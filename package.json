@@ -1,0 +1,32 @@
+{
+    "name": "justmarkup2019",
+    "version": "0.0.1",
+    "description": "The 2019 version of justmarkup.com",
+    "scripts": {
+        "build": "npx eleventy",
+        "watch": "npx eleventy --watch",
+        "debug": "DEBUG=* npx eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/justmarkup/blog.git"
+    },
+    "author": {
+        "name": "Michael Scharnagl",
+        "email": "hallo@justmarkup.com",
+        "url": "https://justmarkup.com/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/justmarkup/blog/issues"
+    },
+    "homepage": "https://justmarkup.com",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.7.1",
+        "@11ty/eleventy-plugin-rss": "^1.0.3",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
+        "luxon": "^1.0.0",
+        "markdown-it": "^8.4.1",
+        "markdown-it-anchor": "^5.0.2"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "justmarkup",
+    "url": "https://justmarkup.com/",
+    "description": "The blog from justmarkup",
+    "feed": {
+        "subtitle": "The blog from justmarkup",
+        "filename": "feed.xml",
+        "path": "/feed/feed.xml",
+        "url": "https://justmarkup.com/log/feed",
+        "id": "https://justmarkup.com/"
+    },
+    "author": {
+        "name": "Michael Scharnagl",
+        "email": "hallo@justmarkup.com"
+    }
+}

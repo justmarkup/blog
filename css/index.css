@@ -1,0 +1,13 @@
+:root {
+    background-color: white;
+    color: #111;
+}
+
+* {
+    box-sizing: border-box
+}
+
+*::before,
+*::after {
+    box-sizing: inherit
+}

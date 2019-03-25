@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  </head>
+  <body>
+    <header>
+      <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+      <nav>
+        <ul class="nav">
+          {%- for nav in collections.nav  -%}
+          <li class="nav__item{% if nav.url == page.url %} nav__item--active{% endif %}">
+            <a class="nav__link" href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </header>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %} id="main">
+      {{ content | safe }}
+    </main>
+
+    <footer>
+      <small>
+        Copyright © Michael Scharnagl <time datetime="{{ 'date' | currentYear }}">{{ 'date' | currentYear }}</time>. All rights reserved. <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/legal/">Legal</a> | <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/privacy-policy/">Privacy Policy</a>
+      </small>
+    </footer>
+
+  </body>
+</html>

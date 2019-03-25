@@ -1,0 +1,11 @@
+---
+layout: layouts/home.njk
+templateClass: page--notes
+tags:
+  - nav
+navtitle: Notes
+permalink: /log/notes/
+---
+
+{% set postslist = collections[ "notes" ] %}
+{% include "postslist.njk" %}
