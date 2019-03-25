@@ -2,8 +2,14 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
+
+    eleventyConfig.addFilter("cssmin", function(code) {
+        return new CleanCSS({}).minify(code).styles;
+    });
+
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
     eleventyConfig.setDataDeepMerge(true);
@@ -13,7 +19,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("readableDate", dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
     });
-
 
     eleventyConfig.addNunjucksFilter('currentYear', function(value) {
         return new Date().getFullYear();
