@@ -1,3 +1,10 @@
+/*
+
+$green: #089b52;
+$black: #111;
+$white: #fff;
+*/
+
 :root {
     background-color: white;
     color: #111;
@@ -25,19 +32,29 @@ body {
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 main {
     margin: 40px auto;
     max-width: 800px;
-    overflow: hidden;
     min-height: 80vh;
     min-height: calc(100vh - 240px);
+}
+
+p,
+time,
+li {
+    font-size: 1.2rem;
 }
 
 
 /* header */
 
 .logo {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     display: block;
     height: 90px;
     width: 110px;
@@ -59,14 +76,33 @@ main {
     padding: 0.4em;
     display: inline-block;
     transition: all 240ms ease-out;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #089b52;
+    transition: all 240ms ease-out;
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+.nav__link:hover:after,
+.nav__link:focus:after {
+    transform: translateY(0);
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    background: rgb(4, 137, 4);
     color: #fff;
-    outline: 2px solid #fff;
-    outline-offset: -2px;
+    outline: none;
 }
 
 
@@ -89,7 +125,7 @@ footer {
     footer:before {
         content: "Congrats! You reached the end of the page.";
         position: absolute;
-        top: -34px;
+        top: -32px;
         color: #000;
         text-align: center;
         left: 0;
@@ -104,7 +140,16 @@ footer {
 
 .page--article h1 {
     margin: 0;
-    padding: 0 1em;
+    padding: 40px 0 0 0;
+    position: relative;
+}
+
+.page--article h1:after {
+    content: "";
+    background: #089b52;
+    width: 80vw;
+    height: 8px;
+    display: block;
 }
 
 .page--article .article__content p,
@@ -113,7 +158,26 @@ footer {
     line-height: 1.2;
 }
 
-.page--article .article__content {
+
+/* article teaser */
+
+.teaser {
+    margin: 0;
+    padding: 0 0 40px 0;
+    list-style: none;
+}
+
+.teaser__title {
+    font-size: 1.3rem;
+}
+
+.teaser__date {
+    display: block;
+}
+
+
+/* not in use yet
+.teaser {
     background: #fff;
     padding: 1em 2em;
     background: #fff 50%/cover border-box padding-box;
@@ -123,12 +187,12 @@ footer {
     transition: all 440ms ease-out;
 }
 
-.page--article .article__content:hover:before {
+.teaser:hover:before {
     -webkit-clip-path: inset(0 round 0 0 10px 10px);
     clip-path: inset(0 round 0 0 10px 10px);
 }
 
-.page--article .article__content:before {
+.teaser:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -146,3 +210,4 @@ footer {
     clip-path: inset(0 round 0 60px 10px 10px);
     transition: all 440ms ease-out;
 }
+*
