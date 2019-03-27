@@ -35,6 +35,14 @@ html {
     background-attachment: fixed;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 html,
 body {
     height: 100%;
@@ -49,10 +57,22 @@ main {
     min-height: calc(100vh - 240px);
 }
 
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 p,
 time,
 li {
     font-size: 1.2rem;
+}
+
+blockquote {
+    border-left: 6px solid #089b52;
+    margin: 0;
+    padding: 0 0 0 16px;
 }
 
 pre {
@@ -66,6 +86,7 @@ pre {
     overflow-x: auto;
     font-size: 1.1em;
     line-height: 1.3;
+    text-align: left;
 }
 
 pre mark {
@@ -82,6 +103,17 @@ pre mark {
         margin-left: -50vw;
         margin-right: -50vw;
     }
+}
+
+.permalink {
+    text-decoration: none;
+    color: #089b52;
+}
+
+.permalink:hover,
+.permalink:focus {
+    background: #089b52;
+    color: #000;
 }
 
 
@@ -108,12 +140,6 @@ pre mark {
     outline: none;
 }
 
-.logo:focus * {
-    stroke: #fff;
-    fill: #fff;
-    background: #089b52;
-}
-
 .nav {
     margin: 0;
     padding: 1em 0 0 0;
@@ -127,7 +153,7 @@ pre mark {
 
 .nav__link {
     font-size: 1.2rem;
-    padding: 0.4em;
+    padding: 0.4em 0.8em;
     display: inline-block;
     transition: all 240ms ease-out;
     text-decoration: none;
@@ -167,7 +193,7 @@ footer {
     color: #fff;
     padding: 40px 20px;
     text-align: center;
-    margin: 60px 0 0 0;
+    margin: 120px 0 0 0;
     font-size: 1.2em;
     position: relative;
 }
@@ -179,21 +205,17 @@ footer a:focus {
     color: #111;
 }
 
-@media all and (min-width: 700px) {
-    footer {
-        margin-top: 120px;
-    }
-    footer:before {
-        content: "Congrats! You reached the end of the page.";
-        position: absolute;
-        top: -32px;
-        color: rgba(18, 27, 23, 0.9);
-        text-align: center;
-        left: 0;
-        right: 0;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+footer:before {
+    content: "Congrats! You reached the end of the page.";
+    content: "<footer>";
+    position: absolute;
+    top: -32px;
+    color: rgba(18, 27, 23, 0.9);
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 
@@ -208,13 +230,23 @@ footer a:focus {
     margin: 0;
     padding: 40px 0 0 0;
     position: relative;
+    font-size: 2.6em;
+    color: #555;
+}
+
+.page--article h2 {
+    font-size: 1.8em;
+}
+
+.page--article h3 {
+    font-size: 1.6em;
 }
 
 .page--article h1:after {
     content: "";
     background: #089b52;
     width: 80vw;
-    height: 8px;
+    height: 4px;
     display: block;
 }
 
@@ -222,6 +254,36 @@ footer a:focus {
 .page--article .article__content li {
     font-size: 1.3em;
     line-height: 1.4;
+}
+
+.page--article main img {
+    padding: 0 20px;
+    width: 1000px;
+    max-width: 100%;
+    margin-left: -100px;
+    position: relative;
+}
+
+@media all and (max-width: 900px) {
+    .page--article main img {
+        padding: 14px;
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+}
+
+.page--article a:focus {
+    outline: none;
+    background: #089b52;
+}
+
+.page--article a:hover:focus {
+    background: inherit;
 }
 
 
@@ -233,8 +295,19 @@ footer a:focus {
     list-style: none;
 }
 
+.teaser__item {
+    margin-bottom: 1em;
+}
+
 .teaser__title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.teaser__item:first-of-type .teaser__title {
+    font-size: 2rem;
 }
 
 .teaser__date {

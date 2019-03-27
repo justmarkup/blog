@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
     eleventyConfig.addFilter("readableDate", dateObj => {
-        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("LLLL dd, yyyy");
     });
 
     eleventyConfig.addNunjucksFilter('currentYear', function(value) {
@@ -41,7 +41,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
     eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("fonts");
 
     /* Markdown Plugins */
     let markdownIt = require("markdown-it");

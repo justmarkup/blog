@@ -2,8 +2,10 @@
 {% for post in postslist | reverse %}
   <li class="teaser__item{% if post.url == url %} teaser__item--active{% endif %}">
     <a href="{{ post.url | url }}" class="teaser__title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="teaser__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    <p>{{ post.data.description }}</p>
+    <time class="teaser__date" datetime="{{ post.date }}">{{ post.date | readableDate }}</time>
+    {% if post.data.description %}
+      <p>{{ post.data.description }}</p>
+    {% endif %}
     {% for tag in post.data.tags %}
       {%- if tag != "posts" -%}
       {% set tagUrl %}/tags/{{ tag }}/{% endset %}
