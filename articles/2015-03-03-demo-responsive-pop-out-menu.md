@@ -1,5 +1,5 @@
 ---
-title: Demo: Responsive Pop-out Menu
+title: Demo - Responsive Pop-out Menu
 description: 
 date: 2015-03-03T15:31:57+00:00
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Browsers and Bugs: The last issue
+title: Browsers and Bugs - The last issue
 description: 
 date: 2015-07-06T17:48:58+00:00
 tags:

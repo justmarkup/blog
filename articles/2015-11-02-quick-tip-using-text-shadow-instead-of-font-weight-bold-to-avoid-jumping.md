@@ -1,5 +1,5 @@
 ---
-title: Using text-shadow instead of font-weight: bold to avoid jumping
+title: Using text-shadow instead of font-weight bold to avoid jumping
 description: 
 date: 2015-11-02T07:55:32+00:00
 tags:

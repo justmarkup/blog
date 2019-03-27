@@ -1,5 +1,5 @@
 ---
-title: Enhancing a comment form: From basic to custom error message to BackgroundSync
+title: Enhancing a comment form - From basic to custom error message to BackgroundSync
 description: 
 date: 2016-10-10T14:12:04+00:00
 tags:

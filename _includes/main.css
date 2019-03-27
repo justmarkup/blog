@@ -185,6 +185,10 @@ pre mark {
     outline: none;
 }
 
+.nav__item--active .nav__link {
+    border-bottom: 2px solid #089b52;
+}
+
 
 /* footer */
 
@@ -196,6 +200,10 @@ footer {
     margin: 120px 0 0 0;
     font-size: 1.2em;
     position: relative;
+}
+
+footer time {
+    font-size: 1em;
 }
 
 footer a:hover,
@@ -304,6 +312,34 @@ footer:before {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     border-bottom: 1px solid;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.1em;
+}
+
+.teaser__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #089b52;
+    transition: all 240ms ease-out;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.teaser__title:hover:after,
+.teaser__title:focus:after {
+    transform: translateX(0);
+}
+
+.teaser__title:focus,
+.teaser__title:hover {
+    outline: none;
+    border-color: transparent;
 }
 
 .teaser__item:first-of-type .teaser__title {
@@ -312,6 +348,11 @@ footer:before {
 
 .teaser__date {
     display: block;
+}
+
+.archivetext {
+    text-align: center;
+    font-size: 1.4em;
 }
 
 

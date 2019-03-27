@@ -2,26 +2,39 @@
 permalink: feed/feed.xml
 excludeFromSitemap: true
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ metadata.title }}</title>
-	<subtitle>{{ metadata.feed.subtitle }}</subtitle>
-	<link href="{{ metadata.feed.url }}" rel="self"/>
-	<link href="{{ metadata.url }}"/>
-	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
-	<id>{{ metadata.feed.id }}</id>
-	<author>
-		<name>{{ metadata.author.name }}</name>
-		<email>{{ metadata.author.email }}</email>
-	</author>
-	{%- for post in collections.posts %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-	<entry>
-		<title>{{ post.data.title }}</title>
-		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
-		<id>{{ absolutePostUrl }}</id>
-		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-	</entry>
-	{%- endfor %}
-</feed>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>justmarkup</title>
+	<atom:link href="https://justmarkup.com/log/feed/" rel="self" type="application/rss+xml" />
+	<link>https://justmarkup.com/log</link>
+	<description></description>
+	<lastBuildDate>Sat, 23 Feb 2019 22:24:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+		{%- for post in collections.articles | reverse %}
+			{% if post.data.oldUrl %}
+			{% set absolutePostUrl %}{{ post.data.oldUrl}}{% endset %}
+			{% else %}
+			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+			{% endif %}
+			
+			<item>
+				<title>{{ post.data.title }}</title>
+				<link>{{ absolutePostUrl }}</link>
+				<pubDate>{{ post.date | rssDate }}</pubDate>
+				<guid isPermaLink="false">{{ absolutePostUrl }}</guid>
+				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+			</item>
+		{%- endfor %}
+	</channel>
+</rss>
