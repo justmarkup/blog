@@ -17,44 +17,48 @@ Let’s start with the [prefers-reduced-motion media query](https://developer.mo
 
 The prefers-reduced-motion media feature is used to detect if the user has requested the system minimize the amount of animation or motion it uses. You can either detect it using a CSS media query
 
-    @media (prefers-reduced-motion: reduce) {
-      /* disable animations/transitions */
-    }
-    
+``` css
+@media (prefers-reduced-motion: reduce) {
+    /* disable animations/transitions */
+}
+```
 
 or you can also use JavaScript to check if the users prefers reduced motion:
 
-    var motionQuery = matchMedia('(prefers-reduced-motion)');
-    function handleReduceMotionChanged() {
-      if (motionQuery.matches) {
-        /* disabled animations/transitions */
-      } else { 
-        /* enable animations/transitions */
-      }
+``` js
+var motionQuery = matchMedia('(prefers-reduced-motion)');
+function handleReduceMotionChanged() {
+    if (motionQuery.matches) {
+    /* disabled animations/transitions */
+    } else { 
+    /* enable animations/transitions */
     }
-    motionQuery.addListener(handleReduceMotionChanged);
-    handleReduceMotionChanged();
-    
+}
+motionQuery.addListener(handleReduceMotionChanged);
+handleReduceMotionChanged();
+```
 
 The safest way to disable all CSS animations and transitions is to use:
 
-    @media (prefers-reduced-motion: reduce) {
-      * {
-          transition: none !important;
-          animation: none !important;
-      }
+``` css
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
     }
-    
+}
+```
 
 This would however also not trigger [animation start/end events or keyframe states](https://twitter.com/scottjehl/status/1086287082031583232), so if your code relies on them you might use:
 
-    @​media (prefers-reduced-motion: reduce) { 
-      * { 
-          animation-duration: 0.1s !important; 
-          transition-duration: 0.1s !important; 
-        } 
-    }
-    
+``` css
+@​media (prefers-reduced-motion: reduce) { 
+    * { 
+        animation-duration: 0.1s !important; 
+        transition-duration: 0.1s !important; 
+    } 
+}
+```
 
 This is the safest solution, but it might not be the best solution as you may still want to use animations/transitions for some parts even if the user prefers reduced motion. I recommend reading [Designing Safer Web Animation For Motion Sensitivity](https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity) by [Val Head](https://twitter.com/vlh) to learn more about when it is a good idea to use animations or transitions.
 
@@ -67,25 +71,26 @@ The prefers-color-scheme media query is probably better known by Dark/Light mode
 
 In CSS you can use the following media query to check if a user prefers dark mode. For light mode the query would be prefers-color-scheme: light.
 
-    
-    @media (prefers-color-scheme: dark) {
-      /* adust styles for dark mode */
-    }
-    
+``` css
+@media (prefers-color-scheme: dark) {
+    /* adust styles for dark mode */
+}
+```
 
 As it is a media query you can also use JavaScript to check for it:
 
-    var colorSchemeQuery = matchMedia('(prefers-color-scheme: dark)');
-    function handleColorSchemeChanged() {
-      if (colorSchemeQuery.matches) {
-        /* dark mode */
-      } else { 
-        /* light mode */
-      }
+``` js
+var colorSchemeQuery = matchMedia('(prefers-color-scheme: dark)');
+function handleColorSchemeChanged() {
+    if (colorSchemeQuery.matches) {
+    /* dark mode */
+    } else { 
+    /* light mode */
     }
-    colorSchemeQuery.addListener(handleColorSchemeChanged);
-    handleColorSchemeChanged();
-    
+}
+colorSchemeQuery.addListener(handleColorSchemeChanged);
+handleColorSchemeChanged();
+```
 
 You can read more about [designing for dark mode](https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode) in this article by [Andy Clarke](https://twitter.com/Malarkey).
 
@@ -96,20 +101,22 @@ On to the next one – the [SaveData request header](https://wicg.github.io/neti
 
 We can either detect it via JavaScript using:
 
-    if ("connection" in navigator) {
-        if (navigator.connection && navigator.connection.saveData === true) {
-            // saveData mode is enabled - don't load heavy assets like high-res images or webfonts
-        }
+``` js
+if ("connection" in navigator) {
+    if (navigator.connection && navigator.connection.saveData === true) {
+        // saveData mode is enabled - don't load heavy assets like high-res images or webfonts
     }
-    
+}
+```
 
 Or you can also detect it on the server-side, here is an example in PHP:
 
-    if (isset($_SERVER["HTTP_SAVE_DATA"]) && strtolower($_SERVER["HTTP_SAVE_DATA"]) === "on") {
-      // `Save-Data` detected!
-      $saveData = true;
-    }
-    
+``` php
+if (isset($_SERVER["HTTP_SAVE_DATA"]) && strtolower($_SERVER["HTTP_SAVE_DATA"]) === "on") {
+    // `Save-Data` detected!
+    $saveData = true;
+}
+```
 
 There is currently no media query for saveData and while we probably never get [bandwith media query](https://www.smashingmagazine.com/2013/01/bandwidth-media-queries-we-dont-need-em/) there is hope that there will be a save data media query in the future.
 
@@ -122,20 +129,22 @@ Next is the [Do Not Track request header](https://developer.mozilla.org/en-US/do
 
 So while I am not sure if other browsers will also disable it, it is still great and gives you extra karma if you honour the Do Not Track setting. It can again be checked via JavaScript:
 
-    var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
-    
-    if (!doNotTrack) {
-        /* load analytics if you really need to */
-    }
-    
+``` js
+var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
+
+if (!doNotTrack) {
+    /* load analytics if you really need to */
+}
+```
 
 You can also check for Do Not Track on the server-side, again here an example in PHP:
 
-    $donottrack= (isset($_SERVER['HTTP_DNT']) && $_SERVER['HTTP_DNT'] == 1); 
-    if (!$donottrack) {
-      echo 'embed analytics script if you really need to'; 
-    }
-    
+``` php
+$donottrack= (isset($_SERVER['HTTP_DNT']) && $_SERVER['HTTP_DNT'] == 1); 
+if (!$donottrack) {
+    echo 'embed analytics script if you really need to'; 
+}
+```
 
 Let the user decide
 -------------------

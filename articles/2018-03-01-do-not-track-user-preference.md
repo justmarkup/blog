@@ -18,17 +18,19 @@ Client-side
 
 We can use JavaScript to check for DNT on the client-side. Here is an example, which only loads Google Analytics if DNT is not enabled.
 
-    var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
-    
-    if (!doNotTrack) {
-        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-    	(function(d, t) {
-    		var g = d.createElement(t),
-    		    s = d.getElementsByTagName(t)[0];
-    		g.src = 'https://ssl.google-analytics.com/ga.js';
-    		s.parentNode.insertBefore(g, s);
-    	}(document, 'script'));
-    }
+``` js
+var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
+
+if (!doNotTrack) {
+    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = 'https://ssl.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+}
+```
 
 The standard way to test for DNT is using `navigator.doNotTrack`, which either returns “1” if DNT is enabled or “0” if not. However, some browsers use [non-standard properties and values](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack#Browser_compatibility), that’s why we have to extend the test to cover all of them.
 
@@ -41,23 +43,29 @@ Even better than checking it on the client-side is checking it directly on the s
 
 If you are using PHP, the information is available in the $\_SERVER array:
 
-    $donottrack= (isset($_SERVER['HTTP_DNT']) && $_SERVER['HTTP_DNT'] == 1); if (!$donottrack) {echo 'embed analytics script'; }
+``` php
+$donottrack= (isset($_SERVER['HTTP_DNT']) && $_SERVER['HTTP_DNT'] == 1); if (!$donottrack) {echo 'embed analytics script'; }
+```
 
 ### Node.js
 
 In Node.js it is available via `req.header.dnt`. Here is an example using Express.
 
-    app.get('/', function (req, res) {
-      const donottrack = (req.header.dnt && req.header.dnt == '1) ? true : false;
-      res.render("index", {
-            dnt: donottrack
-        });
+``` js
+app.get('/', function (req, res) {
+    const donottrack = (req.header.dnt && req.header.dnt == '1) ? true : false;
+    res.render("index", {
+        dnt: donottrack
     });
+});
+```
 
 And now you can check for the dnt variable in the template.
 
-    if !dnt
-      script(src="analytics.js")
+``` js
+if !dnt
+    script(src="analytics.js")
+```
 
 Conclusion
 ----------

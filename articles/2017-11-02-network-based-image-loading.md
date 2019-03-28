@@ -27,56 +27,58 @@ In this demo we will use the Network Information API in our Service Worker to ha
 
 First, we register the Service Worker in our HTML file:
 
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js', {
-            scope: './'
-        });
-    }
-    
+``` js
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js', {
+        scope: './'
+    });
+}
+```
 
 Now, let’s have a look at our Service Worker file (sw.js) we registered.
 
-    const connectionEffectiveType = 'connection' in navigator;
-    
-    self.addEventListener('fetch', function(event) {
-        // check if the request is an image
-        if (/\.jpg$|.png$|.webp$/.test(event.request.url)) {
-            // check if navigator.connection is supported
-            if (navigatorConnectionSupported) {
-                const connectionEffectiveType = navigator.connection.effectiveType;
-    
-                // check if effectiveType is supported
-                if (connectionEffectiveType) {
-                    const req = event.request.clone();
-                    let imageResolution = '';
-    
-                    switch (connectionEffectiveType) {
-                        case "slow-2g":
-                        case "2g":
-                            imageResolution = '_low';
-                            break;
-                        case "4g":
-                            imageResolution = '_high';
-                            break;
-                        default:
-                            imageResolution = '';
-                    }
-    
-                    // Build the image we want to return based on connection
-                    const returnUrl = req.url.substr(0, req.url.lastIndexOf(".")) + imageResolution + "." + req.url.split('.').pop();
-    
-                    event.respondWith(
-                        fetch(returnUrl, {
-                            mode: 'no-cors'
-                        })
-                    );
-    
+``` js
+const connectionEffectiveType = 'connection' in navigator;
+
+self.addEventListener('fetch', function(event) {
+    // check if the request is an image
+    if (/\.jpg$|.png$|.webp$/.test(event.request.url)) {
+        // check if navigator.connection is supported
+        if (navigatorConnectionSupported) {
+            const connectionEffectiveType = navigator.connection.effectiveType;
+
+            // check if effectiveType is supported
+            if (connectionEffectiveType) {
+                const req = event.request.clone();
+                let imageResolution = '';
+
+                switch (connectionEffectiveType) {
+                    case "slow-2g":
+                    case "2g":
+                        imageResolution = '_low';
+                        break;
+                    case "4g":
+                        imageResolution = '_high';
+                        break;
+                    default:
+                        imageResolution = '';
                 }
-    
+
+                // Build the image we want to return based on connection
+                const returnUrl = req.url.substr(0, req.url.lastIndexOf(".")) + imageResolution + "." + req.url.split('.').pop();
+
+                event.respondWith(
+                    fetch(returnUrl, {
+                        mode: 'no-cors'
+                    })
+                );
+
             }
+
         }
-    });
-    
+    }
+});
+```
 
 Let’s go through the code step-by-step.
 

@@ -41,12 +41,14 @@ Use &lt;video&gt; as default
 
 We start with using the video element:
 
-    <video muted controls playsinline data-gif preload="metadata">
-      <source src="file.mp4" type="video/mp4">
-      Your browser doesn't support playing videos, but you can download it  instead. 
-      <a href="file.gif">Download as GIF (1000kB)</a>  
-      <a href="file.mp4">Download as Video(100kB)</a>
-    </video>
+``` html
+<video muted controls playsinline data-gif preload="metadata">
+    <source src="file.mp4" type="video/mp4">
+    Your browser doesn't support playing videos, but you can download it  instead. 
+    <a href="file.gif">Download as GIF (1000kB)</a>  
+    <a href="file.mp4">Download as Video(100kB)</a>
+</video>
+```
 
 I added `preload="metadata"` to avoid that the browser will preload the whole video, and also the `controls` attribute to show the video controls and `playsinline` so the video will play inline and not fullscreen on iOS. This way the user can decide if they want to view the video or not. In addition, I added a fallback text for unsupported browsers and links to download the file as GIF or MP4. This is, however, not really a replacement for a GIF, so let\`s move on.
 
@@ -55,35 +57,37 @@ Autoplay video if supported
 
 GIFs are autoplaying and to make our video react like a GIF we want the video to start immediately and also loop. First we check if the browser is capable of autoplaying videos:
 
-    // https://git.io/vH4Ek
-    var supports_video_autoplay = function(callback) {
-    
-        var v = document.createElement("video");
-        v.paused = true;
-        var p = false;
-        try {
-            p = "play" in v && v.play();
-        } catch (err) {
-    
-        }
-        typeof callback === "function" && callback(!v.paused || "Promise" in window && p instanceof Promise);
-    
-    };
-    
-    supports_video_autoplay(function(supportsAutoplay) {
-        // supports video autoplay and querySelector
-        if (supportsAutoplay && 'querySelector' in document) {
-            var videos = document.querySelectorAll('[data-gif]');
-    
-            [].forEach.call(videos, function(video) {
-                video.removeAttribute('controls');
-                video.setAttribute('autoplay', true);
-                video.setAttribute('loop', true);
-            });
-        } else {
-            // no video autoplay support :(
-        }
-    });
+``` js
+// https://git.io/vH4Ek
+var supports_video_autoplay = function(callback) {
+
+    var v = document.createElement("video");
+    v.paused = true;
+    var p = false;
+    try {
+        p = "play" in v && v.play();
+    } catch (err) {
+
+    }
+    typeof callback === "function" && callback(!v.paused || "Promise" in window && p instanceof Promise);
+
+};
+
+supports_video_autoplay(function(supportsAutoplay) {
+    // supports video autoplay and querySelector
+    if (supportsAutoplay && 'querySelector' in document) {
+        var videos = document.querySelectorAll('[data-gif]');
+
+        [].forEach.call(videos, function(video) {
+            video.removeAttribute('controls');
+            video.setAttribute('autoplay', true);
+            video.setAttribute('loop', true);
+        });
+    } else {
+        // no video autoplay support :(
+    }
+});
+```
 
 I found this test after looking at the Modernizr repository and seeing this solution by [Paul O’Rely](https://github.com/paulorely). If the browser supports autoplay we get all our “GIF videos”, remove the `controls` attribute and add the `autoplay` and `loop` attributes. This way the videos will now autoplay and loop like a GIF.
 
@@ -92,32 +96,34 @@ Use IntersectionObserver
 
 So, now all our GIF videos start automatically if autoplay is supported. We may use several of these videos on a page and playing them all at once means the browser has to download them all and this may also make the site unresponsive. So, as a next step we only play videos if they are actually in the Viewport using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
 
-    if (supportsAutoplay && 'IntersectionObserver' in window) {
-        var videos = document.querySelectorAll('[data-gif]');
-    
-        observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                var video = entry.target;
-                if (entry.intersectionRatio > 0) {
-                    // video is in the viewport - start it
-                    if (!video.hasAttribute('autoplay')) {
-                        video.setAttribute('autoplay', true);
-                        video.setAttribute('loop', true);
-                    }
-                    video.play();
-                } else {
-                    // video is outside the viewport - pause it
-                    video.pause();
+``` js
+if (supportsAutoplay && 'IntersectionObserver' in window) {
+    var videos = document.querySelectorAll('[data-gif]');
+
+    observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            var video = entry.target;
+            if (entry.intersectionRatio > 0) {
+                // video is in the viewport - start it
+                if (!video.hasAttribute('autoplay')) {
+                    video.setAttribute('autoplay', true);
+                    video.setAttribute('loop', true);
                 }
-            });
+                video.play();
+            } else {
+                // video is outside the viewport - pause it
+                video.pause();
+            }
         });
-    
-        [].forEach.call(videos, function(video) {
-            video.removeAttribute('controls');
-    
-            observer.observe(video);
-        });
-    }
+    });
+
+    [].forEach.call(videos, function(video) {
+        video.removeAttribute('controls');
+
+        observer.observe(video);
+    });
+}
+```
 
 First we change our feature test and check if `IntersectionObserver` is supported. Next we define a new IntersectionObserver. If `entry.intersectionRatio` is bigger than 0, the video is in the viewport. In this case we add the `autoplay` and `loop` attributes if they were not already added and play the video. Otherwise, we will pause the video.
 
@@ -132,19 +138,25 @@ We should use the [Save-Data client hint request header](https://developers.goog
 
 We can either get the info if a user has turned on Save-data on the server-side. Here is an example using PHP, which will set the `data-save-data` attribute on the html element if the header returns true.
 
-    $saveData = (isset($_SERVER["HTTP_SAVE_DATA"]) && stristr($_SERVER["HTTP_SAVE_DATA"], "on") !== false) ? true : false;
-    <html <?php if($saveData === true) : echo("data-save-data"); endif; ?>">
+``` php
+$saveData = (isset($_SERVER["HTTP_SAVE_DATA"]) && stristr($_SERVER["HTTP_SAVE_DATA"], "on") !== false) ? true : false;
+<html <?php if($saveData === true) : echo("data-save-data"); endif; ?>">
+```
 
 We can also check for Save-data on the client-side.
 
-    var saveData =  navigator.connection && navigator.connection.saveData;
+``` js
+var saveData =  navigator.connection && navigator.connection.saveData;
+```
 
 So, we extend our test and check for saveData. If a user opt-in to saveData we will not autoplay the videos.
 
-    var saveData =  navigator.connection && navigator.connection.saveData;
-    if (supported && 'IntersectionObserver' in window && !saveData) {
-        // autoplay videos
-    }
+``` js
+var saveData =  navigator.connection && navigator.connection.saveData;
+if (supported && 'IntersectionObserver' in window && !saveData) {
+    // autoplay videos
+}
+```
 
 Enhance with serving MP4 via &lt;img&gt;
 ----------------------------------
@@ -153,45 +165,49 @@ The latest Safari Technology Preview now has support for using MP4 as the source
 
 First we need a feature test to check if the MP4 format is supported for img:
 
-    var supports_mp4_in_img = function(callback) {
-    
-        var image = new Image();
-    
-        image.onload = function() {
-            var isSupported = image.width > 0 && image.height > 0;
-            callback(isSupported);
-        };
-    
-        image.onerror = function() {
-            callback(false);
-        };
-    
-        image.src = "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAs1tZGF0AAACrgYF//+q3EXpvebZSLeWLNgg2SPu73gyNjQgLSBjb3JlIDE0OCByMjYwMSBhMGNkN2QzIC0gSC4yNjQvTVBFRy00IEFWQyBjb2RlYyAtIENvcHlsZWZ0IDIwMDMtMjAxNSAtIGh0dHA6Ly93d3cudmlkZW9sYW4ub3JnL3gyNjQuaHRtbCAtIG9wdGlvbnM6IGNhYmFjPTEgcmVmPTMgZGVibG9jaz0xOjA6MCBhbmFseXNlPTB4MzoweDExMyBtZT1oZXggc3VibWU9NyBwc3k9MSBwc3lfcmQ9MS4wMDowLjAwIG1peGVkX3JlZj0xIG1lX3JhbmdlPTE2IGNocm9tYV9tZT0xIHRyZWxsaXM9MSA4eDhkY3Q9MSBjcW09MCBkZWFkem9uZT0yMSwxMSBmYXN0X3Bza2lwPTEgY2hyb21hX3FwX29mZnNldD0tMiB0aHJlYWRzPTEgbG9va2FoZWFkX3RocmVhZHM9MSBzbGljZWRfdGhyZWFkcz0wIG5yPTAgZGVjaW1hdGU9MSBpbnRlcmxhY2VkPTAgYmx1cmF5X2NvbXBhdD0wIGNvbnN0cmFpbmVkX2ludHJhPTAgYmZyYW1lcz0zIGJfcHlyYW1pZD0yIGJfYWRhcHQ9MSBiX2JpYXM9MCBkaXJlY3Q9MSB3ZWlnaHRiPTEgb3Blbl9nb3A9MCB3ZWlnaHRwPTIga2V5aW50PTI1MCBrZXlpbnRfbWluPTEwIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAD2WIhAA3//728P4FNjuZQQAAAu5tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAZAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACGHRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAIAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAGQAAAAAAAEAAAAAAZBtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAACgAAAAEAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAE7bWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAAA+3N0YmwAAACXc3RzZAAAAAAAAAABAAAAh2F2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgACAEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAAxYXZjQwFkAAr/4QAYZ2QACqzZX4iIhAAAAwAEAAADAFA8SJZYAQAGaOvjyyLAAAAAGHN0dHMAAAAAAAAAAQAAAAEAAAQAAAAAHHN0c2MAAAAAAAAAAQAAAAEAAAABAAAAAQAAABRzdHN6AAAAAAAAAsUAAAABAAAAFHN0Y28AAAAAAAAAAQAAADAAAABidWR0YQAAAFptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAAC1pbHN0AAAAJal0b28AAAAdZGF0YQAAAAEAAAAATGF2ZjU2LjQwLjEwMQ==";
-    }
+``` js
+var supports_mp4_in_img = function(callback) {
+
+    var image = new Image();
+
+    image.onload = function() {
+        var isSupported = image.width > 0 && image.height > 0;
+        callback(isSupported);
+    };
+
+    image.onerror = function() {
+        callback(false);
+    };
+
+    image.src = "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAs1tZGF0AAACrgYF//+q3EXpvebZSLeWLNgg2SPu73gyNjQgLSBjb3JlIDE0OCByMjYwMSBhMGNkN2QzIC0gSC4yNjQvTVBFRy00IEFWQyBjb2RlYyAtIENvcHlsZWZ0IDIwMDMtMjAxNSAtIGh0dHA6Ly93d3cudmlkZW9sYW4ub3JnL3gyNjQuaHRtbCAtIG9wdGlvbnM6IGNhYmFjPTEgcmVmPTMgZGVibG9jaz0xOjA6MCBhbmFseXNlPTB4MzoweDExMyBtZT1oZXggc3VibWU9NyBwc3k9MSBwc3lfcmQ9MS4wMDowLjAwIG1peGVkX3JlZj0xIG1lX3JhbmdlPTE2IGNocm9tYV9tZT0xIHRyZWxsaXM9MSA4eDhkY3Q9MSBjcW09MCBkZWFkem9uZT0yMSwxMSBmYXN0X3Bza2lwPTEgY2hyb21hX3FwX29mZnNldD0tMiB0aHJlYWRzPTEgbG9va2FoZWFkX3RocmVhZHM9MSBzbGljZWRfdGhyZWFkcz0wIG5yPTAgZGVjaW1hdGU9MSBpbnRlcmxhY2VkPTAgYmx1cmF5X2NvbXBhdD0wIGNvbnN0cmFpbmVkX2ludHJhPTAgYmZyYW1lcz0zIGJfcHlyYW1pZD0yIGJfYWRhcHQ9MSBiX2JpYXM9MCBkaXJlY3Q9MSB3ZWlnaHRiPTEgb3Blbl9nb3A9MCB3ZWlnaHRwPTIga2V5aW50PTI1MCBrZXlpbnRfbWluPTEwIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAD2WIhAA3//728P4FNjuZQQAAAu5tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAZAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACGHRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAIAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAGQAAAAAAAEAAAAAAZBtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAACgAAAAEAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAE7bWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAAA+3N0YmwAAACXc3RzZAAAAAAAAAABAAAAh2F2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgACAEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAAxYXZjQwFkAAr/4QAYZ2QACqzZX4iIhAAAAwAEAAADAFA8SJZYAQAGaOvjyyLAAAAAGHN0dHMAAAAAAAAAAQAAAAEAAAQAAAAAHHN0c2MAAAAAAAAAAQAAAAEAAAABAAAAAQAAABRzdHN6AAAAAAAAAsUAAAABAAAAFHN0Y28AAAAAAAAAAQAAADAAAABidWR0YQAAAFptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAAC1pbHN0AAAAJal0b28AAAAdZGF0YQAAAAEAAAAATGF2ZjU2LjQwLjEwMQ==";
+}
+```
 
 For our test we define a `new Image()`, use a small base64 encoded mp4 file and check onload if the width and height are bigger than 0. If yes the browser supports mp4 files for images. If not or if there was an error it doesn’t support it.
 
-    supports_mp4_in_img(function(supportsMP4InImg) {
-        if (supportsMP4InImg) {
-            var videos = document.querySelectorAll('[data-gif]');
-    
-            [].forEach.call(videos, function(video) {
-                var img = new Image();
-                img.src = video.querySelector('source').src;
-                img.setAttribute('alt', "");
-                if (img.decode) {
-                    img.decode().then(function() { video.parentNode.replaceChild(img, video); });
-                } else {
-                    img.onload = function() {
-                        video.parentNode.replaceChild(img, video);
-                    }
+``` js
+supports_mp4_in_img(function(supportsMP4InImg) {
+    if (supportsMP4InImg) {
+        var videos = document.querySelectorAll('[data-gif]');
+
+        [].forEach.call(videos, function(video) {
+            var img = new Image();
+            img.src = video.querySelector('source').src;
+            img.setAttribute('alt', "");
+            if (img.decode) {
+                img.decode().then(function() { video.parentNode.replaceChild(img, video); });
+            } else {
+                img.onload = function() {
+                    video.parentNode.replaceChild(img, video);
                 }
-    
-            });
-        }  else {
-        // use as described before
-        }
-    })
+            }
+
+        });
+    }  else {
+    // use as described before
+    }
+})
+```
 
 Next, we call the test function and if the callback returns true we can change our videos to images. We loop over all our videos and for every video found create a new img and replace the video with it. We also add the alt attribute for the img here. As the latest Safari version also supports [the decode method for img](https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode), I added a test here to use this instead of onload when supported. The decode method is great because it ensures that the image can be appended to the DOM without causing a decoding delay on the next frame.
 
@@ -204,12 +220,14 @@ According to [Can I use](https://caniuse.com/#feat=video) about 94% of all activ
 
 As `<img>` is not a solution, I next tried with `<object>`.
 
-    <video muted autoplay loop playsinline>
-      <source src="file.mp4" type="video/mp4">
-      <object data="file.gif" type="image/gif">Alternative text</object>
-      <a href="file.gif">Download as GIF (1000kB)</a>
-      <a href="file.mp4">Download as Video(100kB)</a>
-    </video>
+``` html
+<video muted autoplay loop playsinline>
+    <source src="file.mp4" type="video/mp4">
+    <object data="file.gif" type="image/gif">Alternative text</object>
+    <a href="file.gif">Download as GIF (1000kB)</a>
+    <a href="file.mp4">Download as Video(100kB)</a>
+</video>
+```
 
 Using `<object>` only browsers not supporting `<video>` will request the file. That’s at least what my test confirmed, but as there are many more browsers and I can\`t test in all I am not 100% sure this will always be the case. This way all browsers not supporting the video element will use the object and show the GIF as a fallback. I also added alternative text inside the object and two links after it to be able to easily download the GIF or video.
 

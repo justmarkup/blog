@@ -21,23 +21,25 @@ Using CSS Hyphenation
 
 To use hyphens today we still need to add prefixes for IE/Edge/Chromium, so it is best to use the following for every text which should use hyphens:
 
-    .hyphenate {
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
-    }
-    
+``` css
+.hyphenate {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+```
 
 As you probably want to break words and not the layout in unsupported browsers I recommend the following. This way all words will be hyphenated in supported browsers and will break into new lines in unsupported browsers.
 
-    .hyphenate {
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
-    }
-    
+``` css
+.hyphenate {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+```
 
 Now, that we know how to use CSS Hyphenation today, let’s have a look at what’s missing to make it even better.
 
@@ -55,7 +57,9 @@ It specifies the minimum number of characters in a hyphenated word and thus we c
 
 So, in theory we could use the following to only use hyphens for words with 10 characters or more and only break before/after after four characters:
 
-    hyphenate-limit-chars: 10 4 4;
+``` css
+hyphenate-limit-chars: 10 4 4;
+```
 
 In reality, this property is still only supported in Internet Explorer 10+ and in Edge with the -ms prefix. It would be really great to get better support for hyphenate-limit-chars – so please let your favorite browser(s) know that you want it – thanks! Here is the issue for [Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=924069) and here for [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=1521723)
 

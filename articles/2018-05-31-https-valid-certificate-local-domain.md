@@ -20,7 +20,9 @@ Setting up the domain
 
 If you already know how to do this, jump straight to [Setting up a certificate](#setupcertificate). If not, you first have to edit your hosts file. On MacOS and Linux you can find this file at /etc/hosts and on Windows it can be found at \[SystemRoot\]\\system32\\drivers\\etc\\hosts (if you are using the Linux subsystem it is here: /mnt/c/Windows/System32/drivers/etc/hosts). Open the hosts file and add the following at the end.
 
-    127.0.0.1 justmarkup.localhost
+``` bash
+127.0.0.1 justmarkup.localhost
+```
 
 Replace justmarkup.localhost with your domain of choice.
 
@@ -35,37 +37,40 @@ First create a new folder called cert in your project folder. This is where we w
 
 Okay, so first create the file root.cnf with the following content and save it in the cert folder.
 
-    # OpenSSL configuration for Root CA
-    
-    [ req ]
-    
-    prompt             = no
-    string_mask        = default
-    
-    # The size of the keys in bits:
-    default_bits       = 2048
-    distinguished_name = req_distinguished_name
-    x509_extensions    = x509_ext
-    
-    [ req_distinguished_name ]
-    
-    # Note that the following are in 'reverse order' to what you'd expect to see.
-    
-    countryName = gb
-    organizationName = Test
-    commonName = Test Root CA
-    
-    [ x509_ext ]
-    
-    basicConstraints=critical,CA:true,pathlen:0
-    keyUsage=critical,keyCertSign,cRLSign
-    
+``` bash
+# OpenSSL configuration for Root CA
+
+[ req ]
+
+prompt             = no
+string_mask        = default
+
+# The size of the keys in bits:
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+x509_extensions    = x509_ext
+
+[ req_distinguished_name ]
+
+# Note that the following are in 'reverse order' to what you'd expect to see.
+
+countryName = gb
+organizationName = Test
+commonName = Test Root CA
+
+[ x509_ext ]
+
+basicConstraints=critical,CA:true,pathlen:0
+keyUsage=critical,keyCertSign,cRLSign
+```
 
 You should replace organizationName and commonName with something related to your project and something you will remember lately.
 
 Next switch to the command line and go into your cert folder you created before and run:
 
-    openssl req -x509 -new -keyout root.key -out root.cer -config root.cnf
+``` bash
+openssl req -x509 -new -keyout root.key -out root.cer -config root.cnf
+```
 
 The script will ask for a PEM pass phrase – enter something – it should be secure and you should remember it.
 
@@ -73,50 +78,55 @@ The script will ask for a PEM pass phrase – enter something – it should be s
 
 Next, create a file called server.cnf with the following content in the certs folder:
 
-    # OpenSSL configuration for end-entity cert
-    
-    [ req ]
-    
-    prompt             = no
-    string_mask        = default
-    
-    # The size of the keys in bits:
-    default_bits       = 2048
-    distinguished_name = req_distinguished_name
-    
-    x509_extensions    = x509_ext
-    
-    [ req_distinguished_name ]
-    
-    # Note that the following are in 'reverse order' to what you'd expect to see.
-    
-    countryName = gb
-    organizationName = Test
-    commonName = localhost
-    
-    [ x509_ext ]
-    
-    keyUsage=critical,digitalSignature,keyAgreement
-    
-    subjectAltName = @alt_names
-    
-    # Multiple Alternate Names are possible
-    [alt_names]
-    DNS.1 = justmarkup.localhost
-    DNS.2 = justmarkup.test
-    
+``` bash
+# OpenSSL configuration for end-entity cert
+
+[ req ]
+
+prompt             = no
+string_mask        = default
+
+# The size of the keys in bits:
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+
+x509_extensions    = x509_ext
+
+[ req_distinguished_name ]
+
+# Note that the following are in 'reverse order' to what you'd expect to see.
+
+countryName = gb
+organizationName = Test
+commonName = localhost
+
+[ x509_ext ]
+
+keyUsage=critical,digitalSignature,keyAgreement
+
+subjectAltName = @alt_names
+
+# Multiple Alternate Names are possible
+[alt_names]
+DNS.1 = justmarkup.localhost
+DNS.2 = justmarkup.test
+```
 
 You have to change the following things here. First, change organizationName to the same name you have set in your root.cnf. Next, change DNS.1 to your local domain name. You can also use multiple here by using DNS.2, DNS.3 and so on.
 
 After saving the file, open your command line again and run the following:
 
-    openssl req -nodes -new -keyout server.key -out server.csr -config server.cnf
+``` bash
+openssl req -nodes -new -keyout server.key -out server.csr -config server.cnf
+```
 
 ### Generate the certificate
 
 Stay in the command line and run the following next:
 
-    openssl x509 -days 3650 -req -in server.csr -CA root.cer -CAkey root.key -set_serial 123 -out server.cer -extfile server.cnf -extensions x509_ext
+``` bash
+openssl x509 -days 3650 -req -in server.csr -CA root.cer -CAkey root.key -set_serial 123 -out server.cer -extfile server.cnf -extensions x509_ext
+```
 
 Here you are required to enter the pass phrase you entered before, I hope you still remember it. Otherwise, you sadly have to start again.
 
@@ -129,31 +139,39 @@ If you haven’t installed npm and node yet, you should do now to follow along. 
 
 So, now we have npm and node installed we first have to init the project. Open your command line and move to your projects folder and init npm with:
 
-    npm init
+``` bash
+npm init
+```
 
 This will create a package.json file. Next, we need to install express.
 
-    npm i express -g --save
+``` bash
+npm i express -g --save
+```
 
 This will add express as a dependency to our project. Now open your index.js (The entry point you selected before when using npm init – it is index.js by default if you didn’t select another one before) and add the following:
 
-    const express = require('express');
-    const app = express();
-    const fs = require('fs');
-    const https = require('https');
-    
-    const sslOptions = {
-        key: fs.readFileSync("./cert/server.key"),
-        cert: fs.readFileSync("./cert/server.cer")
-    };
-    
-    https.createServer(sslOptions, app).listen(3001);
-    
-    app.get('/', (req, res) => res.send('Hello SSL!'))
+``` js
+const express = require('express');
+const app = express();
+const fs = require('fs');
+const https = require('https');
+
+const sslOptions = {
+    key: fs.readFileSync("./cert/server.key"),
+    cert: fs.readFileSync("./cert/server.cer")
+};
+
+https.createServer(sslOptions, app).listen(3001);
+
+app.get('/', (req, res) => res.send('Hello SSL!'))
+```
 
 Now go back to your command line and run:
 
-    node index.js
+``` bash
+node index.js
+```
 
 If you now open https://justmarkup.localhost:3001 (replace justmarkup.localhost with the name of your local domain) in your browser you should see “Hello SSL!”. There is still one problem, while we can serve the local domain now via https it is still considered invalid by browsers, so let’s change this.
 

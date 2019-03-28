@@ -16,18 +16,19 @@ Expandable menu
 
 Throughout this article, we will use an expandable menu as our example. The idea is that the menu is fully visible on big screens and transforms into an expandable menu on small screens. Our basic markup looks like this:
 
-    <header role="banner">
-    	<a class="logo" href="/" title="Home">Logo</a>
-    
-    	<nav role="navigation" id="menu" class="js-menu js--expandable">
-    		<ul>
-    			<li><a href="/">Link 1</a></li>
-    			<li><a href="/">Another Link</a></li>
-    			...
-    		</ul>
-    	</nav>
-    </header>
-    
+``` html
+<header role="banner">
+	<a class="logo" href="/" title="Home">Logo</a>
+
+	<nav role="navigation" id="menu" class="js-menu js--expandable">
+		<ul>
+			<li><a href="/">Link 1</a></li>
+			<li><a href="/">Another Link</a></li>
+			...
+		</ul>
+	</nav>
+</header>
+```
 
 So, we have a header with our Logo and a navigation with multiple navigation items. I also added an id to the nav and two classes, which we will need later.
 
@@ -39,80 +40,81 @@ With this basic markup and some styles our header will look like the following o
 
 Now, let’s have a look at the JavaScript.
 
-    //CTM
-    if (window.CSS && CSS.supports('color', 'var(--primary)')) {
-    
-    	var expandableElement = document.querySelector('.js--expandable');
-    	var header = document.querySelector('header');
-    	var menu = document.querySelector('.js-menu');
-    	var menuButton = document.createElement('button');
-    	var hasRun = false;
-    
-    	function observeMenu() {
-    
-    		var isExpandable = window.getComputedStyle(expandableElement).getPropertyValue('--expandable').trim();
-    		
-    		// check if --expandable is set to true
-    		if (isExpandable === 'true') {
-                            // add menu toggle button and eventListener if not already happened before
-    			if (!hasRun) {
-    				initToggleMenu();
-    			}
-                            // hide menu and show button
-    			menu.setAttribute('hidden', true);
-    			menuButton.removeAttribute('hidden');
-    			menu.setAttribute('aria-labelledby', 'menu-button');
-    		} else {
-                            // hide button and show menu
-    			menuButton.setAttribute('hidden', true);
-    			menu.removeAttribute('hidden');
-    			menu.removeAttribute('aria-labelledby');
-    		}
-    
-    	};
-    
-    	function initToggleMenu () {
-    
-    		// Button properties
-    		menuButton.classList.add('menu-button');
-    		menuButton.setAttribute('id', 'menu-button');
-    		menuButton.setAttribute('aria-expanded', 'false');
-    		menuButton.setAttribute('aria-controls', 'menu');
-    		menuButton.innerHTML = 'Menu';
-    		
-    		// Menu properties
-    		menu.setAttribute('hidden', true);
-    		menu.setAttribute('aria-labelledby', 'menu-button');
-    		menu.classList.add(' is--expandable');
-    		
-    		// Add menu button to DOM
-    		header.insertBefore(menuButton, menu);
-    
-    
-    		// handle click on menu button
-    		menuButton.addEventListener('click', function () {
-    
-    			if (!menu.hasAttribute('hidden')) {
-    				// Hide
-    				menu.setAttribute('hidden', true);
-    				menuButton.setAttribute('aria-expanded', 'false');
-    			} else {
-    				// Show
-    				menu.removeAttribute('hidden');
-    				menuButton.setAttribute('aria-expanded', 'true');
-    			}
-    		}, false);
-    
-    		hasRun = true;
-    
-    	};
-    
-    	observeMenu();
-    	
-    	window.addEventListener('resize', observeMenu, true);
-    	
-    }
-    
+``` js
+//CTM
+if (window.CSS && CSS.supports('color', 'var(--primary)')) {
+
+	var expandableElement = document.querySelector('.js--expandable');
+	var header = document.querySelector('header');
+	var menu = document.querySelector('.js-menu');
+	var menuButton = document.createElement('button');
+	var hasRun = false;
+
+	function observeMenu() {
+
+		var isExpandable = window.getComputedStyle(expandableElement).getPropertyValue('--expandable').trim();
+		
+		// check if --expandable is set to true
+		if (isExpandable === 'true') {
+						// add menu toggle button and eventListener if not already happened before
+			if (!hasRun) {
+				initToggleMenu();
+			}
+						// hide menu and show button
+			menu.setAttribute('hidden', true);
+			menuButton.removeAttribute('hidden');
+			menu.setAttribute('aria-labelledby', 'menu-button');
+		} else {
+						// hide button and show menu
+			menuButton.setAttribute('hidden', true);
+			menu.removeAttribute('hidden');
+			menu.removeAttribute('aria-labelledby');
+		}
+
+	};
+
+	function initToggleMenu () {
+
+		// Button properties
+		menuButton.classList.add('menu-button');
+		menuButton.setAttribute('id', 'menu-button');
+		menuButton.setAttribute('aria-expanded', 'false');
+		menuButton.setAttribute('aria-controls', 'menu');
+		menuButton.innerHTML = 'Menu';
+		
+		// Menu properties
+		menu.setAttribute('hidden', true);
+		menu.setAttribute('aria-labelledby', 'menu-button');
+		menu.classList.add(' is--expandable');
+		
+		// Add menu button to DOM
+		header.insertBefore(menuButton, menu);
+
+
+		// handle click on menu button
+		menuButton.addEventListener('click', function () {
+
+			if (!menu.hasAttribute('hidden')) {
+				// Hide
+				menu.setAttribute('hidden', true);
+				menuButton.setAttribute('aria-expanded', 'false');
+			} else {
+				// Show
+				menu.removeAttribute('hidden');
+				menuButton.setAttribute('aria-expanded', 'true');
+			}
+		}, false);
+
+		hasRun = true;
+
+	};
+
+	observeMenu();
+	
+	window.addEventListener('resize', observeMenu, true);
+	
+}
+```
 
 It is pretty long, so let’s go through this step by step. First, we have a [Cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard) check, so only supported browsers will run the JavaScript. Next, we define some variables with our needed elements as well as a Boolean value we will use later to check if the button has already been created.
 
@@ -120,15 +122,17 @@ After that, we create a function called `observeMenu` which we will execute on p
 
 Here is the CSS we use to set the custom property. On small screens we set it to `true` and once there is enough space to show it in one line, we set it to `false`
 
-    .js--expandable {
-    	--expandable: true;
-    }
-    
-    @media all and (min-width: 50em) {
-    	.js--expandable {
-    		--expandable: false;
-    	}
-    }
+``` css
+.js--expandable {
+	--expandable: true;
+}
+
+@media all and (min-width: 50em) {
+	.js--expandable {
+		--expandable: false;
+	}
+}
+```
 
 Back in our `observeMenu` function, if `isExpandable` is true, we first check if we already added the menu, and if not add it. Futhermore we change some attributes based on the `isExpandable` variable.
 

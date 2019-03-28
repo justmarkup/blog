@@ -105,6 +105,16 @@ pre mark {
     }
 }
 
+::-moz-selection {
+    color: #111;
+    background: #089b52;
+}
+
+ ::selection {
+    color: #111;
+    background: #089b52;
+}
+
 .permalink {
     text-decoration: none;
     color: #089b52;
@@ -285,13 +295,15 @@ footer:before {
     }
 }
 
-.page--article a:focus {
+.page--article main a:focus,
+.page--article main a:hover {
     outline: none;
     background: #089b52;
 }
 
-.page--article a:hover:focus {
-    background: inherit;
+.article__date {
+    display: block;
+    padding: 0.3em 0;
 }
 
 
@@ -356,38 +368,132 @@ footer:before {
 }
 
 
-/* not in use yet
-.teaser {
-    background: #fff;
-    padding: 1em 2em;
-    background: #fff 50%/cover border-box padding-box;
-    position: relative;
-    border-radius: 10px 0 40px 10px;
-    margin: 5px 30px;
-    transition: all 440ms ease-out;
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
 }
 
-.teaser:hover:before {
-    -webkit-clip-path: inset(0 round 0 0 10px 10px);
-    clip-path: inset(0 round 0 0 10px 10px);
+ :not(pre)>code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
 }
 
-.teaser:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -0.4em;
-    right: -0.4em;
-    bottom: -0.4em;
-    left: -0.9em;
-    border: inherit;
-    border-color: transparent;
-    background: rgba(3, 142, 73, 0.9);
-    background-clip: border-box;
-    -webkit-filter: blur(9px);
-    filter: blur(9px);
-    -webkit-clip-path: inset(0 round 0 60px 10px 10px);
-    clip-path: inset(0 round 0 60px 10px 10px);
-    transition: all 440ms ease-out;
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #b2b1b1;
 }
-*
+
+.token.punctuation {
+    color: #c5c8c6;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+    color: #96CBFE;
+}
+
+.token.class-name {
+    color: #FFFFB6;
+    text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+    color: #99CC99;
+}
+
+.token.symbol,
+.token.deleted {
+    color: #f92672;
+}
+
+.token.number {
+    color: #FF73FD;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #A8FF60;
+}
+
+.token.variable {
+    color: #C6C5FE;
+}
+
+.token.operator {
+    color: #EDEDED;
+}
+
+.token.entity {
+    color: #FFFFB6;
+    /* text-decoration: underline; */
+}
+
+.token.url {
+    color: #96CBFE;
+}
+
+.language-css .token.string,
+.style .token.string {
+    color: #87C38A;
+}
+
+.token.atrule,
+.token.attr-value {
+    color: #F9EE98;
+}
+
+.token.function {
+    color: #DAD085;
+}
+
+.token.regex {
+    color: #E9C062;
+}
+
+.token.important {
+    color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}

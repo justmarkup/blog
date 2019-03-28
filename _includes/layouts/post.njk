@@ -3,6 +3,7 @@ layout: layouts/base.njk
 templateClass: page--article
 ---
 <h1>{{ title }}</h1>
+<time class="article__date" datetime="{{ date }}">{{ date | readableDate }}</time>
 
 <div class="article__content">
     {{ content | safe }}

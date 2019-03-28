@@ -20,7 +20,9 @@ Before continuing you should already have Node.js [installed](https://nodejs.org
 
 To install Puppeteer run
 
-    npm i puppeteer
+``` bash
+npm i puppeteer
+```
 
 in your command line.
 
@@ -31,28 +33,29 @@ Get the data
 
 First we launch a new browser with Puppeteer and go to a new page. To do this create a new file called index.js and insert the following:
 
-    const puppeteer = require('puppeteer');
-    
-    (async() => {
-        // start the browser
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-        // open a new page
-        const page = await browser.newPage();
-        const pageURL = 'https://justmarkup.com';
-        try {
-            // try to go to URL
-            await page.goto(pageURL);
-            console.log(`opened the page: ${pageURL}`);
-        } catch (error) {
-            console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
-        }
-    
-        // all done, close the browser
-        await browser.close();
-    
-        process.exit()
-    })();
-    
+``` js
+const puppeteer = require('puppeteer');
+
+(async() => {
+    // start the browser
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    // open a new page
+    const page = await browser.newPage();
+    const pageURL = 'https://justmarkup.com';
+    try {
+        // try to go to URL
+        await page.goto(pageURL);
+        console.log(`opened the page: ${pageURL}`);
+    } catch (error) {
+        console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+    }
+
+    // all done, close the browser
+    await browser.close();
+
+    process.exit()
+})();
+```
 
 First, we require the Puppeteer library. Next we use `puppeteer.launch()` to create a new browser and `browser.newPage()` to define a new page/tab. Last we use `page.goto(URL)` to open an URL.
 
@@ -60,79 +63,31 @@ If we run `node index.js`, it should log “opened the page https://justmarkup.c
 
 Now, that we know how to launch a browser and open an URL, let’s see how we can get data from the DOM of the page.
 
-    const puppeteer = require('puppeteer');
-    
-    (async() => {
-        // start the browser
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-        // open a new page
-        const page = await browser.newPage();
-        const pageURL = 'https://justmarkup.com';
-        try {
-            // try to go to URL
-            await page.goto(pageURL);
-            console.log(`opened the page: ${pageURL}`);
-        } catch (error) {
-            console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
-        }
-    
-        // Find all links to articles
-        const postsSelector = '.main .article h2 a';
-        await page.waitForSelector(postsSelector, { timeout: 0 });
-        const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
-    
-        // Visit each page one by one
-        for (let postUrl of postUrls) {
-    
-            // open the page
-            try {
-                await page.goto(postUrl);
-                console.log('opened the page: ', postUrl);
-            } catch (error) {
-                console.log(error);
-                console.log('failed to open the page: ', postUrl);
-            }
-    
-            // get the pathname
-            let pagePathname = await page.evaluate(() => location.pathname);
-            pagePathname = pagePathname.replace(/\//g, "-");
-            console.log('got the pathname:', pagePathname);
-    
-            // get the title of the post
-            const titleSelector = '.article h1';
-            await page.waitForSelector(titleSelector);
-            const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
-            console.log('found the title', pageTitle);
-    
-            // get the content of the page
-            const contentSelector = '.article .entry-content';
-            await page.waitForSelector(contentSelector, { timeout: 0 });
-            const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
-            console.log('found the content: ', pageContent);
-    
-        }
-    
-        // all done, close the browser
-        await browser.close();
-    
-        process.exit()
-    })();
-    
+``` js
+const puppeteer = require('puppeteer');
 
-First, we get all links to our posts we find in the entry page, in my case they can be targeted with the selector ‘.main .article h2 a’.
+(async() => {
+    // start the browser
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    // open a new page
+    const page = await browser.newPage();
+    const pageURL = 'https://justmarkup.com';
+    try {
+        // try to go to URL
+        await page.goto(pageURL);
+        console.log(`opened the page: ${pageURL}`);
+    } catch (error) {
+        console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+    }
 
     // Find all links to articles
     const postsSelector = '.main .article h2 a';
     await page.waitForSelector(postsSelector, { timeout: 0 });
     const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
-    
 
-We define the selector and use `waitForSelector()` to be sure the DOM nodes are visible. Next, we use [page.$$eval(selector, pageFunction\[, …args\])](https://github.com/GoogleChrome/puppeteer/blob/v1.11.0/docs/api.md#pageevalselector-pagefunction-args), which runs `Array.from(document.querySelectorAll(selector))` within the page and passes it as the first argument to `pageFunction`. Lastly we use the `map()` method to get the links to the pages defined in the `href` attribute. Great, we now have an `Array` with all our links.
-
-Now, it is time to open all links, one after another and get the data (headline, content, pathname) we need.
-
+    // Visit each page one by one
     for (let postUrl of postUrls) {
-    
+
         // open the page
         try {
             await page.goto(postUrl);
@@ -141,26 +96,77 @@ Now, it is time to open all links, one after another and get the data (headline,
             console.log(error);
             console.log('failed to open the page: ', postUrl);
         }
-    
+
         // get the pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, "-");
         console.log('got the pathname:', pagePathname);
-    
+
         // get the title of the post
         const titleSelector = '.article h1';
         await page.waitForSelector(titleSelector);
         const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
         console.log('found the title', pageTitle);
-    
+
         // get the content of the page
         const contentSelector = '.article .entry-content';
         await page.waitForSelector(contentSelector, { timeout: 0 });
         const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
         console.log('found the content: ', pageContent);
-    
+
     }
-    
+
+    // all done, close the browser
+    await browser.close();
+
+    process.exit()
+})();
+```
+
+First, we get all links to our posts we find in the entry page, in my case they can be targeted with the selector ‘.main .article h2 a’.
+
+``` js
+// Find all links to articles
+const postsSelector = '.main .article h2 a';
+await page.waitForSelector(postsSelector, { timeout: 0 });
+const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
+```
+
+We define the selector and use `waitForSelector()` to be sure the DOM nodes are visible. Next, we use [page.$$eval(selector, pageFunction\[, …args\])](https://github.com/GoogleChrome/puppeteer/blob/v1.11.0/docs/api.md#pageevalselector-pagefunction-args), which runs `Array.from(document.querySelectorAll(selector))` within the page and passes it as the first argument to `pageFunction`. Lastly we use the `map()` method to get the links to the pages defined in the `href` attribute. Great, we now have an `Array` with all our links.
+
+Now, it is time to open all links, one after another and get the data (headline, content, pathname) we need.
+
+``` js
+for (let postUrl of postUrls) {
+
+    // open the page
+    try {
+        await page.goto(postUrl);
+        console.log('opened the page: ', postUrl);
+    } catch (error) {
+        console.log(error);
+        console.log('failed to open the page: ', postUrl);
+    }
+
+    // get the pathname
+    let pagePathname = await page.evaluate(() => location.pathname);
+    pagePathname = pagePathname.replace(/\//g, "-");
+    console.log('got the pathname:', pagePathname);
+
+    // get the title of the post
+    const titleSelector = '.article h1';
+    await page.waitForSelector(titleSelector);
+    const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
+    console.log('found the title', pageTitle);
+
+    // get the content of the page
+    const contentSelector = '.article .entry-content';
+    await page.waitForSelector(contentSelector, { timeout: 0 });
+    const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
+    console.log('found the content: ', pageContent);
+
+}
+```
 
 We loop through the above defined `postUrls` and use `page.goto()` to open each URL. Now we get the pathname, which we will later use as our filename. Here we use `page.evaluate()` to get the `pathname` defined in `window.location`. We also replace all “/” with “-” to get a valid filename.
 
@@ -175,67 +181,68 @@ Convert to markdown
 
 So, we now have all the needed data. As the next step we will use [Turndown](https://github.com/domchristie/turndown) to convert the HTML to Markdown.
 
-    const puppeteer = require('puppeteer');
-    const TurndownService = require('turndown');
-    
-    const turndownService = new TurndownService();
-    
-    (async() => {
-        // start the browser
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-        // open a new page
-        const page = await browser.newPage();
-        const pageURL = 'https://justmarkup.com';
+``` js
+const puppeteer = require('puppeteer');
+const TurndownService = require('turndown');
+
+const turndownService = new TurndownService();
+
+(async() => {
+    // start the browser
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    // open a new page
+    const page = await browser.newPage();
+    const pageURL = 'https://justmarkup.com';
+    try {
+        // try to go to URL
+        await page.goto(pageURL);
+        console.log(`opened the page: ${pageURL}`);
+    } catch (error) {
+        console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+    }
+
+    // Find all links to articles
+    const postsSelector = '.main .article h2 a';
+    await page.waitForSelector(postsSelector, { timeout: 0 });
+    const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
+
+    // Visit each page one by one
+    for (let postUrl of postUrls) {
+
+        // open the page
         try {
-            // try to go to URL
-            await page.goto(pageURL);
-            console.log(`opened the page: ${pageURL}`);
+            await page.goto(postUrl);
+            console.log('opened the page: ', postUrl);
         } catch (error) {
-            console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+            console.log(error);
+            console.log('failed to open the page: ', postUrl);
         }
-    
-        // Find all links to articles
-        const postsSelector = '.main .article h2 a';
-        await page.waitForSelector(postsSelector, { timeout: 0 });
-        const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
-    
-        // Visit each page one by one
-        for (let postUrl of postUrls) {
-    
-            // open the page
-            try {
-                await page.goto(postUrl);
-                console.log('opened the page: ', postUrl);
-            } catch (error) {
-                console.log(error);
-                console.log('failed to open the page: ', postUrl);
-            }
-    
-            // get the pathname
-            let pagePathname = await page.evaluate(() => location.pathname);
-            pagePathname = pagePathname.replace(/\//g, "-");
-    
-            // get the title of the post
-            const titleSelector = '.article h1';
-            await page.waitForSelector(titleSelector);
-            const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
-    
-            // get the content of the page
-            const contentSelector = '.article .entry-content';
-            await page.waitForSelector(contentSelector, { timeout: 0 });
-            const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
-    
-            // convert the html to markdown
-            let pageContentMarkdown = turndownService.turndown(pageTitle + pageContent);
-            console.log('Yes, this is the headline and content as markdown', pageContentMarkdown)
-        }
-    
-        // all done, close the browser
-        await browser.close();
-    
-        process.exit()
-    })();
-    
+
+        // get the pathname
+        let pagePathname = await page.evaluate(() => location.pathname);
+        pagePathname = pagePathname.replace(/\//g, "-");
+
+        // get the title of the post
+        const titleSelector = '.article h1';
+        await page.waitForSelector(titleSelector);
+        const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
+
+        // get the content of the page
+        const contentSelector = '.article .entry-content';
+        await page.waitForSelector(contentSelector, { timeout: 0 });
+        const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
+
+        // convert the html to markdown
+        let pageContentMarkdown = turndownService.turndown(pageTitle + pageContent);
+        console.log('Yes, this is the headline and content as markdown', pageContentMarkdown)
+    }
+
+    // all done, close the browser
+    await browser.close();
+
+    process.exit()
+})();
+```
 
 First, we need to install Turndown by running `npm install turndown` in our command line. After that, we require turndown at the top of our index.js, and define the service with `const turndownService = new TurndownService();`
 
@@ -246,106 +253,109 @@ Save markdown files
 
 To finish the plan, we now need to save the converted Markdown in files (one for each article).
 
-    const puppeteer = require('puppeteer');
-    const TurndownService = require('turndown');
-    const fs = require('fs');
-    
-    const turndownService = new TurndownService();
-    
-    (async() => {
-        // start the browser
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-        // open a new page
-        const page = await browser.newPage();
-        const pageURL = 'https://justmarkup.com';
+``` js
+const puppeteer = require('puppeteer');
+const TurndownService = require('turndown');
+const fs = require('fs');
+
+const turndownService = new TurndownService();
+
+(async() => {
+    // start the browser
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    // open a new page
+    const page = await browser.newPage();
+    const pageURL = 'https://justmarkup.com';
+    try {
+        // try to go to URL
+        await page.goto(pageURL);
+        console.log(`opened the page: ${pageURL}`);
+    } catch (error) {
+        console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+    }
+
+    // Find all links to articles
+    const postsSelector = '.main .article h2 a';
+    await page.waitForSelector(postsSelector, { timeout: 0 });
+    const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
+
+    // Visit each page one by one
+    for (let postUrl of postUrls) {
+
+        // open the page
         try {
-            // try to go to URL
-            await page.goto(pageURL);
-            console.log(`opened the page: ${pageURL}`);
+            await page.goto(postUrl);
+            console.log('opened the page: ', postUrl);
         } catch (error) {
-            console.log(`failed to open the page: ${pageURL} with the error: ${error}`);
+            console.log(error);
+            console.log('failed to open the page: ', postUrl);
         }
-    
-        // Find all links to articles
-        const postsSelector = '.main .article h2 a';
-        await page.waitForSelector(postsSelector, { timeout: 0 });
-        const postUrls = await page.$$eval(postsSelector, postLinks => postLinks.map(link => link.href));
-    
-        // Visit each page one by one
-        for (let postUrl of postUrls) {
-    
-            // open the page
-            try {
-                await page.goto(postUrl);
-                console.log('opened the page: ', postUrl);
-            } catch (error) {
-                console.log(error);
-                console.log('failed to open the page: ', postUrl);
-            }
-    
-            // get the pathname
-            let pagePathname = await page.evaluate(() => location.pathname);
-            pagePathname = pagePathname.replace(/\//g, "-");
-    
-            // get the title of the post
-            const titleSelector = '.article h1';
-            await page.waitForSelector(titleSelector);
-            const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
-    
-            // get the content of the page
-            const contentSelector = '.article .entry-content';
-            await page.waitForSelector(contentSelector, { timeout: 0 });
-            const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
-    
-            // convert the html to markdown
-            let pageContentMarkdown = turndownService.turndown(pageTitle + pageContent);
-            
-    
-             // Check if folder exists before writing files there
-            const postsDirectory = '/posts/';
-            if (!fs.existsSync(postsDirectory)) {
-                fs.mkdirSync(postsDirectory);
-            }
-    
-            // save the file as ${pathname}.md
-            fs.writeFile(postsDirectory + pagePathname + '.md', pageContentMarkdown, (err) => {
-                if (err) {
-                    console.log(err);
-                }
-    
-                // success case, the file was saved
-                console.log('Page saved!');
-            });
+
+        // get the pathname
+        let pagePathname = await page.evaluate(() => location.pathname);
+        pagePathname = pagePathname.replace(/\//g, "-");
+
+        // get the title of the post
+        const titleSelector = '.article h1';
+        await page.waitForSelector(titleSelector);
+        const pageTitle = await page.$eval(titleSelector, titleSelector => titleSelector.outerHTML);
+
+        // get the content of the page
+        const contentSelector = '.article .entry-content';
+        await page.waitForSelector(contentSelector, { timeout: 0 });
+        const pageContent = await page.$eval(contentSelector, contentSelector => contentSelector.innerHTML);
+
+        // convert the html to markdown
+        let pageContentMarkdown = turndownService.turndown(pageTitle + pageContent);
+
+
+            // Check if folder exists before writing files there
+        const postsDirectory = '/posts/';
+        if (!fs.existsSync(postsDirectory)) {
+            fs.mkdirSync(postsDirectory);
         }
-    
-        // all done, close the browser
-        await browser.close();
-    
-        process.exit()
-    })();
-    
+
+        // save the file as ${pathname}.md
+        fs.writeFile(postsDirectory + pagePathname + '.md', pageContentMarkdown, (err) => {
+            if (err) {
+                console.log(err);
+            }
+
+            // success case, the file was saved
+            console.log('Page saved!');
+        });
+    }
+
+    // all done, close the browser
+    await browser.close();
+
+    process.exit()
+})();
+```
 
 We are using the [File System API (fs) from Node.js](https://nodejs.org/api/fs.html) here, so as a first step we require it at the the top of our index.js. I wanted to save all posts in a folder called ‘posts’. So, we first check if the folder already exists, and if not we will create the folder using:
 
-    // Check if folder exists before writing files there
-    const postsDirectory = '/posts/';
-    if (!fs.existsSync(postsDirectory)) {
-        fs.mkdirSync(postsDirectory);
-    }
-    
+``` js
+// Check if folder exists before writing files there
+const postsDirectory = '/posts/';
+if (!fs.existsSync(postsDirectory)) {
+    fs.mkdirSync(postsDirectory);
+}
+```
 
 Now on to the final part to save a Markdown file for each article.
 
-    // save the file as ${pathname}.md
-    fs.writeFile(postsDirectory + pagePathname + '.md', pageContentMarkdown, (err) => {
-        if (err) {
-            console.log(err);
-        }
-    
-        // success case, the file was saved
-        console.log('Page saved!');
-    });
-    
+``` js
+// save the file as ${pathname}.md
+fs.writeFile(postsDirectory + pagePathname + '.md', pageContentMarkdown, (err) => {
+    if (err) {
+        console.log(err);
+    }
+
+    // success case, the file was saved
+    console.log('Page saved!');
+});
+```
 
 Here we use `fs.writeFile()`. We want to save our files in ‘/posts/’, using our `pagePathname` as the filename and use the file extension “.md” so we pass that as the first argument. As the second argument we will pass `pageContentMarkdown` which contains the converted Markdown as a `String`. If all goes well, the articles now get saved one after another as Markdown files. Yes, goal achieved!
 

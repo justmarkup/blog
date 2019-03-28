@@ -18,13 +18,14 @@ Front-end
 
 Let’s start with the front-end part. First we add a feature test to check if the browser supports push notifications, and if it does load our JavaScript.
 
-    if ('serviceWorker' in navigator && 'PushManager' in window) {
-      var s = document.createElement('script');
-      s.src = '/script/push.js';
-      s.async = true;
-      document.head.appendChild(s);
-    }
-    
+``` js
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+  var s = document.createElement('script');
+  s.src = '/script/push.js';
+  s.async = true;
+  document.head.appendChild(s);
+}
+```
 
 Before starting with coding we need some prerequisites. We will need Application Server Keys (VAPID Key). You can get them either via this [site](https://web-push-codelab.appspot.com/) or by installing the web-push library (which we will need later on the back-end) with `npm install -g web-push` and executing `web-push generate-vapid-keys` on the terminal. In both cases you will get a public key and a private key, which you should save at safe place.
 
@@ -34,140 +35,141 @@ Before the application server key / VAPID spec has been defined the first browse
 
 With that in place, have a look at the JavaScript file “push.js” where we will handle the Service Worker Registration and the subscription of notifications:
 
-    'use strict';
-    
-    const appServerKey = 'BHLCrsFGJQIVgg-XNp8F59C8UFF49GAVxvYMvyCURim3nMYI5TMdsOcrh-yJM7KbtZ3psi5FhfvaJbU_11jwtPY';
-    
-    const pushWrapper = document.querySelector('.push-wrapper');
-    const pushButton = document.querySelector('.push-button');
-    
-    let hasSubscription = false;
-    let serviceWorkerRegistration = null;
-    let subscriptionData = false;
-    
-    function urlB64ToUint8Array(base64String) {
-      const padding = '='.repeat((4 - base64String.length % 4) % 4);
-      const base64 = (base64String + padding)
-        .replace(/\-/g, '+')
-        .replace(/_/g, '/');
-    
-      const rawData = window.atob(base64);
-      const outputArray = new Uint8Array(rawData.length);
-    
-      for (let i = 0; i < rawData.length; ++i) {
-        outputArray[i] = rawData.charCodeAt(i);
-      }
-      return outputArray;
-    }
-    
-    function updatePushButton() {
-      pushWrapper.classList.remove('hidden');
-      
-      if (hasSubscription) {
-        pushButton.textContent = `Disable Push Notifications`;
-      } else {
-        pushButton.textContent = `Enable Push Notifications`;
-      }
-    }
-    
-    function subscribeUser() {
-      serviceWorkerRegistration.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: urlB64ToUint8Array(appServerKey)
-      })
-      .then(function(subscription) {
-    
-        fetch('/push/subscribe',{
-          method: "POST",
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(subscription)
-        })
-        .then(function(response) {
-          return response;
-        })
-        .then(function(text) {
-          console.log('User is subscribed.');
-          hasSubscription = true;
-    
-          updatePushButton();
-        })
-        .catch(function(error) {
-          hasSubscription = false;
-          console.error('error fetching subscribe', error);
-        });
-        
-      })
-      .catch(function(err) {
-        console.log('Failed to subscribe the user: ', err);
-      });
-    }
-    
-    function unsubscribeUser() {
-      serviceWorkerRegistration.pushManager.getSubscription()
-      .then(function(subscription) {
-        if (subscription) {
-          subscriptionData = {
-            endpoint: subscription.endpoint
-          };
-          
-          fetch('/push/unsubscribe',{
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(subscriptionData)
-          })
-          .then(function(response) {
-            return response;
-          })
-          .then(function(text) {
-            hasSubscription = false;
-    
-            updatePushButton();
-          })
-          .catch(function(error) {
-            hasSubscription = true;
-            console.error('error fetching subscribe', error);
-          });
-    
-          hasSubscription = false;
-    
-          updatePushButton();
-          return subscription.unsubscribe();
-        }
-      });
-    }
-    
-    function initPush() {
-    
-      pushButton.addEventListener('click', function() {
-        if (hasSubscription) {
-          unsubscribeUser();
-        } else {
-          subscribeUser();
-        }
-      });
-    
-      // Set the initial subscription value
-      serviceWorkerRegistration.pushManager.getSubscription()
-      .then(function(subscription) {
-        hasSubscription = !(subscription === null);
-    
-        updatePushButton();
-      });
-    }
-    
-    navigator.serviceWorker.register('sw.js')
-    .then(function(sw) {
-      serviceWorkerRegistration = sw;
-      initPush();
+``` js
+'use strict';
+
+const appServerKey = 'BHLCrsFGJQIVgg-XNp8F59C8UFF49GAVxvYMvyCURim3nMYI5TMdsOcrh-yJM7KbtZ3psi5FhfvaJbU_11jwtPY';
+
+const pushWrapper = document.querySelector('.push-wrapper');
+const pushButton = document.querySelector('.push-button');
+
+let hasSubscription = false;
+let serviceWorkerRegistration = null;
+let subscriptionData = false;
+
+function urlB64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
+
+function updatePushButton() {
+  pushWrapper.classList.remove('hidden');
+  
+  if (hasSubscription) {
+    pushButton.textContent = `Disable Push Notifications`;
+  } else {
+    pushButton.textContent = `Enable Push Notifications`;
+  }
+}
+
+function subscribeUser() {
+  serviceWorkerRegistration.pushManager.subscribe({
+    userVisibleOnly: true,
+    applicationServerKey: urlB64ToUint8Array(appServerKey)
+  })
+  .then(function(subscription) {
+
+    fetch('/push/subscribe',{
+      method: "POST",
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(subscription)
+    })
+    .then(function(response) {
+      return response;
+    })
+    .then(function(text) {
+      console.log('User is subscribed.');
+      hasSubscription = true;
+
+      updatePushButton();
     })
     .catch(function(error) {
-      console.error('Service Worker Error', error);
+      hasSubscription = false;
+      console.error('error fetching subscribe', error);
     });
     
+  })
+  .catch(function(err) {
+    console.log('Failed to subscribe the user: ', err);
+  });
+}
+
+function unsubscribeUser() {
+  serviceWorkerRegistration.pushManager.getSubscription()
+  .then(function(subscription) {
+    if (subscription) {
+      subscriptionData = {
+        endpoint: subscription.endpoint
+      };
+      
+      fetch('/push/unsubscribe',{
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(subscriptionData)
+      })
+      .then(function(response) {
+        return response;
+      })
+      .then(function(text) {
+        hasSubscription = false;
+
+        updatePushButton();
+      })
+      .catch(function(error) {
+        hasSubscription = true;
+        console.error('error fetching subscribe', error);
+      });
+
+      hasSubscription = false;
+
+      updatePushButton();
+      return subscription.unsubscribe();
+    }
+  });
+}
+
+function initPush() {
+
+  pushButton.addEventListener('click', function() {
+    if (hasSubscription) {
+      unsubscribeUser();
+    } else {
+      subscribeUser();
+    }
+  });
+
+  // Set the initial subscription value
+  serviceWorkerRegistration.pushManager.getSubscription()
+  .then(function(subscription) {
+    hasSubscription = !(subscription === null);
+
+    updatePushButton();
+  });
+}
+
+navigator.serviceWorker.register('sw.js')
+.then(function(sw) {
+  serviceWorkerRegistration = sw;
+  initPush();
+})
+.catch(function(error) {
+  console.error('Service Worker Error', error);
+});
+```
 
 First, we define the `appServerKey` (the public VAPID Key mentioned above) and some elements and variables. Next, we add a function called "urlB64ToUint8Array" we will later use to convert the public key, which is base 64 URL safe encoded, to a UInt8Array.
 
@@ -175,23 +177,27 @@ After that, we define a function called "updatePushButton" - we will call this e
 
 Next, we have the function "subscribeUser" to subscribe users. You may notice that we already defined serviceWorkerRegistration at the beginning of the file. If you go to the end of the file you will see that we override this when registering the service worker so it contains the [service worker registration](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration).
 
-    serviceWorkerRegistration.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: urlB64ToUint8Array(appServerKey)
-    })
+``` js
+serviceWorkerRegistration.pushManager.subscribe({
+  userVisibleOnly: true,
+  applicationServerKey: urlB64ToUint8Array(appServerKey)
+})
+```
 
 The subscribe() method of the PushManager returns a Promise and needs two configuration parameters:  
 userVisibleOnly: A Boolean indicating that the returned push subscription will only be used for messages whose effect is made visible to the user. It is required to set this to true.  
 applicationServerKey: The public key (we generated above) your push server will use to send messages to client apps via a push server. This needs to be a UInt8Array so we use our function mentioned before to convert our key.
 
-    .then(function(subscription) {
-    	fetch('/push/subscribe',{
-    		method: "POST",
-    		headers: {
-    			'Content-Type': 'application/json'
-    		},
-    		body: JSON.stringify(subscription)
-    	})
+``` js
+.then(function(subscription) {
+  fetch('/push/subscribe',{
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(subscription)
+  })
+```
 
 Next, we send the push subscription details to the server. We can safely use the Fetch API here as every browser who supports push notifications also supports fetch. After we got back the response, we update the UI to show that the subscription was successfull or not. This is also the best place to send additional info to the user. For example, on iss-observer a user can decide if they want to receive notifications for sightings and the morning or/and evening and I also send the information about the country, region and city they want to get notifications to the server where I save the information and use them when deciding if a notification should be send.
 
@@ -208,52 +214,56 @@ The Service Worker
 
 Here we will focus on the two events, "push" and "nofificationclick" we will need to handle notifications.
 
-    self.addEventListener('push', function(event) {
-    
-    	let notificationData = {};
-    
-    	try {
-    		notificationData = event.data.json();
-    	} catch (e) {
-    		notificationData = {
-    			title: 'Default title',
-    			body: 'Default message',
-    			icon: '/default-icon.png'
-    		};
-    	}
-    
-    	event.waitUntil(
-    		self.registration.showNotification(notificationData.title, {
-    			body: notificationData.body,
-    			icon: notificationData.icon
-    		})
-    	);
-    
-    });
+``` js
+self.addEventListener('push', function(event) {
+
+  let notificationData = {};
+
+  try {
+    notificationData = event.data.json();
+  } catch (e) {
+    notificationData = {
+      title: 'Default title',
+      body: 'Default message',
+      icon: '/default-icon.png'
+    };
+  }
+
+  event.waitUntil(
+    self.registration.showNotification(notificationData.title, {
+      body: notificationData.body,
+      icon: notificationData.icon
+    })
+  );
+
+});
+```
 
 First we have a look at the "push" event in our service worker. There we check if we get a payload (title, body, icon..) from the server and if not fall back to a default message. After that, we use the showNotification() method to show the notification to the user.
 
 Note: In addition to title, body and icon the payload can also have other [options](https://web-push-book.gauntface.com/chapter-05/02-display-a-notification/#visual-options) like badge, tag or vibrate. At the time of writing this (February 2017) many of these are only available in some browsers. Therefore we will concentrate on title, body and icon which are supported in all browsers supporting push notifications.
 
-    self.addEventListener('notificationclick', function(event) {
-    
-    	// close the notification
-    	event.notification.close();
-    
-    	// see if the current is open and if it is focus it
-    	// otherwise open new tab
-      event.waitUntil(
-    
-        self.clients.matchAll().then(function(clientList) {
-     
-          if (clientList.length > 0) {
-            return clientList[0].focus();
-          }
-     
-          return self.clients.openWindow('/');
-        })
-      );
-    });
+``` js
+self.addEventListener('notificationclick', function(event) {
+
+  // close the notification
+  event.notification.close();
+
+  // see if the current is open and if it is focus it
+  // otherwise open new tab
+  event.waitUntil(
+
+    self.clients.matchAll().then(function(clientList) {
+  
+      if (clientList.length > 0) {
+        return clientList[0].focus();
+      }
+  
+      return self.clients.openWindow('/');
+    })
+  );
+});
+```
 
 The notificationclick event will be triggered once the user clicks on the notification. We first close the notification. Next we check if the user has already a page open and focus it or otherwise open a new window with our site.
 
@@ -266,51 +276,55 @@ Note: I assume you have basic knowledge of Node.js and have used Express before.
 
 Okay, first of all we install the Web Push library with `npm install web-push --save` and require it in our app with `const webPush = require('web-push');`.
 
-    webPush.setVapidDetails(
-      'mailto:hallo@justmarkup.com',
-      "YOUR_PUBLIC_VAPID_KEY", // process.env.VAPID_PUBLIC_KEY,
-      "YOUR_PRIVATE_VAPID_KEY", // process.env.VAPID_PRIVATE_KEY
-    );
+``` js
+webPush.setVapidDetails(
+  'mailto:hallo@justmarkup.com',
+  "YOUR_PUBLIC_VAPID_KEY", // process.env.VAPID_PUBLIC_KEY,
+  "YOUR_PRIVATE_VAPID_KEY", // process.env.VAPID_PRIVATE_KEY
+);
+```
 
 Next, we define the VAPID Details, these are the keys we generated at the beginning. In addition to this, we need to either set an email adress with the prefix mailto: or the URL of our site - this is in case a push service has to contact you for whatever reason. As you can see in the comments in the code I prefer to save these values as an environment variable `process.env.VAPID_PUBLIC_KEY` - you may use other methods to save and get these values but the private key should always be saved safely and should never be exposed to the public; There is a reason it is called private key.
 
 Next, have a look at our subscribe function:
 
-    app.post('/push/subscribe', function (req, res) {
-    
-    	const subscription = {
-    		endpoint: req.body.endpoint,
-    		keys: {
-    			p256dh: req.body.keys.p256dh,
-    			auth: req.body.keys.auth
-    		}
-    	};
-    	
-    	const payload = JSON.stringify({
-    		title: 'Welcome',
-    		body: 'Thank you for enabling push notifications',
-    		icon: '/android-chrome-192x192.png'
-    	});
-    
-    	const options = {
-    		TTL: 3600 // 1sec * 60 * 60 = 1h
-    	};
-    
-    	webPush.sendNotification(
-    		subscription, 
-    		payload,
-    		options
-    		).then(function() {
-    			console.log("Send welcome push notification");
-    			res.status(200).send('subscribe');
-    			return;
-    		}).catch(err => {
-    			console.error("Unable to send welcome push notification", err );
-    			res.status(500).send('subscription not possible');
-    			return;
-    	});
-    
-    })
+``` js
+app.post('/push/subscribe', function (req, res) {
+
+  const subscription = {
+    endpoint: req.body.endpoint,
+    keys: {
+      p256dh: req.body.keys.p256dh,
+      auth: req.body.keys.auth
+    }
+  };
+  
+  const payload = JSON.stringify({
+    title: 'Welcome',
+    body: 'Thank you for enabling push notifications',
+    icon: '/android-chrome-192x192.png'
+  });
+
+  const options = {
+    TTL: 3600 // 1sec * 60 * 60 = 1h
+  };
+
+  webPush.sendNotification(
+    subscription, 
+    payload,
+    options
+    ).then(function() {
+      console.log("Send welcome push notification");
+      res.status(200).send('subscribe');
+      return;
+    }).catch(err => {
+      console.error("Unable to send welcome push notification", err );
+      res.status(500).send('subscription not possible');
+      return;
+  });
+
+})
+```
 
 By sending the subscription details to the sever we will get the endpoint and the p256dh and auth keys. To keep this example short I will not show how to save the data in a database. For example, in my demo I used [Mongo DB](https://github.com/justmarkup/demos/blob/gh-pages/push-notifications/controllers/push.js#L19) to save the subscriptions.
 
@@ -318,19 +332,21 @@ Here we will return a first notification welcoming the user once they subscribed
 
 Info: The default TTL (Time To Live) defined by the web push library is four weeks. This means if you send a notification and the user is offline for two weeks and goes online again they will still get the notification. It is probably a good idea to change this to a shorter period as getting weeks old push notifications (which should always be important and time relevant) is probably not what you want.
 
-    app.post('/push/unsubscribe', function (req, res) {
-    
-    	// remove from database
-    	Push.findOneAndRemove({endpoint: endpoint}, function (err,data){
-        if(err) { 
-          console.error('error with unsubscribe', error);
-          res.status(500).send('unsubscription not possible'); 
-        }
-        console.log('unsubscribed');
-        res.status(200).send('unsubscribe');
-      });
-    
-    })
+``` js
+app.post('/push/unsubscribe', function (req, res) {
+
+  // remove from database
+  Push.findOneAndRemove({endpoint: endpoint}, function (err,data){
+    if(err) { 
+      console.error('error with unsubscribe', error);
+      res.status(500).send('unsubscription not possible'); 
+    }
+    console.log('unsubscribed');
+    res.status(200).send('unsubscribe');
+  });
+
+})
+```
 
 When a user unsubscribes we remove the saved entry from our database so we know we don't need to try sending notifications to them again.
 

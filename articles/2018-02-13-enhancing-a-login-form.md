@@ -23,15 +23,17 @@ The basic version
 
 Let’s start with the front-end implementation and our basic version, a HTML form with an email field, a password field and a submit button:
 
-     <form action="/login" method="post">
-        <label for="email">Email</label>
-        <input id="email" type="text" name="email">
-    
-        <label for="password">Password</label>
-        <input id="password" type="text" name="password">
-    
-        <input type="submit" value="Login">
-    </form>
+``` html
+<form action="/login" method="post">
+    <label for="email">Email</label>
+    <input id="email" type="text" name="email">
+
+    <label for="password">Password</label>
+    <input id="password" type="text" name="password">
+
+    <input type="submit" value="Login">
+</form>
+```
 
 This will work in every browser, if the back-end is also implemented. Yes, also in [Lynx](http://lynx.browser.org/). From here we start adding enhancements without breaking the basic version.
 
@@ -43,27 +45,29 @@ Enhance with HTML
 
 While the basic HTML form works fine, we should enhance it by providing validation and hints.
 
-     <form action="/login" method="post">
-        <div class="form__element">
-            <label class="form__label" for="email">
-                Email
-                <span class="form__required">required</span>
-            </label>
-            <input class="form__input" id="email" type="text" name="email" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
-        </div>
-    
-        <div class="form__element">
-            <label class="form__label" for="password">
-                Password
-                <span class="form__required">required</span>
-            </label>
-            <input class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
-            <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p>
-        </div>
-    
-        <a href="/forgotPassword">Forgot password?</a>
-        <input class="form__submit" type="submit" value="Login">
-    </form>
+``` html
+<form action="/login" method="post">
+    <div class="form__element">
+        <label class="form__label" for="email">
+            Email
+            <span class="form__required">required</span>
+        </label>
+        <input class="form__input" id="email" type="text" name="email" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
+    </div>
+
+    <div class="form__element">
+        <label class="form__label" for="password">
+            Password
+            <span class="form__required">required</span>
+        </label>
+        <input class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
+        <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p>
+    </div>
+
+    <a href="/forgotPassword">Forgot password?</a>
+    <input class="form__submit" type="submit" value="Login">
+</form>
+```
 
 Let’s go through this step-by-step.
 
@@ -88,48 +92,50 @@ Enhance with CSS
 
 While our form now has form validation and uses proper HTML it doesn’t look appealing. So, let’s add some CSS.
 
-    .form__element {
-        margin: 0 0 1em 0;
-    }
-    
-    .form__label {
-        font-size: 1.2em;
-        display: block;
-        margin: 0 0 0.4em 0;
-    }
-    
-    .form__input {
-        width: 100%;
-        padding: 0.6em;
-        font-size: 1.3em;
-    }
-    
-    .form__required {
-        float: right;
-        font-size: 0.8em;
-        background: #ddd;
-        padding: 0.3em;
-    }
-    
-    .form__hint {
-        margin: 0;
-        font-size: 1.1em;
-    }
-    
-    .form__hint:before {
-        content: "\1F6C8";
-        font-size: 1.2em;
-        margin: 0 0.2em 0 0;
-    }
-    
-    .form__submit {
-        background: #326f10;
-        color: #fff;
-        border: none;
-        padding: 0.6em;
-        font-size: 1.4em;
-        float: right;
-    }
+``` css
+.form__element {
+    margin: 0 0 1em 0;
+}
+
+.form__label {
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0 0.4em 0;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1.3em;
+}
+
+.form__required {
+    float: right;
+    font-size: 0.8em;
+    background: #ddd;
+    padding: 0.3em;
+}
+
+.form__hint {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.form__hint:before {
+    content: "\1F6C8";
+    font-size: 1.2em;
+    margin: 0 0.2em 0 0;
+}
+
+.form__submit {
+    background: #326f10;
+    color: #fff;
+    border: none;
+    padding: 0.6em;
+    font-size: 1.4em;
+    float: right;
+}
+```
 
 First, I added some space between the label/input groups wrapped by `.form__element` to make clear what groups belong together. Next, I set the label to `display: block` so it will be above the input. I also increased the font-size and added some spacing between it and the following input. For the input itself, I set it’s width to 100% of the width of the container and also increased font-size there and added some padding.
 
@@ -149,12 +155,14 @@ Feedback messages
 Our form now has native validation, looks good and is accessible. Let’s improve this even more with feedback messages.  
 The first case is that a user enters all data correctly and gets logged in. In this case, a redirect happens on the server-side to a page only accessible by logged-in users. I prefer to add a success message on top of the page so the user knows immediately that the login was successful.
 
-    <div class="message message--success" data-message>
-        <p class="message__text">You have successfully logged in. Welcome back!</p>
-        <button class="message__close" hidden data-closenotification>
-            <span class="message__closetext">Close message</span>
-        </button>
-    </div>
+``` html
+<div class="message message--success" data-message>
+    <p class="message__text">You have successfully logged in. Welcome back!</p>
+    <button class="message__close" hidden data-closenotification>
+        <span class="message__closetext">Close message</span>
+    </button>
+</div>
+```
 
 Let’s go through the HTML used for the feedback message. On the wrapper I set a data attribute, which I will later us in JavaScript, and some classes for styling it.
 
@@ -162,28 +170,30 @@ Next, we have the text, followed by a button. This button has the `hidden` attri
 
 Let’s move to the JavaScript part:
 
-    // cut the mustard
-    
-    if('querySelector' in document) {
-    
-        // get all messages
-        var messageComponents = document.querySelectorAll("[data-message]");
-    
-        // if at least one message is in the DOM
-        if (messageComponents.length > 0) {
-            // loop over each message
-            [].forEach.call(messageComponents, function (message) {
-                var messageButton = message.querySelector("[data-closenotification]");
-                // show the close button 
-                messageButton.removeAttribute('hidden');
-    
-                // on click hide the message
-                messageButton.addEventListener("click", function () {
-                    this.parentElement.hidden = true;
-                });
+``` js
+// cut the mustard
+
+if('querySelector' in document) {
+
+    // get all messages
+    var messageComponents = document.querySelectorAll("[data-message]");
+
+    // if at least one message is in the DOM
+    if (messageComponents.length > 0) {
+        // loop over each message
+        [].forEach.call(messageComponents, function (message) {
+            var messageButton = message.querySelector("[data-closenotification]");
+            // show the close button 
+            messageButton.removeAttribute('hidden');
+
+            // on click hide the message
+            messageButton.addEventListener("click", function () {
+                this.parentElement.hidden = true;
             });
-        }
+        });
     }
+}
+```
 
 First, I added a simple [Cut the mustard test](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard) to ensure browsers not knowing about `querySelector` won’t execute the JavaScript inside. Next, I used `querySelectorAll` to get all messages, followed by a check to ensure at least one message is present on the site. After that, I used a loop to go through every message one by one. Therein the `hidden` attribute gets removed to show it to the user. The following `eventListener` makes sure to hide the complete message after clicking the close button.
 
@@ -191,23 +201,27 @@ First, I added a simple [Cut the mustard test](http://responsivenews.co.uk/post/
 
 There can also be an authentication error, in which case we can also use the same markup as for the success message, but add [role=”alertdialog”](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alertdialog_role) and `aria-labelledby` to give the dialog an accessible name.
 
-    <div role="alertdialog" aria-labelledby="passwordError" class="message message--error" data-message>
-        <p class="message__text" id="passwordError">The provided password doesn't match!</p>
-        <button class="message__close" hidden data-closenotification>
-            <span class="message__closetext">Close message</span>
-        </button>
-    </div>
+``` html
+<div role="alertdialog" aria-labelledby="passwordError" class="message message--error" data-message>
+    <p class="message__text" id="passwordError">The provided password doesn't match!</p>
+    <button class="message__close" hidden data-closenotification>
+        <span class="message__closetext">Close message</span>
+    </button>
+</div>
+```
 
 The next case is showing inline validation errors. While we already use native validation, it all happens on the client-side and can therefore easily be altered by a user. So, we should plan for this and handle validation errors if the back-end catches them.
 
-    <div class="form__element has-error">
-        <label class="form__label" for="email">
-            Email
-            <span class="form__required">required</span>
-        </label>
-        <input class="form__input" id="email" type="text" name="email" aria-describedby="errorEmail" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
-        <p role="alert" class="form__error" id="errorEmail">Please use a valid email address.</p>
-    </div>
+``` html
+<div class="form__element has-error">
+    <label class="form__label" for="email">
+        Email
+        <span class="form__required">required</span>
+    </label>
+    <input class="form__input" id="email" type="text" name="email" aria-describedby="errorEmail" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
+    <p role="alert" class="form__error" id="errorEmail">Please use a valid email address.</p>
+</div>
+```
 
 On the server-side I check if there is a validation error and if yes, then show the alert message in the HTML. If you are curious, here is how this [can be done using Node.js and Pug](https://glitch.com/edit/#!/enhance-login-form?path=views/login.pug:1:0).
 
@@ -222,66 +236,68 @@ Enhance client-side validation
 
 So far we have a nice looking form, have ensured that validation is in place on the back-end and front-end and that all is accessible and usable. However, there is always a way to enhance something. So, let’s use some JavaScript to validate inputs immediately after moving on.
 
-    // cut the mustard
-    var form = document.createElement('form');
-    if ('checkValidity' in form && 'querySelector' in document && 'classList' in document.documentElement) {
-    
-        // get all inputs
-        var inputs = document.querySelectorAll("[data-error]");
-    
-        if (inputs.length > 0) {
-    
-            var toggleErrorMessage = function(input, hasError) {
-                var message = (input.value === '') ? input.dataset.empty : input.dataset.error;
-                var oldMessage = document.getElementById("alert-" + input.name);
-                var newMessage;
-    
-                if (hasError) {
-                    if (!oldMessage) {
-                        newMessage = document.createElement("p");
-                        newMessage.setAttribute('role', 'alert');
-                        newMessage.classList.add('form__error');
-                        newMessage.setAttribute('id', 'alert-' + input.name);
-                    } else {
-                        newMessage = oldMessage;
-                    }
-    
-                    newMessage.innerText = message;
-    
-                    input.setAttribute('aria-describedby', 'alert-' + input.name);
-                    input.parentElement.appendChild(newMessage);
-    
-                    input.parentElement.classList.add('has-error');
+``` js
+// cut the mustard
+var form = document.createElement('form');
+if ('checkValidity' in form && 'querySelector' in document && 'classList' in document.documentElement) {
+
+    // get all inputs
+    var inputs = document.querySelectorAll("[data-error]");
+
+    if (inputs.length > 0) {
+
+        var toggleErrorMessage = function(input, hasError) {
+            var message = (input.value === '') ? input.dataset.empty : input.dataset.error;
+            var oldMessage = document.getElementById("alert-" + input.name);
+            var newMessage;
+
+            if (hasError) {
+                if (!oldMessage) {
+                    newMessage = document.createElement("p");
+                    newMessage.setAttribute('role', 'alert');
+                    newMessage.classList.add('form__error');
+                    newMessage.setAttribute('id', 'alert-' + input.name);
                 } else {
-    
-                    if (oldMessage) {
-                        input.parentElement.removeChild(oldMessage);
-                        input.removeAttribute('aria-describedby');
-                        input.parentElement.classList.remove('has-error');
-                    }
-    
+                    newMessage = oldMessage;
                 }
-            };
-            // loop over each input
-            [].forEach.call(inputs, function(input) {
-    
-                // check validation on blur
-                input.addEventListener("blur", function(event) {
-                    input.checkValidity();
-    
-                    if (input.checkValidity()) {
-                        input.classList.remove("error");
-                        input.setAttribute("aria-invalid", "false");
-                        toggleErrorMessage(input, false);
-                    } else {
-                        input.classList.add("error");
-                        input.setAttribute("aria-invalid", "true");
-                        toggleErrorMessage(input, true);
-                    }
-                });
+
+                newMessage.innerText = message;
+
+                input.setAttribute('aria-describedby', 'alert-' + input.name);
+                input.parentElement.appendChild(newMessage);
+
+                input.parentElement.classList.add('has-error');
+            } else {
+
+                if (oldMessage) {
+                    input.parentElement.removeChild(oldMessage);
+                    input.removeAttribute('aria-describedby');
+                    input.parentElement.classList.remove('has-error');
+                }
+
+            }
+        };
+        // loop over each input
+        [].forEach.call(inputs, function(input) {
+
+            // check validation on blur
+            input.addEventListener("blur", function(event) {
+                input.checkValidity();
+
+                if (input.checkValidity()) {
+                    input.classList.remove("error");
+                    input.setAttribute("aria-invalid", "false");
+                    toggleErrorMessage(input, false);
+                } else {
+                    input.classList.add("error");
+                    input.setAttribute("aria-invalid", "true");
+                    toggleErrorMessage(input, true);
+                }
             });
-        }
+        });
     }
+}
+```
 
 Let’s go through this step-by-step.
 
@@ -306,40 +322,44 @@ We enhanced the validation now all the way, while still ensuring that it is stil
 
 First we modify the HTML of our login form and add a `<button></button>` to switch the password field between `type="password"` and `type="text"`.
 
-    <div class="form__elment-inner">
-        <input data-toggle-password-field class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password" data-error="Please use a password with at least 8 characters."
-            data-empty="Please fill out this field">
-        <button type="button" hidden aria-pressed="false" class="form__toggle-password" data-toggle-password>
-            <span>Show password</span>
-        </button>
-    </div>
+``` html
+<div class="form__elment-inner">
+    <input data-toggle-password-field class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password" data-error="Please use a password with at least 8 characters."
+        data-empty="Please fill out this field">
+    <button type="button" hidden aria-pressed="false" class="form__toggle-password" data-toggle-password>
+        <span>Show password</span>
+    </button>
+</div>
+```
 
 On the button I set the `hidden` attribute to hide it initially and set `aria-pressed` to false. As before I also set a data attribute for a reference in JavaScript and a span element containing the text »Show password«.
 
 Let’s move on to Javascript.
 
-    var togglePasswordButton = document.querySelector('[data-toggle-password]');
-    
-    if (togglePasswordButton) {
-        var togglePasswordButtonText = togglePasswordButton.querySelector('span');
-        var passwordField = document.querySelector('[data-toggle-password-field]');
-        togglePasswordButton.removeAttribute('hidden');
-    
-    
-        togglePasswordButton.addEventListener('click', function() {
-            var isPressed = JSON.parse(this.getAttribute('aria-pressed'));
-    
-            if (isPressed) {
-                passwordField.setAttribute('type', 'password');
-                this.setAttribute('aria-pressed', false);
-                togglePasswordButtonText.textContent = 'Show password';
-            } else {
-                passwordField.setAttribute('type', 'text');
-                this.setAttribute('aria-pressed', true);
-                togglePasswordButtonText.textContent = 'Hide password';
-            }
-        });
-    }
+``` js
+var togglePasswordButton = document.querySelector('[data-toggle-password]');
+
+if (togglePasswordButton) {
+    var togglePasswordButtonText = togglePasswordButton.querySelector('span');
+    var passwordField = document.querySelector('[data-toggle-password-field]');
+    togglePasswordButton.removeAttribute('hidden');
+
+
+    togglePasswordButton.addEventListener('click', function() {
+        var isPressed = JSON.parse(this.getAttribute('aria-pressed'));
+
+        if (isPressed) {
+            passwordField.setAttribute('type', 'password');
+            this.setAttribute('aria-pressed', false);
+            togglePasswordButtonText.textContent = 'Show password';
+        } else {
+            passwordField.setAttribute('type', 'text');
+            this.setAttribute('aria-pressed', true);
+            togglePasswordButtonText.textContent = 'Hide password';
+        }
+    });
+}
+```
 
 First, we add a reference for our button. If there is a button, we define a variable for the span element with the text and the password input. Next, we show the button by removing the `hidden` attribute.
 
