@@ -2,6 +2,7 @@
 title: Clean up – random thoughts
 description: 
 date: 2012-12-07T14:04:40+00:00
+oldUrl: https://justmarkup.com/log/2012/12/clean-up-random-thoughts/
 tags:
     - article
 layout: layouts/post.njk

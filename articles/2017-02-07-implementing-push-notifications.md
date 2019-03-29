@@ -2,6 +2,7 @@
 title: Implementing push notifications on the front-end and back-end
 description: 
 date: 2017-02-07T17:43:07+00:00
+oldUrl: https://justmarkup.com/log/2017/02/implementing-push-notifications/
 tags:
     - article
 layout: layouts/post.njk

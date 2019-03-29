@@ -2,6 +2,7 @@
 title: Add Service Worker for WordPress
 description: 
 date: 2016-01-01T16:17:54+00:00
+oldUrl: https://justmarkup.com/log/2016/01/add-service-worker-for-wordpress/
 tags:
     - note
 layout: layouts/post.njk
@@ -12,10 +13,11 @@ As part of the [open redesign](https://justmarkup.com/log/2015/11/open-redesign/
 Register the Service Worker
 ---------------------------
 
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/log/sw.min.js', {scope: '/log/'});
-    }
-    
+``` js
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/log/sw.min.js', {scope: '/log/'});
+}
+```
 
 First of all you have to register the Service Worker, at WordPress themes you normally have a [footer.php](https://github.com/justmarkup/justmarkup.com/blob/master/footer.php#L20-L29) where you can add this.
 
@@ -25,7 +27,9 @@ Usually, you have your theme files under /wp-content/themes/YOURTHEME/ and also 
 
 To get around the issue on my WordPress site, I created a [symbolic link (symlink)](https://en.wikipedia.org/wiki/Symbolic_link) – where I link the Service Worker file in my theme folder to the root folder. This way I can work on the Service Worker file in my themes folder and have it automatically linked to the root folder.
 
-    ln -s /var/www/log/wp-content/themes/justmarkup.com/dist/js/sw.min.js /var/www/log/sw.min.js
+``` bash
+ln -s /var/www/log/wp-content/themes/justmarkup.com/dist/js/sw.min.js /var/www/log/sw.min.js
+```
 
 Another way to handle this would be a .htaccess redirect rule, but I personally prefer using a symlink.
 
@@ -34,13 +38,14 @@ Handle admin and preview pages
 
 With this in place my Service Worker was working fine until I was working on a new article and finding out that changes where sometimes not saved correctly and the preview was not accurate anymore. So, I added a [conditional statement](https://github.com/justmarkup/justmarkup.com/blob/master/src/js/sw.js#L131-L134) to not intercept the fetch when the URL contains wp-admin (the admin area of WordPress) or if the URL contains preview=true (the preview page).
 
-    self.addEventListener("fetch", function(event) {
-      //This service worker won't touch the admin area and preview pages
-      if (event.request.url.match(/wp-admin/) || event.request.url.match(/preview=true/)) {
-        return;
-      }
-    });
-    
+``` js
+self.addEventListener("fetch", function(event) {
+    //This service worker won't touch the admin area and preview pages
+    if (event.request.url.match(/wp-admin/) || event.request.url.match(/preview=true/)) {
+    return;
+    }
+});
+```
 
 Bottom line
 -----------

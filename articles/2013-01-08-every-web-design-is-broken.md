@@ -2,6 +2,7 @@
 title: Every web design is broken
 description: 
 date: 2013-01-08T09:58:42+00:00
+oldUrl: https://justmarkup.com/log/2013/01/every-web-design-is-broken/
 tags:
     - article
 layout: layouts/post.njk

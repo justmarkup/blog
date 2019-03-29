@@ -2,6 +2,7 @@
 title: Notify me … the Notification API in use
 description: 
 date: 2013-09-24T12:14:15+00:00
+oldUrl: https://justmarkup.com/log/2013/09/notification-api/
 tags:
     - article
 layout: layouts/post.njk
@@ -28,11 +29,15 @@ The Notification API allows you to display notifications to users outside of a w
 
 Well, if we would only want to know if a browser fulfils the official W3C Specification, we could simple check for
 
-    "Notification" in window
+``` js
+"Notification" in window
+```
 
 , but as old WebKit browsers and Firefox for mobile have different implemenations, the final check is:
 
-     var NotificationIsSupported = !!(window.Notification /* W3C Specification */ || win.webkitNotifications /* old WebKit Browsers */ || navigator.mozNotification /* Firefox for Android and Firefox OS */) 
+``` js
+var NotificationIsSupported = !!(window.Notification /* W3C Specification */ || win.webkitNotifications /* old WebKit Browsers */ || navigator.mozNotification /* Firefox for Android and Firefox OS */) {}
+```
 
 ### Ask for permission
 
@@ -42,23 +47,25 @@ Well, if we would only want to know if a browser fulfils the official W3C Specif
 
 Before we can show a Notification users have to grant permission. On Firefox OS this can be done within the manifest.webapp by setting the appropriate permssion for Desktop Notifications.
 
-     "permissions": { "desktop-notification": { "description" : "To show notifications" } } 
+``` json
+"permissions": { "desktop-notification": { "description" : "To show notifications" } }
+```
 
 On every other browser we have to attach the requestPermission() function to an event handler, like click or mousedown. It is important to mention, that it is not possible to ask for permission and show notifications without any interaction from the user.
 
 Altough Chrome 23 supports window.Notification.requestPermission it will break the browser, so we first have to check for the old WebKit implemantation to get it successfully running there. Here is the cross-browser way to ask for permission.
 
-     
-    var askForPermission = document.getElementById('askforpermission'); 
-    
-    askForPermission.addEventListener('click', function () { 
-    	if (window.webkitNotifications && window.webkitNotifications.checkPermission) { 
-    		window.webkitNotifications.requestPermission(); 
-    	} else if (window.Notification && window.Notification.requestPermission) { 
-    		window.Notification.requestPermission(); 
-    	} 
-    });
-    
+``` js
+var askForPermission = document.getElementById('askforpermission'); 
+
+askForPermission.addEventListener('click', function () { 
+	if (window.webkitNotifications && window.webkitNotifications.checkPermission) { 
+		window.webkitNotifications.requestPermission(); 
+	} else if (window.Notification && window.Notification.requestPermission) { 
+		window.Notification.requestPermission(); 
+	} 
+});
+```
 
 ### Check permission level
 
@@ -70,22 +77,23 @@ After requesting permission we have to check the permission level. There are thr
 
 As you can see, the values in old WebKit implementations are quite different. Therefore and since the permission on Firefox OS will always be granted our final check looks like this.
 
-    var PERMISSION_DEFAULT = "default", 
-    	PERMISSION_GRANTED = "granted", 
-    	PERMISSION_DENIED = "denied", 
-    	PERMISSION = [PERMISSION_GRANTED, PERMISSION_DEFAULT, PERMISSION_DENIED]; 
-    
-    function checkPermission() { 
-    	var permission; 
-    	if (window.webkitNotifications && window.webkitNotifications.checkPermission) {
-    		permission = PERMISSION[window.webkitNotifications.checkPermission()]; 
-    	} else if (navigator.mozNotification) { 
-    		permission = PERMISSION_GRANTED; 
-    	} else if (window.Notification && window.Notification.permission) {
-    		permission = window.Notification.permission; } return permission; 
-    	}
-    };
-    
+``` js
+var PERMISSION_DEFAULT = "default", 
+	PERMISSION_GRANTED = "granted", 
+	PERMISSION_DENIED = "denied", 
+	PERMISSION = [PERMISSION_GRANTED, PERMISSION_DEFAULT, PERMISSION_DENIED]; 
+
+function checkPermission() { 
+	var permission; 
+	if (window.webkitNotifications && window.webkitNotifications.checkPermission) {
+		permission = PERMISSION[window.webkitNotifications.checkPermission()]; 
+	} else if (navigator.mozNotification) { 
+		permission = PERMISSION_GRANTED; 
+	} else if (window.Notification && window.Notification.permission) {
+		permission = window.Notification.permission; } return permission; 
+	}
+};
+```
 
 ### Show the notification
 
@@ -93,37 +101,38 @@ As you can see, the values in old WebKit implementations are quite different. Th
 
 After handling the permission we can finally start showing notifications. Here is the rather long cross-browser code to do so.
 
-    function showNotification (title, options) { 
-    	var notification; 
-    	if (checkPermission() === PERMISSION_GRANTED) { 
-    		if (window.Notification) { 
-    			notification = new window.Notification(title, { 
-    				icon: options.icon || "", 
-    				body: options.body || "", 
-    				tag: options.tag || ""
-    			});
-    		} else if (window.webkitNotifications) { 
-    			notification = window.webkitNotifications.createNotification(options.icon, title, options.body); 
-    			notification.show(); 
-    		} else if (navigator.mozNotification) { 
-    			notification = navigator.mozNotification.createNotification(title, options.body, options.icon); 
-    			notification.show(); 
-    		} 
-    		return notification; 
-    	} 
-    } 
-    
-    var showNotificationButton = document.getElementById('shownotificationbutton'); 
-    showNotificationButton.addEventListener('click', function () { 
-    	showNotification("Title", { 
-    		body: "Body",
-    		icon: "icon.ico", 
-    		tag: "tag",
-            dir: "ltr",
-            lang: "en-US"
-    	}
-    );
-    
+``` js
+function showNotification (title, options) { 
+	var notification; 
+	if (checkPermission() === PERMISSION_GRANTED) { 
+		if (window.Notification) { 
+			notification = new window.Notification(title, { 
+				icon: options.icon || "", 
+				body: options.body || "", 
+				tag: options.tag || ""
+			});
+		} else if (window.webkitNotifications) { 
+			notification = window.webkitNotifications.createNotification(options.icon, title, options.body); 
+			notification.show(); 
+		} else if (navigator.mozNotification) { 
+			notification = navigator.mozNotification.createNotification(title, options.body, options.icon); 
+			notification.show(); 
+		} 
+		return notification; 
+	} 
+} 
+
+var showNotificationButton = document.getElementById('shownotificationbutton'); 
+showNotificationButton.addEventListener('click', function () { 
+	showNotification("Title", { 
+		body: "Body",
+		icon: "icon.ico", 
+		tag: "tag",
+		dir: "ltr",
+		lang: "en-US"
+	}
+);
+```
 
 Let me explain it step by step.
 

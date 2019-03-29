@@ -2,6 +2,7 @@
 title: Responsive Multi Level Navigation – let’s try.
 description: 
 date: 2012-06-19T17:16:59+00:00
+oldUrl: https://justmarkup.com/log/2012/06/responsive-multi-level-navigation/
 tags:
     - article
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Overview of Static Map solutions
 description: 
 date: 2014-05-27T09:53:57+00:00
+oldUrl: https://justmarkup.com/log/2014/05/overview-of-static-map-solutions/
 tags:
     - article
 layout: layouts/post.njk
@@ -23,13 +24,16 @@ I found the following solutions:
 First of all, Google Maps. As described in the [Developer Guide](https://developers.google.com/maps/documentation/staticmaps/index) there are quite a few options to change the style of the map, add markers, paths and polygons. There are also [various](http://staticmapmaker.com/) [Map Generators](http://www.solvium.de/static-map/) available to help get you started.
 
 Example:  
+
 ![static map image of downtown New York City](https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318 &markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false)
 
 Code:
 
-    http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-    &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-    &markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false
+``` html
+http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false
+```
 
 #### Restrictions
 
@@ -48,9 +52,9 @@ There are different ways to use OpenStreetMap Static Maps. As with Google Map al
 
 Code:
 
-    
-    http://open.mapquestapi.com/staticmap/v4/getmap?key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&size=600,200&zoom=3¢er=35.60395,-98.906248&type=sat&pois=yellow_1,33.748867,-84.388185,0,0|yellow_1,29.763066,-95.363351,0,0
-    
+``` html
+http://open.mapquestapi.com/staticmap/v4/getmap?key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&size=600,200&zoom=3¢er=35.60395,-98.906248&type=sat&pois=yellow_1,33.748867,-84.388185,0,0|yellow_1,29.763066,-95.363351,0,0
+``` 
 
 #### Restrictions
 
@@ -68,9 +72,9 @@ Example:
 
 Code:
 
-    
-    http://image.maps.cit.api.here.com/mia/1.6/mapview?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg&c=62.24167616,25.74536193&h=300&w=400&z=8&pip
-    
+``` html
+http://image.maps.cit.api.here.com/mia/1.6/mapview?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg&c=62.24167616,25.74536193&h=300&w=400&z=8&pip
+```
 
 #### Restrictions
 
@@ -85,10 +89,10 @@ Example:
 
 Code:
 
-    
-    http://static-maps.yandex.ru/1.x/?lang=en-US&ll=32.810152,39.889847& \ 
-    size=450,450&z=10&l=map&pt=32.810152,39.889847,pm2rdl1~32.870152,39.869847,pm2rdl99
-    
+``` html
+http://static-maps.yandex.ru/1.x/?lang=en-US&ll=32.810152,39.889847& \ 
+size=450,450&z=10&l=map&pt=32.810152,39.889847,pm2rdl1~32.870152,39.869847,pm2rdl99
+```
 
 #### Restrictions
 

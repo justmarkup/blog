@@ -2,6 +2,7 @@
 title: Progressive enhancement is not…
 description: 
 date: 2015-07-03T10:50:33+00:00
+oldUrl: https://justmarkup.com/log/2015/07/progressive-enhancement-is-not/
 tags:
     - article
 layout: layouts/post.njk

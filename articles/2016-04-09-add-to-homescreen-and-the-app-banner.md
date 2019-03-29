@@ -2,6 +2,7 @@
 title: Add to homescreen and the app banner
 description: 
 date: 2016-04-09T13:44:42+00:00
+oldUrl: https://justmarkup.com/log/2016/04/add-to-homescreen-and-the-app-banner/
 tags:
     - article
 layout: layouts/post.njk
@@ -24,46 +25,50 @@ To get the app banner with the “Add to homescreen” dialog for your site it n
 
 First you need a valid manifest for your site. To integrate the manifest you need to link to it via a meta tag with the attribute manifest:
 
-    <link rel="manifest" href="/manifest.json" />
+``` html
+<link rel="manifest" href="/manifest.json" />
+```
 
 Here is an example of a manifest:
 
+``` json
+{
+  "short_name": "Short Name",
+  "name": "The long name of the app",
+  "start_url": "./",
+  "icons": [
     {
-      "short_name": "Short Name",
-      "name": "The long name of the app",
-      "start_url": "./",
-      "icons": [
-        {
-          "src": "/images/icon-128x128.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        },
-        {
-          "src": "/images/icon-192x192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        },
-        {  
-          "src": "/images/icon-256x256.png",  
-          "sizes": "256x256",  
-          "type": "image/png"  
-        }, 
-        {
-          "src": "/images/icon-384x384.png",
-          "sizes": "384x384",
-          "type": "image/png"
-        },
-        {
-          "src": "/images/icon-512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
-      ],
-      "background_color": "#FFFFFF",
-      "theme_color": "#AA0F0F",
-      "display": "standalone",
-      "orientation": "portrait"
+      "src": "/images/icon-128x128.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {  
+      "src": "/images/icon-256x256.png",  
+      "sizes": "256x256",  
+      "type": "image/png"  
+    }, 
+    {
+      "src": "/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#AA0F0F",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+```
 
 From some testing it seems you need at least an icon with 192×192 to get the app banner, but I would suggest to also add at least the 384×384 and 512×512 icons.
 

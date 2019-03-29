@@ -2,6 +2,7 @@
 title: Setting up https with a valid certificate for a local domain – and use it with Node.js
 description: 
 date: 2018-05-31T06:36:19+00:00
+oldUrl: https://justmarkup.com/log/2018/05/https-valid-certificate-local-domain/
 tags:
     - article
 layout: layouts/post.njk

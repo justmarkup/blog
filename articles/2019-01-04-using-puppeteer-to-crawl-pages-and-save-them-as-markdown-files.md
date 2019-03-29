@@ -2,6 +2,7 @@
 title: Using Puppeteer to crawl pages and save them as Markdown files
 description: 
 date: 2019-01-04T08:55:11+00:00
+oldUrl: https://justmarkup.com/log/2019/01/using-puppeteer-to-crawl-pages-and-save-them-as-markdown-files/
 tags:
     - article
 layout: layouts/post.njk

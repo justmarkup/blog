@@ -2,6 +2,7 @@
 title: Discoverability of progressive web apps
 description: 
 date: 2016-04-05T15:27:52+00:00
+oldUrl: https://justmarkup.com/log/2016/04/discoverability-of-progressive-web-apps/
 tags:
     - note
 layout: layouts/post.njk

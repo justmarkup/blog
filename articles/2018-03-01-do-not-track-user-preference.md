@@ -2,6 +2,7 @@
 title: Do Not Track user preference
 description: 
 date: 2018-03-01T15:09:26+00:00
+oldUrl: https://justmarkup.com/log/2018/03/do-not-track-user-preference/
 tags:
     - article
 layout: layouts/post.njk

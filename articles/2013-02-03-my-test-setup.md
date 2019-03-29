@@ -2,6 +2,7 @@
 title: Just my test setup
 description: 
 date: 2013-02-03T16:45:58+00:00
+oldUrl: https://justmarkup.com/log/2013/02/my-test-setup/
 tags:
     - article
 layout: layouts/post.njk

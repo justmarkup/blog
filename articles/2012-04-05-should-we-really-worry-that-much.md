@@ -2,6 +2,7 @@
 title: Should we really worry that much.
 description: 
 date: 2012-04-05T13:58:42+00:00
+oldUrl: https://justmarkup.com/log/2012/04/should-we-really-worry-that-much/
 tags:
     - article
 layout: layouts/post.njk

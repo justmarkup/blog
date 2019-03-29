@@ -2,6 +2,7 @@
 title: Showing the alternative text while images are loading
 description: 
 date: 2016-01-20T07:54:22+00:00
+oldUrl: https://justmarkup.com/log/2016/01/showing-the-alternative-text-while-images-are-loading/
 tags:
     - note
 layout: layouts/post.njk

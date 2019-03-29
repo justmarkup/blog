@@ -2,6 +2,7 @@
 title: The link to button enhancement
 description:
 date: 2019-01-21T17:21:01+00:00
+oldUrl: https://justmarkup.com/log/2019/01/the-link-to-button-enhancement/
 tags:
     - article
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Fast on my machine
 description: 
 date: 2016-10-20T09:07:57+00:00
+oldUrl: https://justmarkup.com/log/2016/10/fast-on-my-machine/
 tags:
     - note
 layout: layouts/post.njk

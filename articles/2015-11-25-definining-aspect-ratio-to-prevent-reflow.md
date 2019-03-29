@@ -2,6 +2,7 @@
 title: Definining aspect ratio to prevent reflow
 description: 
 date: 2015-11-25T12:21:50+00:00
+oldUrl: https://justmarkup.com/log/2015/11/definining-aspect-ratio-to-prevent-reflow/
 tags:
     - article
 layout: layouts/post.njk
@@ -18,21 +19,22 @@ There are different ways to prevent this jump effect. While you can avoid it by 
 
 ### padding-bottom hack
 
-    .aspect-ratio-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16/9 aspect ratio */
-      height: 0;
-    }
-    
-    .aspect-ratio-container > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #eee; /* you could also define a background image as a placeholder here */
-    }
-    
+``` css
+.aspect-ratio-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 aspect ratio */
+  height: 0;
+}
+
+.aspect-ratio-container > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee; /* you could also define a background image as a placeholder here */
+}
+```
 
 [Example on jsbin](http://jsbin.com/nilemo/latest/edit?html,css,output).
 
@@ -40,30 +42,30 @@ The padding-bottom hack – [intrinsic ratios](http://alistapart.com/article/cre
 
 ### calc()/vw based workaround
 
-    
-    body {
-      width: 75em;
-      max-width: 90vw;
-      margin: 0 auto
-    }
-    
-    img {
-      width: 100%;
-      height: auto;
-      height: calc(9 * 90vw / 16);
-      object-fit: cover;
-      background-color: #eee;
-    }
-    
-    @media all and (min-width: 75em) {
-      img {
-        max-width: 100%;
-        height: auto;
-        height: calc(9 * 75em / 16);
-        object-fit: cover;
-      }
-    }
-    
+``` css
+body {
+  width: 75em;
+  max-width: 90vw;
+  margin: 0 auto
+}
+
+img {
+  width: 100%;
+  height: auto;
+  height: calc(9 * 90vw / 16);
+  object-fit: cover;
+  background-color: #eee;
+}
+
+@media all and (min-width: 75em) {
+  img {
+    max-width: 100%;
+    height: auto;
+    height: calc(9 * 75em / 16);
+    object-fit: cover;
+  }
+}
+```
 
 [Example on jsbin](http://jsbin.com/kezefu/latest/edit?html,css,output).
 
@@ -75,12 +77,12 @@ Browser support is pretty good for [calc()](http://caniuse.com/#feat=calc) and [
 
 ### The aspect-ratio property
 
-    
-    /* set 16/9 aspect ratio for all images */
-    img {
-      aspect-ratio: 16/9;
-    }
-    
+``` css
+/* set 16/9 aspect ratio for all images */
+img {
+  aspect-ratio: 16/9;
+}
+```
 
 Tab Atkins already proposed a draft for an [aspect-ratio CSS property](http://www.xanthir.com/blog/b4810) in 2012. According to [Tab](https://twitter.com/tabatkins) the CSSWG does want to address it, but it’s been low priority for years. He also mentioned that the proposal has some serious problems:
 
@@ -90,29 +92,29 @@ If you want to have this property, write a reply to this thread on [Specifiction
 
 There are other elements like video/iframe and ads (inserted asynchronous and expanding the space) which can trigger an unwanted reflow. I recommend setting an aspect ratio for these elements as well. For banners you often have fixed units which gets inserted into the page according to screen size. Here is an example how you could handle this with CSS:
 
-    
-    /* On small screens show 320x50 banner */
-    .ad-container {
-      width: 320px;
-      height: 50px;
-    }
-    
-    /* On medium screens show 728x90 banner */
-    @media all and (min-width: 800px) {
-     .ad-container {
-       width: 728px;
-       height: 90px;
-     }
-    }
-    
-    /* On large screens show 970x90 banner */
-    @media all and (min-width: 1000px) {
-     .ad-container {
-       width: 970px;
-       height: 90px;
-     }
-    }
-    
+``` css
+/* On small screens show 320x50 banner */
+.ad-container {
+  width: 320px;
+  height: 50px;
+}
+
+/* On medium screens show 728x90 banner */
+@media all and (min-width: 800px) {
+  .ad-container {
+    width: 728px;
+    height: 90px;
+  }
+}
+
+/* On large screens show 970x90 banner */
+@media all and (min-width: 1000px) {
+  .ad-container {
+    width: 970px;
+    height: 90px;
+  }
+}
+```
 
 ### Bottom line
 

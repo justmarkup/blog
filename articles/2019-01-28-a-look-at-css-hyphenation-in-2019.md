@@ -2,6 +2,7 @@
 title: A look at CSS hyphenation in 2019
 description: 
 date: 2019-01-28T10:40:34+00:00
+oldUrl: https://justmarkup.com/log/2019/01/a-look-at-css-hyphenation-in-2019/
 tags:
     - article
 layout: layouts/post.njk

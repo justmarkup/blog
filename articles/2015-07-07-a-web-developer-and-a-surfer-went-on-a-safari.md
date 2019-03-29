@@ -2,6 +2,7 @@
 title: A web developer and a surfer went on a Safari – What happend next will shock you.
 description: 
 date: 2015-07-07T08:16:40+00:00
+oldUrl: https://justmarkup.com/log/2015/07/a-web-developer-and-a-surfer-went-on-a-safari/
 tags:
     - article
 layout: layouts/post.njk

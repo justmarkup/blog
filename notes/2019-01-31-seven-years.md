@@ -2,6 +2,7 @@
 title: Seven years
 description: 
 date: 2019-01-31T07:13:20+00:00
+oldUrl: https://justmarkup.com/log/2019/01/seven-years/
 tags:
     - note
 layout: layouts/post.njk

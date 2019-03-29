@@ -2,6 +2,7 @@
 title: Maphancement – progressive enhanced Google Map
 description: 
 date: 2014-05-11T13:50:39+00:00
+oldUrl: https://justmarkup.com/log/2014/05/maphancement-progressive-enhanced-google-map/
 tags:
     - article
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Introducing 🚀 iss-observer.com
 description: 
 date: 2017-02-02T15:14:17+00:00
+oldUrl: https://justmarkup.com/log/2017/02/introducing-iss-observer-com/
 tags:
     - article
 layout: layouts/post.njk

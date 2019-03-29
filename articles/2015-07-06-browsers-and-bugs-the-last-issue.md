@@ -2,6 +2,7 @@
 title: Browsers and Bugs - The last issue
 description: 
 date: 2015-07-06T17:48:58+00:00
+oldUrl: https://justmarkup.com/log/2015/07/browsers-and-bugs-the-last-issue/
 tags:
     - article
 layout: layouts/post.njk

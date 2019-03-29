@@ -2,6 +2,7 @@
 title: Browsers and Bugs 15/2015
 description: 
 date: 2015-04-17T10:09:06+00:00
+oldUrl: https://justmarkup.com/log/2015/04/browsers-and-bugs-152015/
 tags:
     - article
 layout: layouts/post.njk

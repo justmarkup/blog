@@ -2,6 +2,7 @@
 title: Truncating and revealing text  – The Show More and Read More patterns
 description: 
 date: 2017-01-12T18:28:18+00:00
+oldUrl: https://justmarkup.com/log/2017/01/truncating-and-revealing-text-the-show-more-and-read-more-patterns/
 tags:
     - article
 layout: layouts/post.njk
@@ -14,16 +15,18 @@ Show More
 
 Let’s start with the Show More Pattern – where you have a short text and a button to reveal the longer text. Without the markup needed for the reveal function the HTML may look like this:
 
-    <article>
-    	<h2>Headline</h2>
-    	<p>Some text. Some text. Some text.</p>
-    	<div>
-    		<p>Some more text. Some more text. Some more text. Some more text.
-    		Some more text. Some more text. Some more text.</p>
-    		<p>Some more text. Some more text. Some more text. Some more text.
-    		Some more text. Some more text. Some more text.</p>
-    	</div>
-    </article>
+``` html
+<article>
+	<h2>Headline</h2>
+	<p>Some text. Some text. Some text.</p>
+	<div>
+		<p>Some more text. Some more text. Some more text. Some more text.
+		Some more text. Some more text. Some more text.</p>
+		<p>Some more text. Some more text. Some more text. Some more text.
+		Some more text. Some more text. Some more text.</p>
+	</div>
+</article>
+```
 
 We can use a JavaScript or CSS-based method to add the toggle functionality. First, let’s see how we can achieve it with JavaScript.
 
@@ -31,14 +34,16 @@ We can use a JavaScript or CSS-based method to add the toggle functionality. Fir
 
 To start with, we modify the HTML and add a button to toggle the content and an id attribute on the “full text” wrapper element to associate it with the toggle button.
 
-    <article>
-    	<h2>Headline</h2>
-    	<p>Some text</p>
-    	<div id="more-1" class="fulltext">
-    		<p>Some more text</p>
-    	</div>
-    	<button aria-expanded="false" aria-controls="more-1" class="toggle-content" hidden><span class="text">Show More</span> <span class="visually-hidden">about Headline</span></button>
-    </article>
+``` html
+<article>
+	<h2>Headline</h2>
+	<p>Some text</p>
+	<div id="more-1" class="fulltext">
+		<p>Some more text</p>
+	</div>
+	<button aria-expanded="false" aria-controls="more-1" class="toggle-content" hidden><span class="text">Show More</span> <span class="visually-hidden">about Headline</span></button>
+</article>
+```
 
 On the button we add two attributes `aria-expanded="false"` and `aria-controls="more-1"` for better accessibility. We also set the attribute `hidden` so the button is hidden by default when the full text is not hidden as well. We also add some extra text for context, more on this later.
 
@@ -46,44 +51,46 @@ With that in place, it will still look and behave the same as before (featured t
 
 Now, we add some JavaScript to enhance this and toggle the full text.
 
-    // cut the mustard
-    if ('querySelector' in document && 
-    	'addEventListener' in window) {
-    
-    	var toggleButtons = document.querySelectorAll('.toggle-content');
-    	var fullTextWrappers = document.querySelectorAll('.fulltext');
-    	var fullText;
-    	var toggleButtonText;
-    	
-    
-    	[].forEach.call(fullTextWrappers, function(fullTextWrapper) {
-    		// hide all full text on load
-    		fullTextWrapper.setAttribute('hidden', true);
-    	});
-    
-    	[].forEach.call(toggleButtons, function(toggleButton) {
-    		// show toggle more buttons
-    		toggleButton.removeAttribute('hidden');
-    
-    		// add listener for each button
-    		toggleButton.addEventListener('click', function () {
-    
-    			fullTextWrapper = this.parentElement.querySelector('.fulltext');
-    			toggleButtonText = this.querySelector('.text');
-    
-    			// change attributes and text if full text is shown/hidden
-    			if (!fullTextWrapper.hasAttribute('hidden')) {
-    				toggleButtonText.innerText = 'Show More';
-    				fullTextWrapper.setAttribute('hidden', true);
-    				toggleButton.setAttribute('aria-expanded', false);
-    			} else {
-    				toggleButtonText.innerText = 'Show Less';
-    				fullTextWrapper.removeAttribute('hidden');
-    				toggleButton.setAttribute('aria-expanded', true);
-    			}
-    		});
-    	});
-    }
+``` js
+// cut the mustard
+if ('querySelector' in document && 
+	'addEventListener' in window) {
+
+	var toggleButtons = document.querySelectorAll('.toggle-content');
+	var fullTextWrappers = document.querySelectorAll('.fulltext');
+	var fullText;
+	var toggleButtonText;
+	
+
+	[].forEach.call(fullTextWrappers, function(fullTextWrapper) {
+		// hide all full text on load
+		fullTextWrapper.setAttribute('hidden', true);
+	});
+
+	[].forEach.call(toggleButtons, function(toggleButton) {
+		// show toggle more buttons
+		toggleButton.removeAttribute('hidden');
+
+		// add listener for each button
+		toggleButton.addEventListener('click', function () {
+
+			fullTextWrapper = this.parentElement.querySelector('.fulltext');
+			toggleButtonText = this.querySelector('.text');
+
+			// change attributes and text if full text is shown/hidden
+			if (!fullTextWrapper.hasAttribute('hidden')) {
+				toggleButtonText.innerText = 'Show More';
+				fullTextWrapper.setAttribute('hidden', true);
+				toggleButton.setAttribute('aria-expanded', false);
+			} else {
+				toggleButtonText.innerText = 'Show Less';
+				fullTextWrapper.removeAttribute('hidden');
+				toggleButton.setAttribute('aria-expanded', true);
+			}
+		});
+	});
+}
+```
 
 We start by [cutting the mustard](https://justmarkup.com/log/2015/02/cut-the-mustard-revisited/), so users using old browsers not supporting `querySelector` or `addEventListener` will get the “No-JavaScript Version” and can still read everything, while all other will get the enhanced version.
 
@@ -101,37 +108,41 @@ For this, we make use of the [Target Trick](https://bitsofco.de/the-target-trick
 
 First, we change the Markup of our initial example:
 
-    <article id="less-1">
-    	<h2>Headline</h2>
-    	<p>Text.</p>
-    
-    	<div class="fulltext" id="more-1">
-    		<a class="more" href="#more-1">Show more <span class="visually-hidden">about Headline</span></a>
-    
-    		<p>More Text</p>
-    
-    		<a class="less" href="#less-1">Show less <span class="visually-hidden">about Headline</span></a>
-    
-    	</div>
-    </article>
+``` html
+<article id="less-1">
+	<h2>Headline</h2>
+	<p>Text.</p>
+
+	<div class="fulltext" id="more-1">
+		<a class="more" href="#more-1">Show more <span class="visually-hidden">about Headline</span></a>
+
+		<p>More Text</p>
+
+		<a class="less" href="#less-1">Show less <span class="visually-hidden">about Headline</span></a>
+
+	</div>
+</article>
+```
 
 Here, we add an id attribute to the outer article element (to jump back there when hidding the content), an id attribute to the full text and two links (one to show and one to hide the full text).
 
 Next, we add some CSS:
 
-    .fulltext p,
-    .less {
-    	display: none;
-    }
-    
-    .fulltext:target p,
-    .fulltext:target .less {
-    	display: block;
-    }
-    
-    .fulltext:target .more {
-    	display: none;
-    }
+``` css
+.fulltext p,
+.less {
+	display: none;
+}
+
+.fulltext:target p,
+.fulltext:target .less {
+	display: block;
+}
+
+.fulltext:target .more {
+	display: none;
+}
+```
 
 Per default, we hide the full text and the Show Less link. If the full text container is targeted (`.fulltext:target`) we show the full text and Show Less link and hide the Show More link.
 
@@ -152,11 +163,13 @@ Read More
 
 Next, we will have a look at the Read More pattern.
 
-    <article>
-    	<h2>Article</h2>
-    	<p>Text. <a class="more" href="/article/#more">Read More <span class="visually-hidden">about Article</span></a></p>
-    
-    </article>
+``` html
+<article>
+	<h2>Article</h2>
+	<p>Text. <a class="more" href="/article/#more">Read More <span class="visually-hidden">about Article</span></a></p>
+
+</article>
+```
 
 This is a very common pattern for article overview pages and while it is in use for ages there are still two issues many don’t think of.
 
@@ -178,23 +191,27 @@ Providing context
 
 As shown in all examples above, I added an extra text for all Read/Show More/Less buttons and links with the class `.visually-hidden`.
 
-    <a class="more" href="/article/#more">Read Mor <span class="visually-hidden">about Article</span></a>
+``` html
+<a class="more" href="/article/#more">Read Mor <span class="visually-hidden">about Article</span></a>
+```
 
-    .visually-hidden {
-    	clip: rect(1px, 1px, 1px, 1px);
-    	height: 1px;
-    	overflow: hidden;
-    	position: absolute;
-    	white-space: nowrap;
-    	width: 1px;
-    }
-    a:hover .visually-hidden,
-    a:focus .visually-hidden,
-    button:hover .visually-hidden,
-    button:focus .visually-hidden {
-    	position: relative;
-    	margin: 0;
-    }
+``` css
+.visually-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+a:hover .visually-hidden,
+a:focus .visually-hidden,
+button:hover .visually-hidden,
+button:focus .visually-hidden {
+	position: relative;
+	margin: 0;
+}
+```
 
 This text is visually hidden, but will be announced by screen readers. This is really useful as otherwise they may hear “Read More” multiple times, but don’t know where the link will lead to as the context is missing. For the examples above, I also decided to show the text if you hover or focus any of the links or buttons to see what text you are going to hide/show if there are multiple.
 

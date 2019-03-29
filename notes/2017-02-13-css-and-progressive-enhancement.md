@@ -2,6 +2,7 @@
 title: CSS and progressive enhancement
 description: 
 date: 2017-02-13T14:33:50+00:00
+oldUrl: https://justmarkup.com/log/2017/02/css-and-progressive-enhancement/
 tags:
     - note
 layout: layouts/post.njk
@@ -16,19 +17,21 @@ Fallbacks
 
 CSS has changed a lot in the last years. More and more properties were added and while some are now supported in all modern browsers some only work in one or two browsers. In any way, we can often make use of the architecture of CSS. If a browser doesn’t know a property it will simple skip it without throwing an error. Let’s have a look at an example to demonstrate this:
 
-    h2 {
-      color: black;
-      color: rgba(0,0,0,0.9);
-    }
-    
+``` css
+h2 {
+	color: black;
+	color: rgba(0,0,0,0.9);
+}
+```
 
 In this case all browsers supporting rgba() will use the rgba() value for the color property. However, browsers not supporting rgba() will ignore this and use the value “black” for the color. In this example there won’t be much harm for users as the default value for color for h2 is already black, so browsers not supporting rgba() would still show the h2 in black, but there are other cases where this can lead to unusable content or unreadable text.
 
-    h2 {
-      background: rgba(0,0,0,0.9);
-      color: white;
-    }
-    
+``` css
+h2 {
+	background: rgba(0,0,0,0.9);
+	color: white;
+}
+```
 
 Let’s see how different browsers handle this example. Modern browsers supporting rgba() will show a white headline on a semi-transparent black background; Great. Browsers not supporting rgba() will show a white headline on a white background (assuming you haven’t changed the background-color of the element or parent elements), which means it won’t be visually shown for these users; Not great at all.
 
@@ -39,33 +42,34 @@ Feature tests
 
 Lately, there was a new rule defined in CSS – the @supports rule. You can think of it like a feature query. It gives you the possibility to check in CSS if a CSS feature is supported. Let’s have a look at an example:
 
-    header h1 {
-    	font-size: 70px;
-    	color: green;
-    	padding: 0;
-    	margin: 0;
-    	text-align: center;
-    }
-    
-    @supports (mix-blend-mode: screen) {
-    	header {
-    		padding: 0;
-    		background-image: url(https://justmarkup.com/iceland/img/l/DSCF3732.JPG);
-    		background-size: cover;
-    		background-repeat: no-repeat;
-    		width: 100%;
-    		min-height: 56vw;
-    		display: flex;
-    		align-items: center;
-    		justify-content: center;
-    	}
-    	header h1 {
-    		color: rgba(55,255,255,0.8);
-    		mix-blend-mode: screen;
-    		line-height: 0.5;
-    	}
-    }
-    
+``` css
+header h1 {
+	font-size: 70px;
+	color: green;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+@supports (mix-blend-mode: screen) {
+	header {
+		padding: 0;
+		background-image: url(https://justmarkup.com/iceland/img/l/DSCF3732.JPG);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		min-height: 56vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	header h1 {
+		color: rgba(55,255,255,0.8);
+		mix-blend-mode: screen;
+		line-height: 0.5;
+	}
+}
+```
 
 Our default (not enhanced) style for our main headline is a big, green font.
 
@@ -86,11 +90,13 @@ Custom properties
 
 Some new CSS properties only make sense to use for certain scenarios – custom properties (CSS variables) are a good example.
 
-    :root {--theme-color: gray;}
-    .element {
-      background-color: gray;
-      background-color: var(--theme-color, gray);
-    }
+``` css
+:root {--theme-color: gray;}
+.element {
+	background-color: gray;
+	background-color: var(--theme-color, gray);
+}
+```
 
 In this example, we first set our `--theme-color` to gray, next in the selector `.element` we first define a fallback for browsers not supporting custom-properties and after that set the background-color to our defined –theme-color. If you wonder why I defined gray inside var() `var(--theme-color, gray)` here, that’s because if we would not have defined –theme-color in `:root` before it would fallback to the value after the comma, in this case “gray”. To use CSS with custom properties responsible today (as there are still a lot of browsers not supporting custom properties), we would have to define a fallback and a custom property with another fallback.
 

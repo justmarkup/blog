@@ -2,6 +2,7 @@
 title: Keeping track
 description: 
 date: 2017-12-12T08:03:45+00:00
+oldUrl: https://justmarkup.com/log/2017/12/keeping-track/
 tags:
     - note
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Distrusting certificates – Time to act if you use a StartCom (StartSSL) or WoSign certificate
 description: 
 date: 2016-12-20T17:37:28+00:00
+oldUrl: https://justmarkup.com/log/2016/12/distrusting-certificates/
 tags:
     - note
 layout: layouts/post.njk

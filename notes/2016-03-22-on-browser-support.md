@@ -2,6 +2,7 @@
 title: On browser support
 description: 
 date: 2016-03-22T10:17:52+00:00
+oldUrl: https://justmarkup.com/log/2016/03/on-browser-support/
 tags:
     - note
 layout: layouts/post.njk
@@ -28,7 +29,12 @@ Use with fallback
 
 Other features can be used with a fallback. Be it new CSS color values, SVG or Gradients.
 
-    p {color: #111; color: hsl(236, 100%, 4%); }
+``` css
+p {
+    color: #111; 
+    color: hsl(236, 100%, 4%);
+}
+```
 
 Use with polyfill
 -----------------

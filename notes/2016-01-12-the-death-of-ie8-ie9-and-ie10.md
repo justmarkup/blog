@@ -2,6 +2,7 @@
 title: The death IE8, IE9 and IE10
 description: 
 date: 2016-01-12T13:58:12+00:00
+oldUrl: https://justmarkup.com/log/2016/01/the-death-of-ie8-ie9-and-ie10/
 tags:
     - note
 layout: layouts/post.njk

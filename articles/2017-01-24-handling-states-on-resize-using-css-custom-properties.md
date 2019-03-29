@@ -2,6 +2,7 @@
 title: Handling states on resize using CSS custom properties
 description: 
 date: 2017-01-24T11:31:50+00:00
+oldUrl: https://justmarkup.com/log/2017/01/handling-states-on-resize-using-css-custom-properties/
 tags:
     - article
 layout: layouts/post.njk

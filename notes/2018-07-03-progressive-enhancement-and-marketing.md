@@ -2,6 +2,7 @@
 title: Progressive Enhancement and Marketing
 description: 
 date: 2018-07-03T14:30:24+00:00
+oldUrl: https://justmarkup.com/log/2018/07/progressive-enhancement-and-marketing/
 tags:
     - note
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Dealing with long words in CSS
 description: 
 date: 2015-07-31T13:54:41+00:00
+oldUrl: https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/
 tags:
     - article
 layout: layouts/post.njk
@@ -24,13 +25,14 @@ The first solution for long words is using hyphens.
 
 [Demo](http://jsbin.com/zimeta/4/edit?html,css,output)
 
-    .hyphens {
-      -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
-    }
-    
+``` css
+.hyphens {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+```
 
 **Browser support:** CSS Hyphenation is supported in every major [browser](http://caniuse.com/#feat=css-hyphens), except from all blink-based browsers (Chrome, Opera, Android) – [Chromium bug](https://code.google.com/p/chromium/issues/detail?id=47083). I also tested Safari 5.1 for Windows where hyphens are added but in my test words they were all on the wrong position and made no sense.
 
@@ -47,12 +49,13 @@ As browser support for hyphens isn’t really good, let’s try word-break – a
 
 [Demo](http://jsbin.com/nulequ/edit?html,css,output)
 
-    .word-break {
-      -ms-word-break: break-all;
-      word-break: break-all;
-      word-break: break-word;
-    }
-    
+``` css
+.word-break {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+}
+```
 
 **Browser support:** CSS word-break is supported in every [browser](http://caniuse.com/#feat=word-break), except from Opera Mini and old presto-based Opera browsers. I also found some bugs when using word-break in combination with hyphens – more on that later.
 
@@ -65,11 +68,12 @@ The next solution is using word-wrap (overflow-wrap), another property to specif
 
 [Demo](http://jsbin.com/fuweha/edit?html,css,output)
 
-    .word-wrap {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-    
+``` css
+.word-wrap {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+```
 
 **Browser support:** CSS overflow-wrap is supported in every (at least all I tested and listed on Can I use) [browser](http://caniuse.com/#feat=wordwrap). Note: Some browsers require the legacy name “word-wrap” (rather than “overflow-wrap”) to work.
 
@@ -82,12 +86,13 @@ Another option to handle long words is truncating.
 
 [Demo](http://jsbin.com/miselu/edit?html,css,output)
 
-    .ellipsis {
-      overflow:hidden; 
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    
+``` css
+.ellipsis {
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+``` 
 
 **Browser support:** Text-overflow is supported in every major [browser](http://caniuse.com/#feat=text-overflow).
 
@@ -102,16 +107,17 @@ I tested all the [examples](http://jsbin.com/mojaxo/edit?html,css,output) above 
 
 When searching the web you probably will find the following [solution](https://css-tricks.com/almanac/properties/h/hyphenate/):
 
-    .hyphenate {
-      -ms-word-break: break-all;
-      word-break: break-all;
-      word-break: break-word;
-    
-      -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      hyphens: auto;
-    }
-    
+``` css
+.hyphenate {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+``` 
 
 While this works great in most cases, I found out that in Firefox hyphens won’t work (altough supported) in combination with word-break. Also, as word-break is not supported in Opera Mini it won’t work there.
 
@@ -119,15 +125,16 @@ As browser support for overflow-wrap is fantastic I tested the following, using 
 
 ### Final solution
 
-    .hyphenate {
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      -moz-hyphens: auto;
-      hyphens: auto;
-    }
-    
+``` css
+.hyphenate {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+```
 
 This solution will show hyphens for every browser supporting it and will break lines in every other browser – perfect. Altough I have tested this solution in 26 different browsers I am still not sure this will work 100% – if you find any edge case please let [me](https://twitter.com/justmarkup) know.
 

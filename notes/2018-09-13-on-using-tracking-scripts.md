@@ -2,6 +2,7 @@
 title: On using tracking scripts
 description: 
 date: 2018-09-13T17:06:37+00:00
+oldUrl: https://justmarkup.com/log/2018/09/on-using-tracking-scripts/
 tags:
     - note
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Syntax highlighting as an enhancement
 description: 
 date: 2016-01-05T09:49:08+00:00
+oldUrl: https://justmarkup.com/log/2016/01/add-syntax-highlighting-as-an-enhancement/
 tags:
     - note
 layout: layouts/post.njk
@@ -27,8 +28,12 @@ Examples
 
 CSS
 
-    .code {border: 1px solid green;}
+``` css
+.code {border: 1px solid green;}
+```
 
 JavaScript
 
-    var Prism = true;
+``` js
+var Prism = true;
+```

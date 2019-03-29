@@ -2,6 +2,7 @@
 title: My approach on using id, class and data attributes in HTML, CSS and JavaScript
 description: 
 date: 2017-07-05T07:48:40+00:00
+oldUrl: https://justmarkup.com/log/2017/07/my-approach-on-using-id-class-and-data-attributes-in-html-css-and-javascript/
 tags:
     - note
 layout: layouts/post.njk
@@ -24,23 +25,27 @@ With that in mind, let’s have a look where the `id` attribute is useful and wh
 
 The first use case for the `id` attribute is using it as a fragment identifier. This is really helpful to link to specific areas of a page, for example if you want to link to this section of this article you can add [#fragment-identifier](#fragment-identifier) to the url and link to it.
 
-    <h4 id="fragment-identifier">Fragment identifier</h4>
-    
+``` html
+<h4 id="fragment-identifier">Fragment identifier</h4>
+```
 
 Another pattern where this is often used is a “back-to-top” link, you can add an id with the value of top to an element at the beginning of the page and add a link referencing it. The page will scroll to the top by clicking the link.
 
-    <a href="#top">Back to top</a>
-    
+``` html
+<a href="#top">Back to top</a>
+```
 
 #### ARIA
 
 Another case where I use the id attribute is ARIA, for example aria-labelledby and aria-describedby.
 
-    <div>
-        <label for="username">Your username</label>
-        <input type="text" id="username" aria-describedby="username-tip" required>
-        <div role="tooltip" id="username-tip">Your username is your email address</div>
-    </div>
+``` html
+<div>
+    <label for="username">Your username</label>
+    <input type="text" id="username" aria-describedby="username-tip" required>
+    <div role="tooltip" id="username-tip">Your username is your email address</div>
+</div>
+```
 
 Here is an [example](http://heydonworks.com/practical_aria_examples/#input-tooltip) from Heydon Pickering showing this in action.
 
@@ -55,35 +60,36 @@ As said in the beginning, I often used classNames as a selector in JavaScript wh
 
 That’s why I use classNames only for styling.
 
-    
-    .class {
-      display: flex;
-    }
-    
+``` css
+.class {
+    display: flex;
+}
+```
 
 data attributes
 ---------------
 
 I primarily use it in JavaScript, but also in CSS for different states.
 
-    var element = document.querySelector('[data-toggle]');
-    
-    element.addEventListener('click', function () {
-      if (this.hasAttribute("data-active")) {
-        this.removeAttribute("data-active");
-      } else {
-        this.setAttribute("data-active", true);
-      }
-    });
-    
+``` js
+var element = document.querySelector('[data-toggle]');
+
+element.addEventListener('click', function () {
+    if (this.hasAttribute("data-active")) {
+    this.removeAttribute("data-active");
+    } else {
+    this.setAttribute("data-active", true);
+    }
+});
+```
 
 If I want to change a state in JavaScript I add/remove a data attribute, which I will use in CSS to define additional styles for it:
 
-    
-    [data-active] {
-      color: pink;
-    }
-    
+``` css
+[data-active] {
+    color: pink;
+}
+```
 
 This way, I can immediately see which parts in HTML and CSS are dependent from JavaScript.
 

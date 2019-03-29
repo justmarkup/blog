@@ -2,6 +2,7 @@
 title: Enhancing a login form – from basic to validation to reveal password
 description: 
 date: 2018-02-13T09:09:39+00:00
+oldUrl: https://justmarkup.com/log/2018/02/enhancing-a-login-form/
 tags:
     - article
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: There is a bug
 description: 
 date: 2013-06-24T19:25:09+00:00
+oldUrl: https://justmarkup.com/log/2013/06/there-is-a-bug/
 tags:
     - article
 layout: layouts/post.njk

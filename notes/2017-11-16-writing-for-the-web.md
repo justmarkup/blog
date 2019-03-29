@@ -2,6 +2,7 @@
 title: Writing for the web
 description: 
 date: 2017-11-16T07:34:53+00:00
+oldUrl: https://justmarkup.com/log/2017/11/writing-for-the-web/
 tags:
     - note
 layout: layouts/post.njk

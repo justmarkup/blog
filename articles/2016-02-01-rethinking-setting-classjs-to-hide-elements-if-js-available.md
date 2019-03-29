@@ -2,6 +2,7 @@
 title: Rethinking setting class=”js” to hide elements if JavaScript is available
 description: 
 date: 2016-02-01T15:38:11+00:00
+oldUrl: https://justmarkup.com/log/2016/02/rethinking-setting-classjs-to-hide-elements-if-js-available/
 tags:
     - article
 layout: layouts/post.njk
@@ -41,19 +42,21 @@ Conclusion
 
 To avoid cases where JavaScript is available, but not usable I will use the following code in the future.
 
-    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
-    window.onerror = function () {
-      document.documentElement.className = document.documentElement.className.replace(/\bjs\b/,'no-js');
-    }
-    
+``` js
+document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
+window.onerror = function () {
+  document.documentElement.className = document.documentElement.className.replace(/\bjs\b/,'no-js');
+}
+```
 
 Additional I will use [Cut the mustard](https://justmarkup.com/log/2015/02/cut-the-mustard-revisited/) to check for features.
 
-    if('querySelector' in document && 'addEventListener' in window) {
-      // code here
-    } else {
-      document.documentElement.className = document.documentElement.className.replace(/\bjs\b/,'no-js');
-    }
-    
+``` js
+if('querySelector' in document && 'addEventListener' in window) {
+  // code here
+} else {
+  document.documentElement.className = document.documentElement.className.replace(/\bjs\b/,'no-js');
+}
+```
 
 There are many [ways](http://kryogenix.org/code/browser/everyonehasjs.html) where JavaScript is not available or executed in a browser and by using `window.onerror` we can handle them and show the same layout/functionality which would be shown for users who disabled JavaScript.

@@ -2,6 +2,7 @@
 title: Responsive Images – what? width! this? no, this! hä?
 description: 
 date: 2013-01-16T21:37:22+00:00
+oldUrl: https://justmarkup.com/log/2013/01/responsive-images-what-width-this-no-this-ha/
 tags:
     - article
 layout: layouts/post.njk
@@ -19,17 +20,19 @@ Do make this more clear, have a look at an [example](http://jsbin.com/urivab/1),
 
 The first one shows a site on a 480x320px screen, the second is 645x415px and the last 1001x514px. Ok, so lets have a look at an example using picturefill:
 
-    <div data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">  
-        <div data-src="small.jpg"></div>  
-        <div data-src="medium.jpg"     data-media="(min-width: 400px)"></div>  
-        <div data-src="large.jpg"      data-media="(min-width: 640px)"></div>  
-        <div data-src="extralarge.jpg" data-media="(min-width: 1000px)"></div>  
-  
-        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->  
-        <noscript>  
-            <img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">  
-        </noscript>  
-    </div>
+``` html
+<div data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">  
+    <div data-src="small.jpg"></div>  
+    <div data-src="medium.jpg"     data-media="(min-width: 400px)"></div>  
+    <div data-src="large.jpg"      data-media="(min-width: 640px)"></div>  
+    <div data-src="extralarge.jpg" data-media="(min-width: 1000px)"></div>  
+
+    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->  
+    <noscript>  
+        <img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">  
+    </noscript>  
+</div>
+```
 
 Using this, our first screen will get the medium img, the second the large.jpg and the last one the extralarge.jpg. And here is the problem, because the site with 645x415px has only room to show an image which is 386px width, while the smallest resolution (480x320px) can show an 405px width image. Understand my concerns? In a perfect world we should have shown the small.jpg for the 645x415px screen, instead of delivering an way too big image, shouldn’t we?
 

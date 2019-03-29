@@ -2,6 +2,7 @@
 title: Input type email – better don’t use it!
 description: 
 date: 2015-02-13T12:07:51+00:00
+oldUrl: https://justmarkup.com/log/2015/02/input-type-email-better-dont-use-it/
 tags:
     - article
 layout: layouts/post.njk

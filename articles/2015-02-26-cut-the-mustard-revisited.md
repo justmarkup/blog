@@ -2,6 +2,7 @@
 title: Cut the mustard revisited
 description: 
 date: 2015-02-26T10:49:02+00:00
+oldUrl: https://justmarkup.com/log/2015/02/cut-the-mustard-revisited/
 tags:
     - article
 layout: layouts/post.njk
@@ -9,12 +10,11 @@ layout: layouts/post.njk
 
 Cutting the mustard is a term coined by the BBC team ([post](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard)) to group browsers into »modern« browsers and »old« browsers. This is not done by sniffing the User Agent but by using [Browser Feature Detection](https://developer.mozilla.org/en-US/docs/Browser_Feature_Detection). Here is the JavaScript that decides whether the browser is modern or old.
 
-    if('querySelector' in document
-         && 'localStorage' in window
-         && 'addEventListener' in window) {
-         // Modern browser. Let's add JavaScript functionality
-         }
-    
+``` js
+if('querySelector' in document && 'localStorage' in window && 'addEventListener' in window) {
+     // Modern browser. Let's add JavaScript functionality
+}
+```
 
 With this in place, we have two groups of browsers, modern (IE9+, Fx, Safari, Opera, Chrome, iOS, Android 2.1+, …) and old (IE8-, Blackberry, …). I used the same check in the last years. I don’t have to care about JavaScript implementation and errors in old browsers as I only serve JavaScript to modern browsers and I know which JavaScript features I can use safely. It works out great most of the time.
 
@@ -28,16 +28,17 @@ Looking at the browser support of [Page Visibility](http://caniuse.com/#feat=pag
 
 While the check mentioned by Jake is great, I immediately thought about extending it and adding a check for ServiceWorker to improve performance for browsers supporting it and for adding offline support. So here is my new check I will use in most of my projects from now on:
 
-    if ('visibilityState' in document) { 
-    	// Modern browser. Let's load JavaScript
-    	if ('serviceWorker' in navigator) {
-    		// Let's add offline support
-    		navigator.serviceWorker.register('sw.js', {
-    			scope: './'
-    		});
-    	}
+``` js
+if ('visibilityState' in document) { 
+    // Modern browser. Let's load JavaScript
+    if ('serviceWorker' in navigator) {
+        // Let's add offline support
+        navigator.serviceWorker.register('sw.js', {
+            scope: './'
+        });
     }
-    
+}
+```
 
 If you are unfamiliar with ServiceWorker, I recommend this [interactive introduction](https://github.com/jakearchibald/simple-serviceworker-tutorial) and if you are searching for a way to generate service worker code, I can recommend this [node module](https://github.com/jeffposnick/sw-precache) that will precache specific resources.
 

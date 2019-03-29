@@ -2,6 +2,7 @@
 title: PWA on desktop
 description: 
 date: 2018-02-05T07:54:49+00:00
+oldUrl: https://justmarkup.com/log/2018/02/pwa-on-desktop/
 tags:
     - note
 layout: layouts/post.njk

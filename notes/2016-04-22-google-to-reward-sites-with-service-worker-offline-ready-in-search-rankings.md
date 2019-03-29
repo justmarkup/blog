@@ -2,6 +2,7 @@
 title: Google to reward sites with service worker (offline ready) in search rankings
 description: 
 date: 2016-04-22T11:29:35+00:00
+oldUrl: https://justmarkup.com/log/2016/04/google-to-reward-sites-with-service-worker-offline-ready-in-search-rankings/
 tags:
     - note
 layout: layouts/post.njk

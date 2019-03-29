@@ -2,6 +2,7 @@
 title: Just markup
 description: 
 date: 2018-11-27T08:01:10+00:00
+oldUrl: https://justmarkup.com/log/2018/11/just-markup/
 tags:
     - note
 layout: layouts/post.njk
@@ -9,7 +10,9 @@ layout: layouts/post.njk
 
 When I started working as a Front-end Developer (or rather Web designer, as people doing HTML, CSS and a bit of JavaScript were usually called back then), all the Back-end people working at the company \*laughed\* at me because I was »just« doing HTML and CSS and not »real programming«. They thought all you need to know in HTML are `<font>`, `<br>` and some form elements (including `<input>` without labels of course).
 
-    <FONT color="black" face=Arial size=2>I am a real programmer.</FONT>
+``` html
+<FONT color="black" face=Arial size=2>I am a real programmer.</FONT>
+```
 
 CSS was only used inline and only to change font-size and color and if they needed to align something they build some terrible tables (at a time where using tables for layout were already [bad practice](http://alistapart.com/article/practicalcss) for several [years](http://www.pixy.cz/blogg/clanky/css-3col-layout/)). They didn’t think a second about accessibility, maintainability or semantics.
 

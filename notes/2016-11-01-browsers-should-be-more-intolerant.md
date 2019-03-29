@@ -2,6 +2,7 @@
 title: Browsers should be more  intolerant and punish bad practice
 description: 
 date: 2016-11-01T13:51:53+00:00
+oldUrl: https://justmarkup.com/log/2016/11/browsers-should-be-more-intolerant/
 tags:
     - note
 layout: layouts/post.njk

@@ -2,6 +2,7 @@
 title: Open redesign
 description: 
 date: 2015-11-12T15:47:34+00:00
+oldUrl: https://justmarkup.com/log/2015/11/open-redesign/
 tags:
     - article
 layout: layouts/post.njk

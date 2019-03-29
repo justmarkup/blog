@@ -2,6 +2,7 @@
 title: Hey there feediary.com
 description: 
 date: 2018-07-31T07:49:56+00:00
+oldUrl: https://justmarkup.com/log/2018/07/hey-there-feediary-com/
 tags:
     - article
 layout: layouts/post.njk

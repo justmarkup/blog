@@ -2,6 +2,7 @@
 title: The download attribute
 description: 
 date: 2015-01-13T09:38:38+00:00
+oldUrl: https://justmarkup.com/log/2015/01/the-download-attribute/
 tags:
     - article
 layout: layouts/post.njk
@@ -11,7 +12,9 @@ The download attribute indicates the browser that a link should trigger the “S
 
 Here is an example:
 
-    <a href="/363946739467/64634.jpg" download="custom-filename">Link</a>
+``` html
+<a href="/363946739467/64634.jpg" download="custom-filename">Link</a>
+```
 
 As you can see you can specifiy the filename (in the example custom-filename) the file should be saved as, the extension will be added automatically.
 
@@ -35,16 +38,19 @@ See support on [Can I use](http://caniuse.com/#feat=download). It’s currently 
 When providing a Download-Link you should also consider showing the size of the file. This will help the user to decide if it’s worth to download the file. Always remember that a user may use Roaming (and yes also on [Laptops](http://www.smashingmagazine.com/smashing-newsletter-issue-128/)) and don’t want to waste his limited bandwidth. Detecting the file size is not possible on the client-side but can easily be done server-side.  
 Here is an example for php:
 
-    <?php echo filesize($filename); ?>
+``` php
+<?php echo filesize($filename); ?>
+```
 
 And if you use Node.js you can use the following code:
 
-    function getFilesizeInBytes(filename) {
-     var stats = fs.statSync(filename)
-     var fileSizeInBytes = stats["size"]
-     return fileSizeInBytes
-    }
-    
+``` js
+function getFilesizeInBytes(filename) {
+    var stats = fs.statSync(filename)
+    var fileSizeInBytes = stats["size"]
+    return fileSizeInBytes
+}
+```
 
 ### Conclusion
 

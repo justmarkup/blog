@@ -2,6 +2,7 @@
 title: Every web site has to start with server-side rendered HTML – no exceptions.
 description: 
 date: 2016-01-07T13:22:25+00:00
+oldUrl: https://justmarkup.com/log/2016/01/every-web-site-has-to-starts-with-html/
 tags:
     - note
 layout: layouts/post.njk

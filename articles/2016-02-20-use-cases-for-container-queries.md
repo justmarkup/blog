@@ -2,6 +2,7 @@
 title: Use cases for container queries
 description: 
 date: 2016-02-20T15:40:49+00:00
+oldUrl: https://justmarkup.com/log/2016/02/use-cases-for-container-queries/
 tags:
     - article
 layout: layouts/post.njk
@@ -25,12 +26,13 @@ Using media queries we need to check a module in very area of the site in differ
 
 Let’s start with a demo of a Login form. This may be used in various areas of a site, be it the header, the sidebar or the main area. In this demo the input fields are among each other on narrow screens and next to each other on bigger (> 600px) screens.
 
-    form[max-width~="600px"] label,
-    form[max-width~="600px"] input[type="submit"] {
-      margin: 0.6em 0 0.2em 0;
-      display: block;
-    }
-    
+``` css
+form[max-width~="600px"] label,
+form[max-width~="600px"] input[type="submit"] {
+    margin: 0.6em 0 0.2em 0;
+    display: block;
+}
+```
 
 [Demo](https://justmarkup.com/demos/container-queries/form/) and [Code](https://github.com/justmarkup/demos/tree/gh-pages/container-queries/form/)
 
@@ -40,46 +42,47 @@ Let’s start with a demo of a Login form. This may be used in various areas of 
 
 Next, we have a list of items – in this case products. On narrow screens they are shown among one another, if the container size is between 600px and 800px they are still among one another, but the image floats and the headline and text are shown alongside and if the container size is bigger than 800px the items are shown next to each other. By using container queries we can use the product list everywhere on our site and only need to define container breakpoints once – using mediaqueries we would have to use new breakpoints for every new context.
 
-    .products ul {
-    	margin: 0;
-    	padding: 0;
-    	list-style: none;
-    	display: flex;
-    	flex-wrap: wrap;
-    }
-    
-    .products[min-width~="600px"] img {
-    	width: 50%;
-    	float: left;
-    	margin: 0 2em 2em 0;
-    }
-    
-    .products[min-width~="800px"] ul {
-    	display: flex;
-    	flex-wrap: nowrap;
-    	justify-content: space-between;
-    }
-    
-    .products[min-width~="800px"] li {
-    	width: 32%;
-    }
-    
-    .products[min-width~="800px"] li:nth-child(1):nth-last-child(1) {
-    	width: 100%;
-    }
-    
-    /* two items */
-    .products[min-width~="800px"] li:nth-child(1):nth-last-child(2),
-    .products[min-width~="800px"] li:nth-child(2):nth-last-child(1) {
-    	width: 49%;
-    }
-    
-    .products[min-width~="800px"] img {
-    	width: 100%;
-    	float: none;
-    	margin: 0;
-    }
-    
+``` css
+.products ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products[min-width~="600px"] img {
+    width: 50%;
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.products[min-width~="800px"] ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.products[min-width~="800px"] li {
+    width: 32%;
+}
+
+.products[min-width~="800px"] li:nth-child(1):nth-last-child(1) {
+    width: 100%;
+}
+
+/* two items */
+.products[min-width~="800px"] li:nth-child(1):nth-last-child(2),
+.products[min-width~="800px"] li:nth-child(2):nth-last-child(1) {
+    width: 49%;
+}
+
+.products[min-width~="800px"] img {
+    width: 100%;
+    float: none;
+    margin: 0;
+}
+```
 
 [Demo](https://justmarkup.com/demos/container-queries/product-items/) and [Code](https://github.com/justmarkup/demos/tree/gh-pages/container-queries/product-items/)
 
@@ -94,14 +97,15 @@ Another use case will be widgets, mostly third-party widgets. Think about advert
 
 Here is an example of a third-party iframe we use in different parts of our website, in this case once in the main area and once in a sidebar. The developer of the widget here changes the background-color of an element from blue to red for narrow (=< 300px) containers.
 
-    div {
-      background-color: blue;
-    }
-    
-    div[max-width~="300px"] {
-      background-color: red;
-    }
-    
+``` css
+div {
+    background-color: blue;
+}
+
+div[max-width~="300px"] {
+    background-color: red;
+}
+```
 
 [Demo](https://justmarkup.com/demos/container-queries/third-party/) and [Code](https://github.com/justmarkup/demos/tree/gh-pages/container-queries/third-party/)
 
@@ -111,14 +115,15 @@ Here is an example of a third-party iframe we use in different parts of our webs
 
 Next is an example of an advertisement, inserted into our page with JavaScript. Within the JavaScript of the ad a stylesheet gets inserted, with some styles for the ads. Using container queries the developer changes the font-size from 1em to 1.4em if the container is bigger than 500px.
 
-    .ad {
-      font-size: 1em;
-    }
-    
-    .ad[min-width~="500px"] {
-      font-size: 1.4em;
-    }
-    
+``` css
+.ad {
+    font-size: 1em;
+}
+
+.ad[min-width~="500px"] {
+    font-size: 1.4em;
+}
+```
 
 [Demo](https://justmarkup.com/demos/container-queries/ad/) and [Code](https://github.com/justmarkup/demos/tree/gh-pages/container-queries/ad/)
 
@@ -135,12 +140,13 @@ Which makes sense after thinking about it, the browser don’t know the size of 
 
 We most likely won’t get container based sizes, but one never knows. So, I made an example nevertheless using the pollyfill to show the benefits.
 
-    <div data-responsive-image>
-     <img data-src="http://lorempixel.com/350/150/sports/350x150/">
-     <img min-width="350" data-src="http://lorempixel.com/700/300/sports/700x300/">
-     <img min-width="700" data-src="http://lorempixel.com/1400/600/sports/1400x600/">
-    </div>
-    
+``` html
+<div data-responsive-image>
+    <img data-src="http://lorempixel.com/350/150/sports/350x150/">
+    <img min-width="350" data-src="http://lorempixel.com/700/300/sports/700x300/">
+    <img min-width="700" data-src="http://lorempixel.com/1400/600/sports/1400x600/">
+</div>
+```
 
 [Demo](https://justmarkup.com/demos/container-queries/image/) and [Code](https://github.com/justmarkup/demos/tree/gh-pages/container-queries/image/)
 

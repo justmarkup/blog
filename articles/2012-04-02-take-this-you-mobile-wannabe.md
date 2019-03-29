@@ -2,6 +2,7 @@
 title: Take this you mobile wannabe!
 description: 
 date: 2012-04-02T15:55:45+00:00
+oldUrl: https://justmarkup.com/log/2012/04/take-this-you-mobile-wannabe/
 tags:
     - article
 layout: layouts/post.njk

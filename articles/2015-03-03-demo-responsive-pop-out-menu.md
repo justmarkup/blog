@@ -2,6 +2,7 @@
 title: Demo - Responsive Pop-out Menu
 description: 
 date: 2015-03-03T15:31:57+00:00
+oldUrl: https://justmarkup.com/log/2015/03/demo-responsive-pop-out-menu/
 tags:
     - article
 layout: layouts/post.njk
@@ -19,31 +20,32 @@ This is simple to achieve, I used the [Cut the Mustard](https://justmarkup.com/l
 
 Here is the complete JavaScript:
 
-    (function (doc) {
-    	// CTM, only init JavaScript for modern browsers
-    	if ('visibilityState' in doc) { 
-    
-    		// Add class to html elment once js is available
-    		doc.documentElement.className = 'js';
-    		
-    		// Add Eventlistener to open/close menu
-    		var menuLayer = doc.getElementById('is--menu-layer'),
-    			menuClose = doc.getElementById('is--menu-close'),
-    			menuOpen = doc.getElementById('is--menu-open');
-    		
-    		function openMenu () {
-    			menuLayer.className = 'is--menu-opened';
-    		}
-    
-    		function closeMenu () {
-    			menuLayer.className = '';
-    		}
-    
-    		menuClose.addEventListener("click", closeMenu, false);
-    		menuOpen.addEventListener("click", openMenu, false);
-    	}
-    }(document));
-    
+``` js
+(function (doc) {
+	// CTM, only init JavaScript for modern browsers
+	if ('visibilityState' in doc) { 
+
+		// Add class to html elment once js is available
+		doc.documentElement.className = 'js';
+		
+		// Add Eventlistener to open/close menu
+		var menuLayer = doc.getElementById('is--menu-layer'),
+			menuClose = doc.getElementById('is--menu-close'),
+			menuOpen = doc.getElementById('is--menu-open');
+		
+		function openMenu () {
+			menuLayer.className = 'is--menu-opened';
+		}
+
+		function closeMenu () {
+			menuLayer.className = '';
+		}
+
+		menuClose.addEventListener("click", closeMenu, false);
+		menuOpen.addEventListener("click", openMenu, false);
+	}
+}(document));
+```
 
 On older browsers and devices without JavaScript the menu items will always stay visible and will align to the left.
 
@@ -57,17 +59,18 @@ Smartphones are getting bigger and bigger and thus it becomes quite hard to reac
 
 While all the items are now aligned at the bottom, the most important items (usually first in order) are still at the top. To change it, I used this [technique](https://justmarkup.com/log/2014/11/28/reverse-order-of-elements-with-css/) to reverse the order of the items and, therefore, show the most important item at the very bottom.
 
-    .js .navigation ul {
-    	-webkit-transform: rotate(180deg);
-    	-ms-transform: rotate(180deg);
-    	transform: rotate(180deg);
-    }
-    .js .navigation li{
-    	-webkit-transform: rotate(-180deg);
-    	-ms-transform: rotate(-180deg);
-    	transform: rotate(-180deg);
-    }
-    
+``` css
+.js .navigation ul {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.js .navigation li{
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+```
 
 Here is a screenshot of the opened menu on Android:
 

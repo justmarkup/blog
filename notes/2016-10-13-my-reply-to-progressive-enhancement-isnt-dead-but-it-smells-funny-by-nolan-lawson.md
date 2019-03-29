@@ -2,6 +2,7 @@
 title: My reply to ” Progressive enhancement isn’t dead, but it smells funny” by Nolan Lawson
 description: 
 date: 2016-10-13T17:41:39+00:00
+oldUrl: https://justmarkup.com/log/2016/10/my-reply-to-progressive-enhancement-isnt-dead-but-it-smells-funny-by-nolan-lawson/
 tags:
     - note
 layout: layouts/post.njk

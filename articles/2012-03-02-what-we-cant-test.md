@@ -2,6 +2,7 @@
 title: What we can’t test
 description: 
 date: 2012-03-02T17:53:22+00:00
+oldUrl: https://justmarkup.com/log/2012/03/what-we-cant-test/
 tags:
     - article
 layout: layouts/post.njk

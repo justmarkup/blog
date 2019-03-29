@@ -2,6 +2,7 @@
 title: Early adopters – Using new web platform features
 description: 
 date: 2017-01-20T16:05:28+00:00
+oldUrl: https://justmarkup.com/log/2017/01/early-adopters-using-new-web-platform-features/
 tags:
     - note
 layout: layouts/post.njk
@@ -57,7 +58,9 @@ Before you are able to use a feature shipped with Origin Trials, you have to [re
 
 After some time (up to 24hours) you will get an email with the Token. For example, the meta tag for using the Web Share API looks like this:
 
-    <meta http-equiv="origin-trial" data-feature="Web Share" data-expires="2017-02-15" content="YOURTOKEN">
+``` html
+<meta http-equiv="origin-trial" data-feature="Web Share" data-expires="2017-02-15" content="YOURTOKEN">
+```
 
 Once you have implemented the meta tag on your site you will be able to use the new feature and ship it to all users with a supporting browser. Every 2 months you have to renew your Token and also answer some questions about what you like/dislike about the feature. This information is very important for browsers, so they can change the implementation early on, based on findings from early adopters.
 

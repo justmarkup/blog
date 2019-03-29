@@ -2,6 +2,7 @@
 title: Loading… and how css can help
 description: 
 date: 2012-02-05T16:27:05+00:00
+oldUrl: https://justmarkup.com/log/2012/02/loading-and-how-css-can-help/
 tags:
     - article
 layout: layouts/post.njk
@@ -23,6 +24,7 @@ After playing around a bit with css3 animations and pseudo elements here is my s
 
 Loading, please wait
 
+``` css
 @keyframes load {
 	0% {left: 0; background-color: #ddd}
 	50% {left: 80px; opacity: 0.8; width: 70px}
@@ -53,6 +55,7 @@ Loading, please wait
 	height: 20px;
 	animation: load 2400ms infinite alternate
 }
+```
 
 You probably have seen much more fancy loading bars but I wanted a solution which is also compatible with older browsers and more accessible. If you remove the animations from the pseudo elements you will see how it looks like in older browsers and although not tested how screen readers will read it.
 

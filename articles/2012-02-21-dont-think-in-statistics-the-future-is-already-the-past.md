@@ -2,6 +2,7 @@
 title: Don’t think in statistics – the future is already the past.
 description: 
 date: 2012-02-21T12:40:40+00:00
+oldUrl: https://justmarkup.com/log/2012/02/dont-think-in-statistics-the-future-is-already-the-past/
 tags:
     - article
 layout: layouts/post.njk

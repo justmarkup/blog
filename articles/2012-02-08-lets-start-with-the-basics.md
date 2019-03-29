@@ -2,6 +2,7 @@
 title: Let’s start with the basics.
 description:
 date: 2012-02-08T14:08:56+00:00
+oldUrl: https://justmarkup.com/log/2012/02/lets-start-with-the-basics/
 tags:
     - article
 layout: layouts/post.njk

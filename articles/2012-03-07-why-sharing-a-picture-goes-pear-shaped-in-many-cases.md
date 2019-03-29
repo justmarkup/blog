@@ -2,6 +2,7 @@
 title: Why sharing a picture goes pear-shaped in many cases
 description: 
 date: 2012-03-07T11:10:48+00:00
+oldUrl: https://justmarkup.com/log/2012/03/why-sharing-a-picture-goes-pear-shaped-in-many-cases/
 tags:
     - article
 layout: layouts/post.njk

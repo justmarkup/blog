@@ -2,6 +2,7 @@
 title: Defining browser support
 description: 
 date: 2015-07-09T17:03:14+00:00
+oldUrl: https://justmarkup.com/log/2015/07/browser-support/
 tags:
     - article
 layout: layouts/post.njk

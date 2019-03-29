@@ -2,6 +2,7 @@
 title: Collection of CSS snippets
 description:
 date: 2018-03-27T04:45:05+00:00
+oldUrl: https://justmarkup.com/log/2018/03/collection-of-css-snippets/
 tags:
     - article
 layout: layouts/post.njk

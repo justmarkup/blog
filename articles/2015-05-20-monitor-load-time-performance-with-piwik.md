@@ -2,6 +2,7 @@
 title: Monitor load time performance with Piwik
 description: 
 date: 2015-05-20T10:53:58+00:00
+oldUrl: https://justmarkup.com/log/2015/05/monitor-load-time-performance-with-piwik/
 tags:
     - article
 layout: layouts/post.njk
@@ -13,23 +14,24 @@ As I use [Piwik](http://piwik.org/) to analyze and monitor the traffic on my sit
 
 First of all we define a function to get the load time using the Navigation Timing API:
 
-    function getPerfTiming() {
-      if ( !('performance' in window) || !('timing' in window.performance) || !('navigation' in window.performance)) {
-          return false;
-      } else {
-          var timing = window.performance.timing,
-              now = new Date().getTime(),
-              start = timing.navigationStart,
-              loadTime;
-    
-          loadTime = (now - start) + "ms";
-    
-          return {
-              loadTime: loadTime
-          }
-      }
+``` js
+function getPerfTiming() {
+    if ( !('performance' in window) || !('timing' in window.performance) || !('navigation' in window.performance)) {
+        return false;
+    } else {
+        var timing = window.performance.timing,
+            now = new Date().getTime(),
+            start = timing.navigationStart,
+            loadTime;
+
+        loadTime = (now - start) + "ms";
+
+        return {
+            loadTime: loadTime
+        }
     }
-    
+}
+```
 
 ### Use Piwik to save results
 
@@ -37,16 +39,17 @@ Next we need to change the Piwik code used on the site. We need to define a [cus
 
 Using the function from above this looks like the following:
 
-    if (getPerfTiming()) {
-      piwikTracker.setCustomVariable(
-        1, // slot ID - up to 5 custom variables can be used
-        "loadTime", // name of the custom variable
-        getPerfTiming().loadTime, // value of the custom variable
-        "page" // scope - page means it gets send on every page load
-      );
-    }
-    piwikTracker.trackPageView();
-    
+``` js
+if (getPerfTiming()) {
+    piwikTracker.setCustomVariable(
+    1, // slot ID - up to 5 custom variables can be used
+    "loadTime", // name of the custom variable
+    getPerfTiming().loadTime, // value of the custom variable
+    "page" // scope - page means it gets send on every page load
+    );
+}
+piwikTracker.trackPageView();
+```
 
 ### Monitor results on your Piwik instance
 

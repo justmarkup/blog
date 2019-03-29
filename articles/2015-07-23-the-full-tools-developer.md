@@ -2,6 +2,7 @@
 title: The Full Tools Developer
 description: 
 date: 2015-07-23T09:35:40+00:00
+oldUrl: https://justmarkup.com/log/2015/07/the-full-tools-developer/
 tags:
     - article
 layout: layouts/post.njk

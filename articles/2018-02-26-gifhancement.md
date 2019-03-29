@@ -2,6 +2,7 @@
 title: Gifhancement – convert GIF to video and embed responsible
 description: 
 date: 2018-02-26T08:21:26+00:00
+oldUrl: https://justmarkup.com/log/2018/02/gifhancement/
 tags:
     - article
 layout: layouts/post.njk

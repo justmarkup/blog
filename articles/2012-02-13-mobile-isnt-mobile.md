@@ -2,6 +2,7 @@
 title: Mobile isn’t mobile
 description:
 date: 2012-02-13T22:38:40+00:00
+oldUrl: https://justmarkup.com/log/2012/02/mobile-isnt-mobile/
 tags:
     - article
 layout: layouts/post.njk

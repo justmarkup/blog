@@ -2,6 +2,7 @@
 title: Progressive enhancement all the things
 description: 
 date: 2016-08-23T15:49:13+00:00
+oldUrl: https://justmarkup.com/log/2016/08/progressive-enhancement-all-the-things/
 tags:
     - note
 layout: layouts/post.njk

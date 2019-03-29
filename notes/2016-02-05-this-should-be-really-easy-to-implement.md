@@ -2,6 +2,7 @@
 title: This should be really easy to implement
 description: 
 date: 2016-02-05T17:50:21+00:00
+oldUrl: https://justmarkup.com/log/2016/02/this-should-be-really-easy-to-implement/
 tags:
     - note
 layout: layouts/post.njk

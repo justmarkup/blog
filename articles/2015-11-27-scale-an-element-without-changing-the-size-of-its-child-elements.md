@@ -2,6 +2,7 @@
 title: Scale an element without changing the size of its child elements
 description: 
 date: 2015-11-27T11:55:43+00:00
+oldUrl: https://justmarkup.com/log/2015/11/scale-an-element-without-changing-the-size-of-its-child-elements/
 tags:
     - article
 layout: layouts/post.njk
@@ -15,29 +16,30 @@ The second problem was that I wanted to change the size of the element but not t
 
 After some different approaches I thought about using `::before` to achive the same effect. I first thought it doesn’t work (was confused regarding box model and layers – see below) but it turned out to achive exactly what I wanted; Scale an element without effecting the size of its child elements.
 
-    div {
-      width: 100px;
-      height: 100px;
-      margin: 100px;
-      position: relative;
-    }
-    div:before {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100px;
-      height: 100px;
-      background: red;
-      transform-origin: 0 0;
-      transition: all 8s;
-    }
-    
-    div:hover:before {
-      transform: scale(2);
-    }
-    
+``` css
+div {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  position: relative;
+}
+div:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transform-origin: 0 0;
+  transition: all 8s;
+}
+
+div:hover:before {
+  transform: scale(2);
+}
+```
 
 Here is an [example](http://jsbin.com/siwitix/edit?html,css,output) showing the animation using scale on the div itself (first box) and using scale on div:before (second box).
 

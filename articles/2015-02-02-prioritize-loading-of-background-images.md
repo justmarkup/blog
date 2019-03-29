@@ -2,6 +2,7 @@
 title: Prioritize loading of background images
 description: 
 date: 2015-02-02T17:37:47+00:00
+oldUrl: https://justmarkup.com/log/2015/02/prioritize-loading-of-background-images/
 tags:
     - article
 layout: layouts/post.njk
@@ -27,13 +28,14 @@ Here is the HTML for the header image:
 
 And here is the CSS:
 
-    .header-img {
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        background-image: url(images/header-img.jpg);
-    }
-    
+``` css
+.header-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-image: url(images/header-img.jpg);
+}
+```
 
 First of all we insert an image element and set the src attribute to the same image file as the background image we want to use. We also hide the image with display: none;. This avoids that the image gets shown visually while still ensuring that the image gets requested by the browser. This means that the image is already available before any other background image gets loaded. Thanks to the browser preloader!
 
@@ -59,15 +61,17 @@ Here is the HTML for the header image:
 
 And here is the CSS:
 
-    .header-img {
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        background-image: url(images/header-img_small.jpg);
-    }
-    @media all and (min-width: 600px) {
-      .header-img {background-image: url(images/header-img_medium.jpg);}
-    }
-    @media all and (min-width: 900px) {
-      .header-img {background-image: url(images/header-img_large.jpg);}
-    }
+``` css
+.header-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-image: url(images/header-img_small.jpg);
+}
+@media all and (min-width: 600px) {
+    .header-img {background-image: url(images/header-img_medium.jpg);}
+}
+@media all and (min-width: 900px) {
+    .header-img {background-image: url(images/header-img_large.jpg);}
+}
+```

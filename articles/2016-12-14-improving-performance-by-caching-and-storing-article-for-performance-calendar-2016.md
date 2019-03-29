@@ -2,6 +2,7 @@
 title: Improving performance by Caching and Storing – article for Performance Calendar 2016
 description: 
 date: 2016-12-14T07:30:11+00:00
+oldUrl: https://justmarkup.com/log/2016/12/improving-performance-by-caching-and-storing-article-for-performance-calendar-2016/
 tags:
     - article
 layout: layouts/post.njk

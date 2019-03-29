@@ -2,6 +2,7 @@
 title: Audio - The preload attribute
 description: 
 date: 2015-08-11T12:18:46+00:00
+oldUrl: https://justmarkup.com/log/2015/08/audio-the-preload-attribute/
 tags:
     - article
 layout: layouts/post.njk
@@ -22,11 +23,12 @@ Note: I [tested](https://justmarkup.com/lab/audio/preload/) in IE9, IE10, IE11, 
 
 ### preload=”none”
 
-    <audio controls preload="none">
-      <source src="mp3.mp3" type="audio/mpeg">
-      <source src="ogg.ogg" type="audio/ogg">
-    </audio>
-    
+``` html
+<audio controls preload="none">
+    <source src="mp3.mp3" type="audio/mpeg">
+    <source src="ogg.ogg" type="audio/ogg">
+</audio>
+```
 
 I tested with various browsers and combination of source order (ogg first, mp3 first) and no browser downloaded a file. There is however one major issue: **IE9 doesn’t show the audio player at all when using preload=”none”**. It will only show the player after a right click on the invisible audio player and a click on play.
 
@@ -34,31 +36,34 @@ I tested with various browsers and combination of source order (ogg first, mp3 f
 
 ### preload=”metadata”
 
-    <audio controls preload="metadata">
-      <source src="mp3.mp3" type="audio/mpeg">
-      <source src="ogg.ogg" type="audio/ogg">
-    </audio>
-    
+``` html
+<audio controls preload="metadata">
+    <source src="mp3.mp3" type="audio/mpeg">
+    <source src="ogg.ogg" type="audio/ogg">
+</audio>
+```
 
 Here it gets more interesting. On desktop browsers between 50kb and ~800kb of data gets downloaded from a 40MB file. Mobile browsers only download some kilobytes, only the metadata gets downloaded.
 
 ### preload=”auto”
 
-    <audio controls preload="auto">
-      <source src="mp3.mp3" type="audio/mpeg">
-      <source src="ogg.ogg" type="audio/ogg">
-    </audio>
-    
+``` html
+<audio controls preload="auto">
+    <source src="mp3.mp3" type="audio/mpeg">
+    <source src="ogg.ogg" type="audio/ogg">
+</audio>
+```
 
 On desktop browsers 2MB up to 40MB gets downloaded from a 40MB file. For mobile browsers it’s the same as for preload=”metadata” – only some kilobytes gets downloaded.
 
 ### No preload attribute or preload=”foo”
 
-    <audio controls>
-      <source src="mp3.mp3" type="audio/mpeg"> 
-      <source src="ogg.ogg" type="audio/ogg">
-    </audio>
-    
+``` html
+<audio controls>
+    <source src="mp3.mp3" type="audio/mpeg"> 
+    <source src="ogg.ogg" type="audio/ogg">
+</audio>
+```
 
 According to the specification no preload attribute is a synonym for preload=”auto”. The same goes for invalid keywords like preload=”foo”. My tests shows that all browsers requests the same amount of data for preload=”foo”, no preload attribute or preload=”auto”.
 

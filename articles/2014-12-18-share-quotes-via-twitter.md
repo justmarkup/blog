@@ -2,6 +2,7 @@
 title: Share quotes via twitter
 description: 
 date: 2014-12-18T13:08:19+00:00
+oldUrl: https://justmarkup.com/log/2014/12/share-quotes-via-twitter/
 tags:
     - article
 layout: layouts/post.njk

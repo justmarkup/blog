@@ -2,6 +2,7 @@
 title: Network based image loading using the Network Information API in Service Worker
 description: 
 date: 2017-11-02T11:15:30+00:00
+oldUrl: https://justmarkup.com/log/2017/11/network-based-image-loading/
 tags:
     - article
 layout: layouts/post.njk

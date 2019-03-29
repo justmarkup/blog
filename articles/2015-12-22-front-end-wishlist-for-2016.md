@@ -2,6 +2,7 @@
 title: Front-end wishlist for 2016
 description: 
 date: 2015-12-22T07:59:18+00:00
+oldUrl: https://justmarkup.com/log/2015/12/front-end-wishlist-for-2016/
 tags:
     - article
 layout: layouts/post.njk

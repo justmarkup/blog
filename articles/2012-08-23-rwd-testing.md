@@ -2,6 +2,7 @@
 title: Testing your responsive site – using Ubuntu
 description: 
 date: 2012-08-23T12:12:35+00:00
+oldUrl: https://justmarkup.com/log/2012/08/rwd-testing/
 tags:
     - article
 layout: layouts/post.njk

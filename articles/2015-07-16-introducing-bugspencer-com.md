@@ -2,6 +2,7 @@
 title: Introducing bugspencer.com
 description: 
 date: 2015-07-16T13:50:54+00:00
+oldUrl: https://justmarkup.com/log/2015/07/introducing-bugspencer-com/
 tags:
     - article
 layout: layouts/post.njk

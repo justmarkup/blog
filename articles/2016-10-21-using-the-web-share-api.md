@@ -2,6 +2,7 @@
 title: Using the Web Share API to enhance a static share link
 description: 
 date: 2016-10-21T07:56:26+00:00
+oldUrl: https://justmarkup.com/log/2016/10/using-the-web-share-api/
 tags:
     - article
 layout: layouts/post.njk
@@ -18,8 +19,9 @@ As I said, the Web Share API is an origin trail until April 2017. So, you first 
 
 Next you have to include the token on your site:
 
-    <meta http-equiv="origin-trial" data-feature="Web Share" data-expires="2016-12-01" content="TOKEN">
-    
+``` html
+<meta http-equiv="origin-trial" data-feature="Web Share" data-expires="2016-12-01" content="TOKEN">
+``` 
 
 Further requirements are:
 
@@ -36,29 +38,32 @@ Demo time
 
 First, we will include a static share link for twitter:
 
-    <a class="share" href="https://twitter.com/intent/tweet?text=Using%20the%20Web%20Share%20API%20https%3A//justmarkup.com/log/2016/10/using-the-web-share-api/">Share via Twitter</a>
+``` html
+<a class="share" href="https://twitter.com/intent/tweet?text=Using%20the%20Web%20Share%20API%20https%3A//justmarkup.com/log/2016/10/using-the-web-share-api/">Share via Twitter</a>
+```
 
 This way everybody using a browser not supporting the API will get a link (which may or may not look like a button) to share the site on twitter.
 
 Next, we add a script at the bottom of our site to enhance the link using the Share API:
 
-    if (navigator.share !== undefined) {
-    	const SHARE_BTN = document.querySelector('.share');
-    
-    	SHARE_BTN.textContent = 'Share';
-    
-    	SHARE_BTN.addEventListener('click', function (ev) {
-    
-    		navigator.share({
-    			title: document.title,
-    			url: document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : window.location.href
-    		}).then(() => console.log('Successful share'))
-    		.catch((error) => console.log('Error sharing:', error));
-    
-    		ev.preventDefault();
-    	});
-    }
-    
+``` js
+if (navigator.share !== undefined) {
+	const SHARE_BTN = document.querySelector('.share');
+
+	SHARE_BTN.textContent = 'Share';
+
+	SHARE_BTN.addEventListener('click', function (ev) {
+
+		navigator.share({
+			title: document.title,
+			url: document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : window.location.href
+		}).then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing:', error));
+
+		ev.preventDefault();
+	});
+}
+```
 
 Let’s go through the code one by one. First, we add a feature test to check if `navigator.share` is supported. If this is the case, we change the text of our share link from “Share via Twitter” to “Share” to show that you can share with various services.
 

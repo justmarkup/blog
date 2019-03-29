@@ -2,6 +2,7 @@
 title: CSS containment
 description: 
 date: 2016-04-05T10:04:11+00:00
+oldUrl: https://justmarkup.com/log/2016/04/css-containment/
 tags:
     - article
 layout: layouts/post.njk

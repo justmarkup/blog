@@ -2,6 +2,7 @@
 title: On the Safari 9.1 release
 description: 
 date: 2016-01-14T08:12:52+00:00
+oldUrl: https://justmarkup.com/log/2016/01/on-the-safari-9-1-release/
 tags:
     - note
 layout: layouts/post.njk

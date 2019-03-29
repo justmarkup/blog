@@ -2,6 +2,7 @@
 title: Progressive web apps – let’s not repeat the errors from the beginning of responsive web design
 description: 
 date: 2016-06-07T05:51:41+00:00
+oldUrl: https://justmarkup.com/log/2016/06/progressive-web-apps-lets-not-repeat-the-errors-from-the-beginning-of-responsive-web-design/
 tags:
     - note
 layout: layouts/post.njk
@@ -15,11 +16,12 @@ Now, in 2016, there is a new term – [Progressive Web Apps (PWA)](https://infre
 
 When people learned about responsive design, there were many wrong assumptions. The iPhone and early Android phones \*all\* had the same screen size (320x480px) and people thought it is a good idea to change the design based on these device-specific sizes. Some even named the css iphone.css :-(.
 
-    @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 480px) 
-    and (orientation : portrait) { /* Styles for iPhone in portrait mode */ }
-    
+``` css
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { /* Styles for iPhone in portrait mode */ }
+```
 
 I never want to see that again. Device specific CSS, for i\*-only. A nightmare nobody should wake up to anymore.
 

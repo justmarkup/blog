@@ -2,6 +2,7 @@
 title: Give forms some extra attention
 description: 
 date: 2015-01-06T10:24:20+00:00
+oldUrl: https://justmarkup.com/log/2015/01/give-forms-some-extra-attention/
 tags:
     - article
 layout: layouts/post.njk
@@ -17,9 +18,11 @@ Thinking about other ways to enhance an input experience I came up with some ide
 
 We can use the cursor property to show a “closed” eye once you hover over the password field. This can be done with the following CSS:
 
-    .field-password {
-      cursor: url(https://justmarkup.com/images/journal/eye-blocked.png), auto;
-    }
+``` css
+.field-password {
+    cursor: url(https://justmarkup.com/images/journal/eye-blocked.png), auto;
+}
+```
 
 Here is the example on [jsbin](http://jsbin.com/julutemoke/1/edit?html,css,output).
 
