@@ -1,6 +1,6 @@
 ---
 title: Adapting to user preferences
-description: 
+description: Over the last years, browsers implemented various features to react to user preferences on the web using CSS, JavaScript or by checking for preferences on the server-side. In this article, I would like to show which user preferences are currently exposed by browsers, the best way to handle them and a look in to the future to see what might be available soon.
 date: 2019-02-19T16:48:43+00:00
 oldUrl: https://justmarkup.com/log/2019/02/adapting-to-user-preferences/
 tags:

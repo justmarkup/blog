@@ -1,9 +1,9 @@
 {
     "title": "justmarkup",
     "url": "https://justmarkup.com/",
-    "description": "The blog from justmarkup",
+    "description": "justmarkup is the site of Michael Scharnagl, a front-end developer living in Berlin.",
     "feed": {
-        "subtitle": "The blog from justmarkup",
+        "subtitle": "justmarkup is the site of Michael Scharnagl",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
         "url": "https://justmarkup.com/log/feed",
