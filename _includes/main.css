@@ -274,7 +274,7 @@ footer:before {
     line-height: 1.4;
 }
 
-.page--article main img {
+.page--article .article__content img {
     padding: 0 20px;
     width: 1000px;
     max-width: 100%;
@@ -283,7 +283,7 @@ footer:before {
 }
 
 @media all and (max-width: 900px) {
-    .page--article main img {
+    .page--article .article__content img {
         padding: 14px;
         width: 100vw;
         max-width: 100%;
@@ -295,8 +295,8 @@ footer:before {
     }
 }
 
-.page--article main a:focus,
-.page--article main a:hover {
+.page--article .article__content a:focus,
+.page--article .article__content a:hover {
     outline: none;
     background: #089b52;
 }
@@ -365,6 +365,12 @@ footer:before {
 .archivetext {
     text-align: center;
     font-size: 1.4em;
+}
+
+.archivetext a:hover,
+.archivetext a:focus {
+    outline: none;
+    background-color: #089b52;
 }
 
 
@@ -496,4 +502,100 @@ pre[class*="language-"] {
 
 .token.entity {
     cursor: help;
+}
+
+
+/* carbon ads */
+
+#carbonads {
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    width: 130px;
+    width: calc(130px + 2em);
+    float: right;
+    background: #eee;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+#carbonads span {
+    display: block;
+    overflow: hidden
+}
+
+.carbon-img {
+    display: block;
+    margin: 0 auto 5px;
+    text-align: center
+}
+
+.carbon-text {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #222;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif;
+    transition: all 300ms
+}
+
+.carbon-text:hover {
+    color: #000
+}
+
+.carbon-poweredby {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #444;
+    text-decoration: none;
+    font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif
+}
+
+.carbon-poweredby:hover {
+    color: #222
+}
+
+@media all and (max-width: 500px) {
+    #carbonads {
+        width: auto;
+        margin-left: 0;
+        margin-top: 20px
+    }
+    .carbon-img {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 0
+    }
+    .carbon-text {
+        font-size: 14px
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #carbonads {
+        margin-right: -200px;
+    }
+}
+
+.carbon-text {
+    font-size: 12px;
+}
+
+a.carbon-poweredby {
+    font-size: 10px;
+}
+
+#carbonads a {
+    padding: 0.2em;
+}
+
+#carbonads a:focus,
+#carbonads a:hover {
+    outline: none;
+    background: #fff;
 }

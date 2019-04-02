@@ -5,6 +5,19 @@ templateClass: page--article
 <h1>{{ title }}</h1>
 <time class="article__date" datetime="{{ date }}">{{ date | readableDate }}</time>
 
+<div id="carbon_wrapper"></div>
+
+<script>
+var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
+if (!doNotTrack) {
+    var adScript = document.createElement('script');
+    adScript.async = true;
+    adScript.src = 'https://cdn.carbonads.com/carbon.js?serve=CKYILK7M&placement=justmarkupcom';
+    adScript.id = '_carbonads_js';
+    document.getElementById('carbon_wrapper').appendChild(adScript);
+}
+</script>
+
 <div class="article__content">
     {{ content | safe }}
 </div>

@@ -4,6 +4,7 @@ title: Servus, Hello and Welcome
 tags:
   - nav
 navtitle: About
+navOrder: 3
 templateClass: tmpl-post
 ---
 
