@@ -601,9 +601,9 @@ a.carbon-poweredby {
 }
 
 
-/* rss icon */
+/* svg icons */
 
-.rss-icon {
+.icon {
     stroke: currentColor;
     width: 1rem;
     height: 1rem;
@@ -623,4 +623,62 @@ a.carbon-poweredby {
     border: 8px solid #089b52;
     padding: 0 20px 20px 20px;
     margin: 40px auto;
+}
+
+
+/* skip link */
+
+.skiplink {
+    background: #089b52;
+    padding: 1em;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    outline: none;
+}
+
+.skiplink:not(:focus):not(:active) {
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(100%) !important;
+    height: 1px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px !important;
+}
+
+[tabindex="-1"]:focus {
+    outline: 2px solid #089b52;
+}
+
+
+/* back to top link */
+
+.backtotop {
+    float: right;
+    padding: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+}
+
+.backtotop:hover,
+.backtotop:focus {
+    outline: none;
+    background: #089B55;
+    color: #fff;
+    text-decoration: none;
+}
+
+.backtotop .icon {
+    fill: #111;
+    stroke: #111;
+}
+
+.backtotop:hover .icon,
+.backtotop:focus .icon {
+    fill: #fff;
+    stroke: #fff;
 }

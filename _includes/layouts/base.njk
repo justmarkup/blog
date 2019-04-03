@@ -31,9 +31,11 @@
     {% set css %}{% include "main.css" %}{% endset %}
     <style>{{ css | cssmin | safe }}</style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/rss+xml" title="{{ metadata.title }}">
+    <script defer src="/js/main.js"></script>
   </head>
   <body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
-    <header>
+    <a href="#main" id="skiplink" class="skiplink">Skip to main content</a>
+    <header id="header">
       <a class="logo" href="{{ '/' | url }}">
         <svg width="120" height="90" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
         <title id="title">justmarkup</title>
@@ -69,7 +71,7 @@
           <li class="nav__item">
             <a class="nav__link" href="/feed/feed.xml" target="_blank">
               RSS feed 
-              <svg aria-hidden="true" class="rss-icon" viewBox="0 0 32 32">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 32 32">
                 <circle cx="5" cy="27" r="5" fill="currentColor" stroke="none" />
                 <circle cx="0" cy="32" r="18" stroke-width="7" />
                 <circle cx="0" cy="32" r="28" stroke-width="7" />
@@ -84,11 +86,19 @@
       {{ content | safe }}
     </main>
 
+    <a href="#header" class="backtotop">
+      Back to top
+      <svg aria-hidden="true" class="icon" viewBox="0 0 16 16" >
+        <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
+      </svg>
+    </a>
+
     <footer>
       <small>
         Copyright © Michael Scharnagl <time datetime="{{ 'date' | currentYear }}">{{ 'date' | currentYear }}</time>. All rights reserved. <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/legal/">Legal</a> | <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/privacy/">Privacy Policy</a>
       </small>
     </footer>
 
+    
   </body>
 </html>
