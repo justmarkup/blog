@@ -21,3 +21,9 @@ if (!doNotTrack) {
 <div class="article__content">
     {{ content | safe }}
 </div>
+
+<web-share-wrapper>
+  <a href="https://twitter.com/intent/tweet?text={{ title }}&amp;url=https://justmarkup.com/{{ page.url }}" class="shareit">Share on Twitter</a>
+</web-share-wrapper>
+
+<script type="module" defer src="/js/webshare.js"></script>

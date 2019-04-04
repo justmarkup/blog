@@ -207,7 +207,7 @@ footer {
     color: #fff;
     padding: 40px 20px;
     text-align: center;
-    margin: 120px 0 0 0;
+    margin: 140px 0 0 0;
     font-size: 1.2em;
     position: relative;
 }
@@ -681,4 +681,26 @@ a.carbon-poweredby {
 .backtotop:focus .icon {
     fill: #fff;
     stroke: #fff;
+}
+
+
+/* share link/button */
+
+.shareit {
+    background: #089B55;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #089B55;
+    transition: all 240ms ease-out;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.shareit:hover,
+.shareit:focus {
+    outline: none;
+    background: none;
+    color: #111;
 }
