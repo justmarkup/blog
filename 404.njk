@@ -1,0 +1,21 @@
+---
+layout: layouts/home.njk
+permalink: 404.html
+excludeFromSitemap: true
+---
+
+<h1>404 - not found!</h1>
+
+<h2>Latest articles</h2>
+
+{% set postslist = collections.articles | head(-5) %}
+{% include "postslist.njk" %}
+
+<h2>Latest notes</h2>
+
+{% set postslist = collections[ "note" ] | head(-5) %}
+{% include "postslist.njk" %}
+
+<p>Go to the <a href="{{ '/' | url }}">frontpage</a> or have a look at the <a href="{{ '/archive' | url }}">archive</a> and <a href="{{ '/notes' | url }}">notes</a>.</p>
+
+<p>Still not found what you are looking for? Get in <a href="mailto:hallo@justmarkup.com>"touch</a> and we will try to find it for you.</p>

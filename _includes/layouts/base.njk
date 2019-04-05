@@ -99,6 +99,13 @@
       </small>
     </footer>
 
-    
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(function() {
+      }, function(error) {
+        console.log('service worker error: ', error);
+      });
+    }
+    </script>
   </body>
 </html>
