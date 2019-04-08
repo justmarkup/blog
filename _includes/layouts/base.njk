@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>{{ renderData.title or title or metadata.title }}</title>
     
     <meta name="theme-color" content="#089b52">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" type="image/png" href="/img/icons/icon-128x128.png" sizes="128x128" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/icon-152x152.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="justmarkup">
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     {% if date %}
       <meta name="author" content="Michael Scharnagl" />
