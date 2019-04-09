@@ -6,17 +6,18 @@ templateClass: page--article
 <time class="article__date" datetime="{{ date }}">{{ date | readableDate }}</time>
 
 <div id="carbon_wrapper"></div>
+<div id="feediary" class="feediary" hidden>
+    <a href="https://www.feediary.com/registration/">
+        <img src="https://www.feediary.com/images/logo3.svg" alt="feediary">
+    </a>
+    <a href="https://www.feediary.com/registration/">
+        <h2>Your unique RSS reader.</h2>
+        <p>Browse your favourite content, with zero tracking & zero ads.</p>
+    </a>
+    <a class="trynow" href="https://www.feediary.com/registration/">Try it out</a>
+</div>
 
-<script>
-var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
-if (!doNotTrack) {
-    var adScript = document.createElement('script');
-    adScript.async = true;
-    adScript.src = 'https://cdn.carbonads.com/carbon.js?serve=CKYILK7M&placement=justmarkupcom';
-    adScript.id = '_carbonads_js';
-    document.getElementById('carbon_wrapper').appendChild(adScript);
-}
-</script>
+
 
 <div class="article__content">
     {{ content | safe }}
@@ -27,3 +28,17 @@ if (!doNotTrack) {
 </web-share-wrapper>
 
 <script type="module" defer src="/js/webshare.js"></script>
+
+<script>
+var doNotTrack = (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || window.doNotTrack === "1");
+if (!doNotTrack) {
+    var adScript = document.createElement('script');
+    adScript.async = true;
+    adScript.src = 'https://cdn.carbonads.com/carbon.js?serve=CKYILK7M&placement=justmarkupcom';
+    adScript.id = '_carbonads_js';
+    document.getElementById('carbon_wrapper').appendChild(adScript);
+    document.getElementById('feediary').hidden = true;
+} else {
+    document.getElementById('feediary').hidden = false;
+}
+</script>
