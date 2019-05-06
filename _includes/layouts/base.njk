@@ -69,7 +69,7 @@
         <ul class="nav">
           {%- for nav in collections.nav|sort(attribute="navOrder")   -%}
           <li class="nav__item{% if nav.url == page.url %} nav__item--active{% endif %}">
-            <a class="nav__link" href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+            <a class="nav__link" href="{{ nav.url | url }}" {% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a>
           </li>
           {%- endfor -%}
           <li class="nav__item">
