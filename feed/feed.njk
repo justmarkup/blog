@@ -16,25 +16,33 @@ excludeFromSitemap: true
 	<atom:link href="https://justmarkup.com/log/feed/" rel="self" type="application/rss+xml" />
 	<link>https://justmarkup.com/log</link>
 	<description></description>
-	<lastBuildDate>Sat, 23 Feb 2019 22:24:30 +0000</lastBuildDate>
+	<lastBuildDate>{{ collections.all | rssLastUpdatedDate }}</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
-		{%- for post in collections.articles | reverse %}
-			{% if post.data.oldUrl %}
-			{% set absolutePostUrl %}{{ post.data.oldUrl}}{% endset %}
-			{% else %}
-			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+		{% set posts = collections.all %}
+		{%- for post in posts | reverse %}
+			{% if post.data.title %}
+				{% for tag in post.data.tags %}
+					{%- if tag == "article" or tag == "note" -%}
+						{% if post.data.oldUrl %}
+							{% set absolutePostUrl %}{{ post.data.oldUrl}}{% endset %}
+						{% else %}
+							{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+						{% endif %}
+						
+						<item>
+							<title>{{ posta.data.tags}} {{ post.data.title }}</title>
+							<link>{{ absolutePostUrl }}</link>
+							<pubDate>{{ post.date | rssDate }}</pubDate>
+							<guid isPermaLink="false">{{ absolutePostUrl }}</guid>
+							<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+						</item>
+					{%- endif -%}
+				{% endfor %}
+				
 			{% endif %}
-			
-			<item>
-				<title>{{ post.data.title }}</title>
-				<link>{{ absolutePostUrl }}</link>
-				<pubDate>{{ post.date | rssDate }}</pubDate>
-				<guid isPermaLink="false">{{ absolutePostUrl }}</guid>
-				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-			</item>
 		{%- endfor %}
 	</channel>
 </rss>
