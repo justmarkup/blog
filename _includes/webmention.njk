@@ -5,13 +5,13 @@
         {% if webmention.author.photo %}
           <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
         {% else %}
-          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
+          <img class="webmention__author__photo" src="{{ '/img/avatar-default.png' | url }}" alt="">
         {% endif %}
         <strong class="p-name">{{ webmention.author.name }}</strong>
       </a>
     {% else %}
       <span class="webmention__author">
-        <img class="webmention__author__photo" src="{{ '/assets/images/avatar-default.svg' | url }}" alt="">
+        <img class="webmention__author__photo" src="{{ '/img/avatar-default.png' | url }}" alt="">
         <strong>Anonymous</strong>
       </span>
     {% endif %}
@@ -20,7 +20,13 @@
       <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate }}</time>
     {% endif %}
   </div>
+  {% if webmention.content %}
   <div class="webmention__content p-content">
-    {{ webmention.content.value | safe }}
+    {% if webmention.content.value %}
+      {{ webmention.content.value | safe }}
+    {% else %}
+      {{ webmention.content.text | safe }}
+    {% endif %}
+  {% endif %} 
   </div>
 </article>

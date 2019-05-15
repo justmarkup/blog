@@ -749,3 +749,40 @@ a.carbon-poweredby {
     background: none;
     color: #111;
 }
+
+
+/* webmentions */
+
+.webmentions {
+    padding-top: 20px;
+}
+
+.webmentions__list {
+    margin: 0;
+    padding: 0;
+}
+
+.webmentions__item {
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #999;
+}
+
+.webmention__author {
+    display: flex;
+    align-items: center;
+}
+
+.webmention__author__photo {
+    width: 60px;
+    border-radius: 10px;
+    border-radius: 10px 60px 10px / 20px 10px 30px;
+    margin-right: 10px;
+}
+
+.webmention__pubdate {
+    display: block;
+    padding: 6px 0;
+    font-size: 0.9em;
+}

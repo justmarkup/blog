@@ -21,6 +21,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("LLLL dd, yyyy");
     });
 
+    eleventyConfig.addFilter('dateFromTimestamp', timestamp => {
+        return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
+    })
+
     eleventyConfig.addNunjucksFilter('currentYear', function(value) {
         return new Date().getFullYear();
     });
@@ -41,7 +45,7 @@ module.exports = function(eleventyConfig) {
 
     // Webmentions Filter
     eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
-        const allowedTypes = ['mention-of', 'in-reply-to']
+        const allowedTypes = ['mention-of', 'in-reply-to', 'like-of']
         const allowedHTML = {
             allowedTags: ['b', 'i', 'em', 'strong', 'a'],
             allowedAttributes: {
