@@ -37,7 +37,7 @@ excludeFromSitemap: true
 							<link>{{ absolutePostUrl }}</link>
 							<pubDate>{{ post.date | rssDate }}</pubDate>
 							<guid isPermaLink="false">{{ absolutePostUrl }}</guid>
-							<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+							<description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
 						</item>
 					{%- endif -%}
 				{% endfor %}
