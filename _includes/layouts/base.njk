@@ -9,6 +9,8 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="icon" type="image/png" href="/img/icons/icon-128x128.png" sizes="128x128" />
     <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/icon-152x152.png" />
+    <link rel="webmention" href="https://webmention.io/justmarkup.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/justmarkup.com/xmlrpc" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="justmarkup">
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
@@ -99,7 +101,7 @@
 
     <footer>
       <small>
-        Copyright © Michael Scharnagl <time datetime="{{ 'date' | currentYear }}">{{ 'date' | currentYear }}</time>. All rights reserved. <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/legal/">Legal</a> | <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/privacy/">Privacy Policy</a>
+        Copyright © Michael Scharnagl <time datetime="{{ 'date' | currentYear }}">{{ 'date' | currentYear }}</time>. All rights reserved. <a href="https://twitter.com/justmarkup" rel="me">twitter.com/justmarkup</a> | <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/legal/">Legal</a> | <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/privacy/">Privacy Policy</a>
       </small>
     </footer>
 
