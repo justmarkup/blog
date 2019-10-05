@@ -7,18 +7,6 @@ templateClass: page--article
     <time itemprop="dateCreated pubdate datePublished" class="article__date dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
 
     <div id="carbon_wrapper"></div>
-    <div id="feediary" class="feediary" hidden>
-        <a href="https://www.feediary.com/registration/">
-            <img src="https://www.feediary.com/images/logo3.svg" alt="feediary">
-        </a>
-        <a href="https://www.feediary.com/registration/">
-            <h2>Your unique RSS reader.</h2>
-            <p>Browse your favourite content, with zero tracking & zero ads.</p>
-        </a>
-        <a class="trynow" href="https://www.feediary.com/registration/">Try it out</a>
-    </div>
-
-
 
     <div class="article__content e-content">
         {{ content | safe }}
@@ -42,7 +30,5 @@ if (!doNotTrack) {
     adScript.id = '_carbonads_js';
     document.getElementById('carbon_wrapper').appendChild(adScript);
     document.getElementById('feediary').hidden = true;
-} else {
-    document.getElementById('feediary').hidden = false;
 }
 </script>
