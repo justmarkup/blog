@@ -1,5 +1,5 @@
 ---
-title: Closing feediary.
+title: Closing feediary
 description: Last month I announced that I have to close down my RSS reader feediary soon. Here is my personal view about the reasons behind it.
 ogImage: https://justmarkup.com/log/wp-content/uploads/2018/07/screenshot_reader.png
 ogImageAlt: The reader view of feediary
