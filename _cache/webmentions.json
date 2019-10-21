@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2019-10-05T12:04:05.774Z",
+  "lastFetched": "2019-10-21T08:09:31.933Z",
   "children": [
     {
       "type": "entry",
@@ -349,6 +349,139 @@
       "wm-target": "https://justmarkup.com/notes/2019-05-06-version-eight/",
       "like-of": "https://justmarkup.com/notes/2019-05-06-version-eight/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manuel Matuzović",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg",
+        "url": "https://twitter.com/mmatuzo"
+      },
+      "url": "https://twitter.com/justmarkup/status/1180455549017739265#favorited-by-22161724",
+      "published": null,
+      "wm-received": "2019-10-05T12:16:10Z",
+      "wm-id": 705176,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1180455549017739265/22161724",
+      "wm-target": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "like-of": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gabor Lenard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/536d80760bd8ac34226eaefd3a7a998ae866eda3234238995fb55cca436f0bfc.png",
+        "url": "https://twitter.com/zengabor"
+      },
+      "url": "https://twitter.com/justmarkup/status/1180455549017739265#favorited-by-803501",
+      "published": null,
+      "wm-received": "2019-10-14T15:28:04Z",
+      "wm-id": 711434,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1180455549017739265/803501",
+      "wm-target": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "like-of": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feediary",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/629f45071ab73d4ba5d20c9e718010f98148159c636fc3b9fe79990a8e34ea1e.jpg",
+        "url": "https://twitter.com/feediary"
+      },
+      "url": "https://twitter.com/feediary/status/1180503648385880065",
+      "published": "2019-10-05T15:22:57+00:00",
+      "wm-received": "2019-10-09T14:26:22Z",
+      "wm-id": 707655,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1180455549017739265/1180503648385880065",
+      "wm-target": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "content": {
+        "text": "✏️ Why I shut down the RSS reader feediary.\n\njustmarkup.com/notes/2019-10-…"
+      },
+      "repost-of": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Giulia Chiola",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7f4518cf683e7daf48f776a3783276df1754332ac0ac4a0fbcef42db60b1f71d.jpg",
+        "url": "https://twitter.com/giulia_chiola"
+      },
+      "url": "https://twitter.com/giulia_chiola/status/1181587649070616576",
+      "published": "2019-10-08T15:10:23+00:00",
+      "wm-received": "2019-10-08T15:31:25Z",
+      "wm-id": 706908,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1181587649070616576",
+      "wm-target": "https://justmarkup.com//articles/2019-01-28-a-look-at-css-hyphenation-in-2019/",
+      "content": {
+        "html": "A look at CSS hyphenation in 2019 <a href=\"https://justmarkup.com//articles/2019-01-28-a-look-at-css-hyphenation-in-2019/\">justmarkup.com//articles/2019…</a>",
+        "text": "A look at CSS hyphenation in 2019 justmarkup.com//articles/2019…"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-01-28-a-look-at-css-hyphenation-in-2019/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Holger Bartel",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/592535dc857345dd207fd60638dac39139891257ffe2400f476a70ca705647be.jpg",
+        "url": "https://twitter.com/foobartel"
+      },
+      "url": "https://twitter.com/justmarkup/status/1180455549017739265#favorited-by-205651658",
+      "published": null,
+      "wm-received": "2019-10-05T18:29:33Z",
+      "wm-id": 705341,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1180455549017739265/205651658",
+      "wm-target": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "like-of": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feediary",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/629f45071ab73d4ba5d20c9e718010f98148159c636fc3b9fe79990a8e34ea1e.jpg",
+        "url": "https://twitter.com/feediary"
+      },
+      "url": "https://twitter.com/justmarkup/status/1180455549017739265#favorited-by-974306004140744705",
+      "published": null,
+      "wm-received": "2019-10-05T15:46:46Z",
+      "wm-id": 705266,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1180455549017739265/974306004140744705",
+      "wm-target": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "like-of": "https://justmarkup.com/notes/2019-10-05-behind-closing-feediary/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://www.nakama.theck.es/profile/humberto47",
+      "published": null,
+      "wm-received": "2019-10-20T16:24:35Z",
+      "wm-id": 715296,
+      "wm-source": "http://www.nakama.theck.es/profile/humberto47",
+      "wm-target": "http://justmarkup.com/log/2018/03/collection-of-css-snippets/?utm_source=responsive+design+weekly&utm_campaign=32889969fb-rwd_newsletter_304&utm_medium=email&utm_term=0_df65b6d7c8-32889969fb-59139925&mc_cid=32889969fb&mc_eid=2bc83bf0a1",
+      "mention-of": "http://justmarkup.com/log/2018/03/collection-of-css-snippets/?utm_source=responsive+design+weekly&utm_campaign=32889969fb-rwd_newsletter_304&utm_medium=email&utm_term=0_df65b6d7c8-32889969fb-59139925&mc_cid=32889969fb&mc_eid=2bc83bf0a1",
+      "wm-property": "mention-of",
       "wm-private": false
     }
   ]
