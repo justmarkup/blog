@@ -3,7 +3,7 @@ title: Do's and Don'ts of implementing a hamburger menu
 description: The infamous hamburger menu is one of the examples were I see bad practise very often. A look at good and bad examples of the hamburger menu.
 ogImage: https://justmarkup.com/img/hamburger-menu.png
 ogImageAlt: Button with the hamburger icon on the left and the word Menu on the right.
-date: 2019-12-05T14:10:43+00:00
+date: 2019-12-04T09:20:43+00:00
 tags:
     - article
 layout: layouts/post.njk
@@ -78,7 +78,7 @@ First let's start with the fallback version which works completely without JavaS
 
 See the div there, didn't I just say that we should never use a ```div``` for a button? Yes, this is still right, but this is only a placeholder that we will later replace with a real ```<button>```. We also use the hidden attribute here to hide it, so it won't be visible and also will not be announced by screen readers.
 
-Another alternative is to use a ```<a>``` with an anchor link to the navigation in the footer. In both ways the navigation is still accessible if JavaScript fails and now useless buttons are shown.
+Another alternative is to use a ```<a>``` with an anchor link to the navigation in the footer. In both ways the navigation is still accessible if JavaScript fails and no useless buttons are shown.
 
 Now, let's enhance that when JavaScript is available and ready.
 
@@ -105,7 +105,7 @@ Now, let's enhance that when JavaScript is available and ready.
 })()
 ```
 
-Here we replace the fake button with a real ```<button>```, add ```aria-expanded``` and ```aria-controls``` attributes and add an EventListener which toggles the visibility of our menu and also updated the ARIA attributes accordingly. You can find an unstyled example of this on [JS Bin](https://output.jsbin.com/jagupinila).
+Here we replace the fake button with a real ```<button>```, add ```aria-expanded``` and ```aria-controls``` attributes and add an EventListener which toggles the visibility of our menu and also updates the ARIA attributes accordingly. You can find an unstyled example of this on [JS Bin](https://output.jsbin.com/jagupinila).
 
 We now have all the functionality we want and still make the navigation available if JavaScript fails. 
 
