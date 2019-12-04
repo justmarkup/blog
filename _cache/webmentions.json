@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2019-12-04T08:11:32.716Z",
+  "lastFetched": "2019-12-04T13:55:27.036Z",
   "children": [
     {
       "type": "entry",
@@ -1409,6 +1409,575 @@
       "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1186194605584375808/4407749115",
       "wm-target": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
       "like-of": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Smashing Magazine",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d904c81471b5cf36a625ce3b213b286caad7183ae5ab60ca11bd4422cbf41d15.jpg",
+        "url": "https://twitter.com/smashingmag"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-15736190",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:22Z",
+      "wm-id": 730502,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/15736190",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Natasha Rooney",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/312d0a4774b287cf64b1e7295ec0a754b3daae4156dadfbc2a270db4d0e666c8.jpg",
+        "url": "https://twitter.com/thisNatasha"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-28321091",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:22Z",
+      "wm-id": 730503,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/28321091",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "गोडघास्या",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1948954863afec0b747c94d0d2d15069210e9dfcd6f6766b78995fb62f0a668b.jpg",
+        "url": "https://twitter.com/SatyajitSDT"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-16449728",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:19Z",
+      "wm-id": 730500,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/16449728",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kathleen McMahon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/17efd969828de1c2a7a88c92ee820ba2867711a45d729f729bc16c62f470f8d5.jpg",
+        "url": "https://twitter.com/resource11"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202200177395871744#favorited-by-32190243",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:19Z",
+      "wm-id": 730501,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202200177395871744/32190243",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ant",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5703a318779053282376bc0bc0d0428b11381960662678060847bad7618af9ea.png",
+        "url": "https://twitter.com/Seraphide"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-64349266",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:18Z",
+      "wm-id": 730499,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/64349266",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marc Stalfoort",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/90c871acd6bb1fd019a9d86dbe70cc2027ecfee7a086a990b888d4a4da7ba461.jpg",
+        "url": "https://twitter.com/mstalfoort"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-75093697",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:17Z",
+      "wm-id": 730498,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/75093697",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stacey Jenkins",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2952f2c6e1f97d0c67a5dbef4c87a7e321ff0976cf13704710f7b9e38a13cc50.jpg",
+        "url": "https://twitter.com/staceyjenkins"
+      },
+      "url": "https://twitter.com/staceyjenkins/status/1202219210870591493",
+      "published": "2019-12-04T13:32:50+00:00",
+      "wm-received": "2019-12-04T13:49:16Z",
+      "wm-id": 730496,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202219210870591493",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gunnar Bittersmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8f22de59c2d524e53af7e1075f35a5acb4fc2ca42a9961d2f5ae992be349532d.jpg",
+        "url": "https://twitter.com/g16n"
+      },
+      "url": "https://twitter.com/g16n/status/1202221835074424832",
+      "published": "2019-12-04T13:43:16+00:00",
+      "wm-received": "2019-12-04T13:49:16Z",
+      "wm-id": 730497,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202221835074424832",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "гнойная ангелина",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b271fc023ebb36a2ee0bbc886a0f4664c1cca7c646cdb2d9bd63890b1b8eaa81.jpg",
+        "url": "https://twitter.com/rrrage_input"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-4231306299",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:15Z",
+      "wm-id": 730495,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/4231306299",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Juan Olvera 🇲🇽 🌮",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/32badad20b4b0ff226c9fa0ca6e12d0e3cee489d7030823badc0189572a79e22.png",
+        "url": "https://twitter.com/_jolvera"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-32772397",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:14Z",
+      "wm-id": 730494,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/32772397",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patty 👋",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d2c8a8cf699c7240e87750fdf01c3faf11007af5cb57112389567dd0e1ac7527.jpg",
+        "url": "https://twitter.com/pattyanasco"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-20337184",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:13Z",
+      "wm-id": 730493,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/20337184",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "John Burrows",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1576e8faf079b1ca5f5aa9b3b8f3cd11bc53f6231137dc8813d57ad5f48fde62.jpg",
+        "url": "https://twitter.com/JohnFohf"
+      },
+      "url": "https://twitter.com/JohnFohf/status/1202222698576797698",
+      "published": "2019-12-04T13:46:42+00:00",
+      "wm-received": "2019-12-04T13:49:12Z",
+      "wm-id": 730491,
+      "wm-source": "https://brid-gy.appspot.com/comment/twitter/justmarkup/1202140223825752064/1202222698576797698",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "I wish rule 1 was \"Don't.\"\n\nBut I lose that battle every time\n<a class=\"u-mention\" href=\"http://justmarkup.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/justmarkup\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/smashingmag\"></a>",
+        "text": "I wish rule 1 was \"Don't.\"\n\nBut I lose that battle every time"
+      },
+      "in-reply-to": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "CSS",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9304d210bbc43c84a932135ea72653eb8b376d6b8ac13378fe214f7556481ad5.jpg",
+        "url": "https://twitter.com/CSSTeam_at"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-130168332",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:12Z",
+      "wm-id": 730492,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/130168332",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joe Leech",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9c4981ed8e7378d5211f6830893346377f4a0c5c9ded0e6d3fe2d19727e66a1c.jpg",
+        "url": "https://twitter.com/mrjoe"
+      },
+      "url": "https://twitter.com/mrjoe/status/1202220834120708096",
+      "published": "2019-12-04T13:39:17+00:00",
+      "wm-received": "2019-12-04T13:49:11Z",
+      "wm-id": 730489,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202220834120708096",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Surely just don'ts...\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "Surely just don'ts..."
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Craig Lovelock",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7b4b0782f83dbb972af9b8f4d0688e3025a9928775df025c54b92801334c8877.jpg",
+        "url": "https://twitter.com/Craig_Lovelock"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1540905824",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:11Z",
+      "wm-id": 730490,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1540905824",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Smashing Magazine",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d904c81471b5cf36a625ce3b213b286caad7183ae5ab60ca11bd4422cbf41d15.jpg",
+        "url": "https://twitter.com/smashingmag"
+      },
+      "url": "https://twitter.com/smashingmag/status/1202218813439303680",
+      "published": "2019-12-04T13:31:15+00:00",
+      "wm-received": "2019-12-04T13:49:09Z",
+      "wm-id": 730487,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202218813439303680",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ash",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/62ac474411e600d40b1d2302323fc6e76e9776abad14095076ad3d91118f32b0.jpg",
+        "url": "https://twitter.com/juice49"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-16069900",
+      "published": null,
+      "wm-received": "2019-12-04T13:49:09Z",
+      "wm-id": 730488,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/16069900",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Brehaut",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3e4b1faa20334fb557d5b6b415df12a2b717289de0d7c851ce8e5ecf5e39fb6f.jpg",
+        "url": "https://twitter.com/benbrehaut"
+      },
+      "url": "https://twitter.com/benbrehaut/status/1202209387797987328",
+      "published": "2019-12-04T12:53:48+00:00",
+      "wm-received": "2019-12-04T13:15:28Z",
+      "wm-id": 730479,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202200177395871744/1202209387797987328",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "Here we go justmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dwi",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4141a5bac9897b5cb40c0b205f79ca3f7e673d9419ca5372fd0691f38af744eb.jpg",
+        "url": "https://twitter.com/_dwirianto"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202200177395871744#favorited-by-107585641",
+      "published": null,
+      "wm-received": "2019-12-04T13:15:27Z",
+      "wm-id": 730478,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202200177395871744/107585641",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marco Zehe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b39416159a5c89b1b1627e10452cee6512c36ce130f991b3ecc884cb89c51b0f.jpg",
+        "url": "https://twitter.com/MarcoZehe"
+      },
+      "url": "https://twitter.com/MarcoZehe/status/1202211428989591552",
+      "published": "2019-12-04T13:01:55+00:00",
+      "wm-received": "2019-12-04T13:15:26Z",
+      "wm-id": 730477,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202200177395871744/1202211428989591552",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "Here we go justmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marco Zehe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d82a85a049d8baccfdd05ad0859988c10c76b61c19a60bf70041c520294dffb9.jpg",
+        "url": "https://twitter.com/MarcoInEnglish"
+      },
+      "url": "https://twitter.com/MarcoInEnglish/status/1202211054954176512",
+      "published": "2019-12-04T13:00:26+00:00",
+      "wm-received": "2019-12-04T13:15:25Z",
+      "wm-id": 730476,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202200177395871744/1202211054954176512",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "Here we go justmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Iain Wilson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/39c8afe1014187f06b24b0646ca37f9c23c858439a04423fa0aee2d64f1424da.jpg",
+        "url": "https://twitter.com/Iain_Wilson"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-18658155",
+      "published": null,
+      "wm-received": "2019-12-04T11:44:11Z",
+      "wm-id": 730467,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/18658155",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "secondaryloop",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5ce8cb314ab754eaa7eb126e8c8dabb3be6dd540139f774b694500ba98f72100.jpg",
+        "url": "https://twitter.com/secondaryloop"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1104092910398644224",
+      "published": null,
+      "wm-received": "2019-12-04T11:44:08Z",
+      "wm-id": 730466,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1104092910398644224",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marko Čakarević",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8ebbc86d25997bb4cfc1234052b49608fd71593b54a7e0cf342132df380e701a.png",
+        "url": "https://twitter.com/markocakarevic"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-35430646",
+      "published": null,
+      "wm-received": "2019-12-04T10:07:31Z",
+      "wm-id": 730455,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/35430646",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kalpesh Singh",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/516df7727f4df1c64c8e021e608b334887206c002f5370b8e5da5f0909ab76dc.jpg",
+        "url": "https://twitter.com/knowkalpesh"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1082822706",
+      "published": null,
+      "wm-received": "2019-12-04T09:38:33Z",
+      "wm-id": 730450,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1082822706",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Becky Lingafelter",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e31605879cf0e9a8b07837f1553f47535c40dd1b0287b86a2e9aed1cfc773e51.jpg",
+        "url": "https://twitter.com/blingafe"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-37360104",
+      "published": null,
+      "wm-received": "2019-12-04T09:09:09Z",
+      "wm-id": 730446,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/37360104",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marcus Herrmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/70f5208e4f1f2bb7edf32ab4f4b888e253853bb39c18e6341e0ee575dea7bf45.jpg",
+        "url": "https://twitter.com/_marcusherrmann"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-11659852",
+      "published": null,
+      "wm-received": "2019-12-04T09:09:07Z",
+      "wm-id": 730445,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/11659852",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Максим Синяков",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4b77c5afc4ac72e0ab08d5726c7e9c5449ddf47da8c6dc6cc14b5904ff417db7.jpg",
+        "url": "https://twitter.com/maxsinyakov"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-237831797",
+      "published": null,
+      "wm-received": "2019-12-04T09:09:06Z",
+      "wm-id": 730444,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/237831797",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Becky Lingafelter",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e31605879cf0e9a8b07837f1553f47535c40dd1b0287b86a2e9aed1cfc773e51.jpg",
+        "url": "https://twitter.com/blingafe"
+      },
+      "url": "https://twitter.com/blingafe/status/1202148676531097600",
+      "published": "2019-12-04T08:52:33+00:00",
+      "wm-received": "2019-12-04T09:09:04Z",
+      "wm-id": 730442,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202148676531097600",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stefan Judis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d87f297281efe979ffb78cbbb7e2bc91f2dc3de29421f206675ff72db6d6acf8.jpg",
+        "url": "https://twitter.com/stefanjudis"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-380616577",
+      "published": null,
+      "wm-received": "2019-12-04T09:09:04Z",
+      "wm-id": 730443,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/380616577",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
       "wm-property": "like-of",
       "wm-private": false
     }

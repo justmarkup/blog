@@ -13,7 +13,7 @@ The infamous hamburger menu is one of the examples where I see bad practice very
 
 ## Using the hamburger menu
 
-Before even thinking about the best way to implement a hamburger menu, one should ask if it is even needed at all. There are various [Responsive](https://bradfrost.com/blog/post/responsive-nav-patterns/) [Navigation](https://www.smashingmagazine.com/2017/04/overview-responsive-navigation-patterns/) [Patterns](https://responsivenavigation.net/]) to use instead. Lately, there is also the trend to use a hamburger menu on large screens – while this may look fancy – it means that users have to click two times to go to one of the listed pages. So, if there is space, it is better to directly show all navigation items and only hide them behind the hamburger toggle on small screens.
+Before even thinking about the best way to implement a hamburger menu, one should ask if it is even needed at all. There are various [Responsive](https://bradfrost.com/blog/post/responsive-nav-patterns/) [Navigation](https://www.smashingmagazine.com/2017/04/overview-responsive-navigation-patterns/) [Patterns](https://responsivenavigation.net/) to use instead. Lately, there is also the trend to use a hamburger menu on large screens – while this may look fancy – it means that users have to click two times to go to one of the listed pages. So, if there is space, it is better to directly show all navigation items and only hide them behind the hamburger toggle on small screens.
 
 Okay, so you still think a hamburger menu is the best choice for the site you are building? Let's see what to consider when implementing it.
 
