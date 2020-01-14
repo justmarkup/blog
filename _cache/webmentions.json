@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2019-12-04T13:55:27.036Z",
+  "lastFetched": "2020-01-14T19:38:31.534Z",
   "children": [
     {
       "type": "entry",
@@ -1979,6 +1979,1987 @@
       "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
       "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robert Wemyss",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7d13d89646252a2d7fe3b5a84439012c4ac6ba8a308d7a9f47bdbf16c8d3c7d2.jpg",
+        "url": "https://twitter.com/wemz"
+      },
+      "url": "https://twitter.com/wemz/status/1216763935141105665",
+      "published": "2020-01-13T16:48:23+00:00",
+      "wm-received": "2020-01-13T18:30:01Z",
+      "wm-id": 743794,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1216763935141105665",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "<a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eco Web Hosting",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b5e84c25e6d0daaf6e42b541ccae87c5731329221a855deebe0e5330a057b9d4.png",
+        "url": "https://twitter.com/ecowebhostinguk"
+      },
+      "url": "https://twitter.com/ecowebhostinguk/status/1216691748635914246",
+      "published": "2020-01-13T12:01:32+00:00",
+      "wm-received": "2020-01-13T15:25:24Z",
+      "wm-id": 743754,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1216691748635914246",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "video": [
+        "https://video.twimg.com/tweet_video/EOKOspCWoAEK6qA.mp4"
+      ],
+      "content": {
+        "html": "You know you're going to put a hamburger menu in. \nJust make sure this hamburger is well-done.\n <a href=\"https://twitter.com/justmarkup\">@justmarkup</a> has some great tips: <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "You know you're going to put a hamburger menu in. \nJust make sure this hamburger is well-done.\n @justmarkup has some great tips: justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://webdesign.idjgie.xyz/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "published": null,
+      "wm-received": "2020-01-10T08:48:01Z",
+      "wm-id": 743084,
+      "wm-source": "https://webdesign.idjgie.xyz/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "wm-target": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "mention-of": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://webdesign.idjgie.xyz/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/",
+      "published": null,
+      "wm-received": "2020-01-06T13:00:05Z",
+      "wm-id": 741272,
+      "wm-source": "https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/",
+      "wm-target": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "mention-of": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://allprowebdesigns.com/2020/01/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "published": null,
+      "wm-received": "2020-01-06T12:42:08Z",
+      "wm-id": 741255,
+      "wm-source": "https://allprowebdesigns.com/2020/01/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "wm-target": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "mention-of": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://allprowebdesigns.com/2020/01/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://unsorted.co/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "published": null,
+      "wm-received": "2020-01-06T11:18:23Z",
+      "wm-id": 741172,
+      "wm-source": "http://unsorted.co/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/",
+      "wm-target": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "mention-of": "https://justmarkup.com/log/2017/11/network-based-image-loading/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "http://unsorted.co/front-end-performance-checklist-2020-pdf-apple-pages-ms-word/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/33b408cc1566809133edb29d7369404c22da8c6f3c6e542873064c17b8e76ef8.jpg",
+        "url": "https://twitter.com/Aniuchaaja"
+      },
+      "url": "https://twitter.com/Aniuchaaja/status/1209045258807468033",
+      "published": "2019-12-23T09:37:07+00:00",
+      "wm-received": "2019-12-23T09:41:57Z",
+      "wm-id": 737021,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1209045258807468033",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=heydesigner",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=heydesigner\">justmarkup.com/articles/2019-…</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adalto Junior",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/57c51dd49e1c0b5d78983eb7c75fecdbd1c0d9708ad444a44350d29303840313.png",
+        "url": "https://twitter.com/adaltojunior86"
+      },
+      "url": "https://twitter.com/adaltojunior86/status/1208067105075220482",
+      "published": "2019-12-20T16:50:17+00:00",
+      "wm-received": "2019-12-20T17:11:36Z",
+      "wm-id": 736352,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1208067105075220482",
+      "wm-target": "https://justmarkup.com//articles/2019-10-21-image-orientation/",
+      "content": {
+        "html": "<a href=\"https://justmarkup.com//articles/2019-10-21-image-orientation/\">justmarkup.com//articles/2019…</a>",
+        "text": "justmarkup.com//articles/2019…"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-10-21-image-orientation/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleazar Resendez",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/30aba4c21dc05d0884b5051f00b5840a92c14fdc477a8881ddc6f39a797e5284.jpg",
+        "url": "https://twitter.com/eleazarbr"
+      },
+      "url": "https://twitter.com/eleazarbr/status/1207739902584147969",
+      "published": "2019-12-19T19:10:06+00:00",
+      "wm-received": "2019-12-19T19:22:33Z",
+      "wm-id": 736009,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1207739902584147969",
+      "wm-target": "https://justmarkup.com//articles/2015-07-31-dealing-with-long-words-in-css/",
+      "content": {
+        "html": "Dealing with long words in CSS <a href=\"https://justmarkup.com//articles/2015-07-31-dealing-with-long-words-in-css/\">justmarkup.com//articles/2015…</a>",
+        "text": "Dealing with long words in CSS justmarkup.com//articles/2015…"
+      },
+      "mention-of": "https://justmarkup.com//articles/2015-07-31-dealing-with-long-words-in-css/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HTML Academy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4e2afee6b96a8187def68d1f3fb96bb0128ead06dc0232bf607539a1bb6a867c.png",
+        "url": "https://twitter.com/htmlacademy_ru"
+      },
+      "url": "https://twitter.com/htmlacademy_ru/status/1207616940551950336",
+      "published": "2019-12-19T11:01:29+00:00",
+      "wm-received": "2019-12-19T11:07:55Z",
+      "wm-id": 735929,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1207616940551950336",
+      "wm-target": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
+      "photo": [
+        "https://pbs.twimg.com/media/EMJRNP4WoAAMzeS.jpg"
+      ],
+      "content": {
+        "html": "Ориентация изображений в вебе: почему браузеры могут некорректно отображать изображения — <a href=\"https://justmarkup.com/articles/2019-10-21-image-orientation/\">justmarkup.com/articles/2019-…</a>",
+        "text": "Ориентация изображений в вебе: почему браузеры могут некорректно отображать изображения — justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ronan Smith",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f118e3132eed8cee9b7b4aec8f7994a3da465adb9eb29d3e7fd9276b0dabdad1.jpg",
+        "url": "https://twitter.com/RonanSm35805955"
+      },
+      "url": "https://twitter.com/RonanSm35805955/status/1207441053969797120",
+      "published": "2019-12-18T23:22:35+00:00",
+      "wm-received": "2019-12-19T00:16:59Z",
+      "wm-id": 735871,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1207441053969797120",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu: <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu: justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Yasuhisa🦑",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c844337e0bfeaebda65fa0ba0ac1cb8c94a1186a34ceee6816797008a58842d8.jpg",
+        "url": "https://twitter.com/yhassy"
+      },
+      "url": "https://twitter.com/yhassy/status/1205255576072024064",
+      "published": "2019-12-12T22:38:16+00:00",
+      "wm-received": "2019-12-12T23:06:24Z",
+      "wm-id": 733487,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1205255576072024064",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "使うなと言われるハンバーガーメニューですが、それでも使わなければならないときのアクセシビリティ対応が書かれてた記事。 <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "使うなと言われるハンバーガーメニューですが、それでも使わなければならないときのアクセシビリティ対応が書かれてた記事。 justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dailydevlinks.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a8a5a8ca8b8523200b8cb5a8638bfb9b937cfc8260d1ada5777c1add8fc50c8a.jpg",
+        "url": "https://twitter.com/dailydevlinks"
+      },
+      "url": "https://twitter.com/dailydevlinks/status/1204379541399056384",
+      "published": "2019-12-10T12:37:13+00:00",
+      "wm-received": "2019-12-10T12:51:37Z",
+      "wm-id": 732528,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1204379541399056384",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=dailydevlinks.com",
+      "content": {
+        "html": "📝 Do's and Don'ts of implementing a hamburger menu\n\n🔗 <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=dailydevlinks.com\">justmarkup.com/articles/2019-…</a>\n\n<a href=\"https://twitter.com/search?q=%23html\">#html</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23javascript\">#javascript</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a> <a href=\"https://twitter.com/search?q=%23dailydevlinks\">#dailydevlinks</a>",
+        "text": "📝 Do's and Don'ts of implementing a hamburger menu\n\n🔗 justmarkup.com/articles/2019-…\n\n#html #css #javascript #webdev #dailydevlinks"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/?ref=dailydevlinks.com",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johan Ramon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d881ea735797599e09504a58a252bbaac8e5de51d934f8a60999b98a413f5aa6.jpg",
+        "url": "https://twitter.com/johan_ramon"
+      },
+      "url": "https://twitter.com/johan_ramon/status/1204348454224437248",
+      "published": "2019-12-10T10:33:41+00:00",
+      "wm-received": "2019-12-10T10:50:57Z",
+      "wm-id": 732473,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1204348454224437248",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu: <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu\">justmarkup.com/articles/2019-…</a>\n<a href=\"https://twitter.com/search?q=%23accessibility\">#accessibility</a> <a href=\"https://twitter.com/search?q=%23a11y\">#a11y</a>\n\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu: justmarkup.com/articles/2019-…\n#accessibility #a11y"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Félix Zapata",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a27b6d032b0df1fd3df17ae0f632d9c3a19d6c03a453015c678054bf4d8f4dfc.png",
+        "url": "https://twitter.com/felixzapata"
+      },
+      "url": "https://twitter.com/felixzapata/status/1204276678983344130",
+      "published": "2019-12-10T05:48:29+00:00",
+      "wm-received": "2019-12-10T06:05:37Z",
+      "wm-id": 732344,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1204276678983344130",
+      "wm-target": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com//articles/2019-12-04-hamburger-menu/\">justmarkup.com//articles/2019…</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com//articles/2019…"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.alvinashcraft.com/2019/12/09/dew-drop-december-9-2019-3088/",
+      "published": null,
+      "wm-received": "2019-12-09T13:24:56Z",
+      "wm-id": 732032,
+      "wm-source": "https://www.alvinashcraft.com/2019/12/09/dew-drop-december-9-2019-3088/",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.alvinashcraft.com/2019/12/09/dew-drop-december-9-2019-3088/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://techrights.org/2019/12/08/nomadbsd-1-3/",
+      "published": null,
+      "wm-received": "2019-12-08T15:25:57Z",
+      "wm-id": 731845,
+      "wm-source": "http://techrights.org/2019/12/08/nomadbsd-1-3/",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "http://techrights.org/2019/12/08/nomadbsd-1-3/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dr. Roy Schestowitz (罗伊)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/403224f385702fb8f6f2136d00c2332e2c64ee71dd8ba50b1b6368d7cdbb14af.jpg",
+        "url": "https://twitter.com/schestowitz"
+      },
+      "url": "https://twitter.com/schestowitz/status/1203593681007267840",
+      "published": "2019-12-08T08:34:29+00:00",
+      "wm-received": "2019-12-08T08:37:58Z",
+      "wm-id": 731768,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1203593681007267840",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar Marcelo",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a82b46e8d13dc3ad6defa0ee5960a2e2c9678a0ac33360cbaf27a19070885491.jpg",
+        "url": "https://twitter.com/oscarmarcelo"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-57517432",
+      "published": null,
+      "wm-received": "2019-12-07T11:48:35Z",
+      "wm-id": 731604,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/57517432",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Corey Megown",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fc7185a88c6f5b701224c2947a86a1fb5dc789cb137f05520b02cbcc33750b72.jpg",
+        "url": "https://twitter.com/cmegown"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-305228181",
+      "published": null,
+      "wm-received": "2019-12-06T23:42:53Z",
+      "wm-id": 731506,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/305228181",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dr. Roy Schestowitz (罗伊)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/403224f385702fb8f6f2136d00c2332e2c64ee71dd8ba50b1b6368d7cdbb14af.jpg",
+        "url": "https://twitter.com/schestowitz"
+      },
+      "url": "https://twitter.com/schestowitz/status/1203041468358766598",
+      "published": "2019-12-06T20:00:12+00:00",
+      "wm-received": "2019-12-06T20:13:51Z",
+      "wm-id": 731437,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1203041468358766598",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "The Web is becoming hostile to blind people due to this and other <a href=\"https://twitter.com/search?q=%23accessibility\">#accessibility</a> aspects. Newer often means worse in the <a href=\"https://twitter.com/search?q=%23www\">#www</a> <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "The Web is becoming hostile to blind people due to this and other #accessibility aspects. Newer often means worse in the #www justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Baldur Bjarnason @baldur@toot.cafe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/380091dbece0311dd5cadc43ecdde03be0b6517dc13a83e8b6622a2a1e24516c.jpg",
+        "url": "https://twitter.com/fakebaldur"
+      },
+      "url": "https://twitter.com/fakebaldur/status/1202963444087037959",
+      "published": "2019-12-06T14:50:09+00:00",
+      "wm-received": "2019-12-06T14:50:24Z",
+      "wm-id": 731409,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202963444087037959",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "“Do’s and Don’ts of implementing a hamburger menu” <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "“Do’s and Don’ts of implementing a hamburger menu” justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Saavutettava.fi",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/08b0a2204306996b36f8f6b7793a366cdd2c59351790bfdefef53cabeb965ddc.png",
+        "url": "https://twitter.com/Saavutettavafi"
+      },
+      "url": "https://twitter.com/Saavutettavafi/status/1202951103672963072",
+      "published": "2019-12-06T14:01:07+00:00",
+      "wm-received": "2019-12-06T14:22:26Z",
+      "wm-id": 731406,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202951103672963072",
+      "wm-target": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com//articles/2019-12-04-hamburger-menu/\">justmarkup.com//articles/2019…</a> <a href=\"https://twitter.com/search?q=%23accessibility\">#accessibility</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com//articles/2019… #accessibility"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/",
+      "published": null,
+      "wm-received": "2019-12-06T13:30:38Z",
+      "wm-id": 731405,
+      "wm-source": "https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "<h2 class=\"p-name\">Marco Zehe: Do’s and don’ts on Hamburger menus</h2> \n                            \n<p>Today, just a quick reading tip for you. Michael Scharnagl posted a <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">great article on Wednesday</a> about when to use Hamburger menus, when not to use them, and what to consider for each decision. And that includes accessibility. Thank you, Michael!</p>\n\n\n<h3>Share this:</h3>\n<ul><li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=linkedin\" title=\"Click to share on LinkedIn\"><span>LinkedIn</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=reddit\" title=\"Click to share on Reddit\"><span>Reddit</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=tumblr\" title=\"Click to share on Tumblr\"><span>Tumblr</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/?share=pinterest\" title=\"Click to share on Pinterest\"><span>Pinterest</span></a></li>\n<li>\n</li></ul>\n\n\n\t<h3><em>Related</em></h3>",
+        "text": "Marco Zehe: Do’s and don’ts on Hamburger menus \n                            \nToday, just a quick reading tip for you. Michael Scharnagl posted a great article on Wednesday about when to use Hamburger menus, when not to use them, and what to consider for each decision. And that includes accessibility. Thank you, Michael!\n\n\nShare this:\nFacebook\nLinkedIn\nReddit\nTwitter\nTumblr\nPinterest\n\nRelated"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://rssfeeds.cloudsite.builders/2019/12/06/marco-zehe-dos-and-donts-on-hamburger-menus/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://marcozehe.de/2019/12/06/dos-and-donts-on-hamburger-menus/",
+      "published": null,
+      "wm-received": "2019-12-06T12:00:20Z",
+      "wm-id": 731399,
+      "wm-source": "http://marcozehe.de/2019/12/06/dos-and-donts-on-hamburger-menus/",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://marcozehe.de/2019/12/06/dos-and-donts-on-hamburger-menus/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://nthsecure.com/smashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts",
+      "published": null,
+      "wm-received": "2019-12-06T11:11:19Z",
+      "wm-id": 731396,
+      "wm-source": "https://nthsecure.com/smashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts",
+      "wm-target": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
+      "name": "Smashing Month-to-month Roundup: Neighborhood Assets And Favourite Posts",
+      "content": {
+        "html": "<a href=\"https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fnthsecure.com%2Fsmashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts&amp;text=Smashing%20Month-to-month%20Roundup:%20Neighborhood%20Assets%20And%20Favourite%20Posts&amp;url=https%3A%2F%2Fnthsecure.com%2Fsmashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts\"><span><i></i></span> <span>Tweet</span></a>\n\t\t\t\t\t\t\t\n\t\t\t\t<a href=\"https://www.facebook.com/share.php?m2w&amp;s=100&amp;p%5Burl%5D=https%3A%2F%2Fnthsecure.com%2Fsmashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts&amp;p%5Bimages%5D%5B0%5D=h&amp;p%5Btitle%5D=Smashing+Month-to-month+Roundup%3A+Neighborhood+Assets+And+Favourite+Posts&amp;u=https%3A%2F%2Fnthsecure.com%2Fsmashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts&amp;t=Smashing+Month-to-month+Roundup%3A+Neighborhood+Assets+And+Favourite+Posts\"><span><i></i></span><span>Share</span></a>\n\t\t\t\t\t\t\t\n\t\t\t\t<a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fnthsecure.com%2Fsmashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts&amp;title=Smashing%20Month-to-month%20Roundup:%20Neighborhood%20Assets%20And%20Favourite%20Posts&amp;source=url\"><span><i></i></span><span>Share</span></a>\n\t\t\t\t\t\t\t\n\t\t\t\t<a href=\"https://www.reddit.com/submit\"><span><i></i></span><span>Reddit</span></a>\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\n\n\n\n\n\n\n<h3>About The Creator</h3>\n<p>Juggling between three languages each day, Iris is thought for her love of linguistics, arts, internet design and typography, in addition to her goldmine of …<br /><a href=\"http://www.smashingmagazine.com/author/iris-ljesnjanin\">Extra about<br /><span>Iris<br /></span>…</a></p>\n\n\n\n<p></p>\nWithin the fast-paced trade that designers and builders work in, it’s necessary to remain updated as a lot as doable. Don’t fear, we’ve acquired your again with month-to-month updates that will help you keep up to the mark.<p></p>\n<p>On behalf of the Smashing workforce, welcome to a different month-to-month replace to maintain you all within the loop about all issues <em>smashing</em>. Be part of us as we share the most recent information and spotlight the issues now we have loved studying over the previous month.</p>\n<p>Most of the included posts are sourced from the most well-liked hyperlinks from our Smashing E-newsletter. In case you don’t get our publication but, then <a href=\"https://www.smashingmagazine.com/the-smashing-newsletter/\">enroll right here</a> to obtain helpful strategies and goodies (together with a free eBook on accessibility)!</p>\n<h3>What’s New At Smashing?</h3>\n<p>The final SmashingConf of this yr befell in New York, an occasion that acquired offered out a great distance upfront and one other one we’re all fairly happy with. In case you missed out, our editor-in-chief Rachel Andrew summed up every little thing in a publish with <a href=\"https://www.smashingmagazine.com/2019/11/smashingconf-ny-2019/\">movies and images of SmashingConf NY</a>. Yow will discover the slides of the talks over <a href=\"https://smashingconf.com/ny-2019/\">right here</a>, and even already <a href=\"https://smashingconf.com/ny-2020/registration\">seize your tremendous early-bird ticket</a> should you like!</p>\n<p><a href=\"https://www.smashingmagazine.com/category/smashing-podcast\"></a>Subsequent, there’s a ’lil undertaking that we’ve been which means to launch for a fairly some time, and it’s lastly occurring! We’re proud to have kicked off the <a href=\"https://www.smashingmagazine.com/category/smashing-podcast\">Smashing Podcast</a>, a bi-weekly podcast that’s moderated by our expensive good friend <a href=\"https://twitter.com/drewm\">Drew McLellan</a> — be sure to <a href=\"https://podcast.smashingmagazine.com/subscribe?_ga=2.148489463.198915693.1573422057-899069810.1573222413\">subscribe and tune into any podcast participant</a> of your alternative.</p>\n<p>Final however not least, we’re excited and searching very a lot ahead to the discharge of the upcoming Smashing e-book “<a href=\"https://www.smashingmagazine.com/2019/11/inclusive-components-prerelease/\">Inclusive Parts</a>” written by Heydon Pickering on the whys and the hows, making accessibility extra approachable and pleasant for builders. Keep tuned!</p>\n<h3>Really helpful Studying on Smashing Journal</h3>\n<p>We publish a brand new article each day, and so should you’re not subscribed to our <a href=\"https://www.smashingmagazine.com/feed/\">RSS feed</a> or observe us on social media, you might miss out on some good articles! Listed below are some that our readers appeared to get pleasure from and advocate additional:</p>\n<ul><li>“<a href=\"https://www.smashingmagazine.com/2019/11/stop-analysis-paralysis-design/\">How To Cease Evaluation Paralysis With Design</a>” by <strong>Suzanne Scacca</strong><br /><em>On the subject of placing our guests on the spot, giving them too many choices hurts their decision-making potential together with how they really feel concerning the expertise as an entire.</em>\n</li>\n<li>“<a href=\"https://www.smashingmagazine.com/2019/11/newspapers-teach-web-design/\">What Newspapers Can Educate Us About Net Design</a>” by <strong>Frederick O’Brien</strong><br /><em>Earlier than the house web page, there was the entrance web page. From the Gutenberg Precept to grid methods to above the fold, newspapers train us a lot concerning the foundations of internet design.</em>\n</li>\n<li>“<a href=\"https://www.smashingmagazine.com/2019/11/online-environments-older-users/\">Creating On-line Environments That Work Properly For Older Customers</a>” by <strong>Barry Rueger</strong><br /><em>A big a part of the Web-using inhabitants is aged 50 or older — together with the individuals who invented it. Designers want to grasp what older customers want and why it’s not sufficient to only say, “I can learn it, so what’s the issue?”</em>\n</li>\n<li>“<a href=\"https://www.smashingmagazine.com/2019/11/multiplayer-text-adventure-engine-node-js-part-4/\">Writing A Multiplayer Textual content Journey Engine In Node.js</a>” by <strong>Fernando Doglio</strong><br /><em>A Four-part collection that takes you thru step-by-step that will help you create a text-adventure engine with Node.js.</em>\n</li>\n</ul><h3>Greatest Picks From Our E-newsletter</h3>\n<p>We’ll be trustworthy: Each second week, we wrestle with holding the Smashing E-newsletter points at a average size — there are simply so many gifted of us on the market engaged on good initiatives! So, with out eager to make this month-to-month replace too lengthy both, we’re shining the highlight on the next initiatives:</p>\n<p><strong>Word</strong>: <em>A thanks to <a href=\"https://www.smashingmagazine.com/author/cosima-mielke/\">Cosima Mielke</a> for writing and getting ready these posts!</em></p>\n<h4>Free Companies For Builders</h4>\n<p>So many providers on the market provide free tiers, however they are often exhausting to seek out. <a href=\"https://free-for.dev/#/\">Free For Builders</a> desires to vary that and lists software program and different providers which have free tiers for builders.</p>\n<a href=\"https://free-for.dev/#/\"></a><a href=\"https://free-for.dev/#/\">free-for.dev</a>, a listing of SaaS, PaaS and IaaS choices which have free tiers of curiosity to devops and infradev.<p>The providers included within the checklist are notably fascinating for System Directors, DevOps Practitioners, and different infrastructure builders and canopy every little thing from cloud suppliers and supply code repos to testing, log administration, fee integration, and much more. Greater than 500 folks have contributed to this group undertaking and you’re welcome to submit your findings, too, in fact. A useful useful resource for the bookmarks.</p>\n<h4>Git Command Cheatsheet</h4>\n<p>Have you learnt your git instructions? Whilst you most likely know the commonest ones by coronary heart, there are all the time these instructions which can be simply forgotten since you don’t want them usually. A concise refresher now comes from Rainer Selvet.</p>\n<a href=\"https://gitsheet.wtf/\"></a><a href=\"https://gitsheet.wtf/\">GitSheet</a>, a useless easy git cheatsheet.<p>Described as a “useless easy git cheatsheet” by its creator, <a href=\"https://gitsheet.wtf/\">GitSheet</a> lists git instructions and what they do by subject. A nifty little function: You possibly can copy a command to your clipboard with only a click on. Easy but efficient.</p>\n<h4>A Playground For Tinkering With Design Methods</h4>\n<p>You’re about to construct a design system however don’t actually know the place or the best way to start? Properly, the <a href=\"https://design-system-playground.netlify.com/\">Design System Playground</a> is likely to be an excellent place to get began.</p>\n<a href=\"https://design-system-playground.netlify.com/\"></a><a href=\"https://design-system-playground.netlify.com/\">Design System Playground</a>, an open-source undertaking constructed by <a href=\"https://twitter.com/johnpolacek/\">John Polacek</a>.<p>The playground provides a variety of room to tinker with completely different font and shade mixtures and, when you’re completely happy together with your selections, it generates a design system that you would be able to export and use in your initiatives instantly. If the visible route of your design isn’t clear but, there’s additionally the choice to make use of a preset theme or random selections to construct upon.</p>\n<h4>Freebie: Combine-And-Match Illustrations</h4>\n<p>Illustrations are a unbelievable approach to breathe some life right into a undertaking. However not all of us have the abilities to create them ourselves or the time or the funds to rent an illustrator. For these events, the mix-and-match illustration library which Leni Kauffman created, would possibly turn out to be useful.</p>\n<a href=\"https://fresh-folk.com/\"></a><a href=\"https://fresh-folk.com/\">Recent People</a>, a fantastic illustration library of<br />\nfolks and objects created and designed by London-based illustrator <a href=\"https://twitter.com/lenikauffman\">Leni Kauffman</a>.<p><a href=\"https://fresh-folk.com/\">Recent People</a> helps you to mix poses, outfits, and pores and skin tones into completely different characters. The library additionally contains background parts (e.g., tables, seating, lamps, crops) to create completely different settings — from workplace areas to nature scenes. Free for private and business initiatives.</p>\n<h4>Actual-Time Visualization Of Tokyo’s Public Transport</h4>\n<p>A surprising 3D knowledge visualization undertaking comes from Akihiko Kusanagi: <a href=\"https://nagix.github.io/mini-tokyo-3d/#14/35.6814/139.767/0/60\">Mini Tokyo 3D</a> shows Tokyo’s public transport system on a map in realtime.</p>\n<a href=\"https://github.com/nagix/mini-tokyo-3d\"></a><a href=\"https://nthsecure.com/smashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts\">Massive preview</a>, a real-time 3D digital map of Tokyo’s public transport system.<p>You possibly can observe alongside Tokyo’s trains shifting by means of town, with info on the prepare line, prepare quantity, subsequent and former stops, and doable delays. The information for this mammoth undertaking is sourced from Open Information Problem for Public Transportation in Tokyo which promotes the openness of public transportation knowledge. Their goal is to make public transportation (which is taken into account to be the world’s most complex) simpler to navigate. Inspiring!</p>\n<h4>Classic Science And Tech Advertisements</h4>\n<p>In case you’ve acquired a candy spot for classic graphic design, right here’s a really particular goodie for you: a Flickr album with greater than <a href=\"https://www.flickr.com/photos/bustbright/albums/72157612943324998\">1,400 science and tech adverts</a> from the 1950s and 60s.</p>\n<a href=\"https://www.flickr.com/photos/bustbright/albums/72157612943324998\"></a>“<a href=\"https://www.flickr.com/photos/bustbright/albums/72157612943324998\">Science and Tech Advertisements</a>” (Flickr album), a random assortment of science adverts collected from numerous science and tech magazines of the 50s and 60s.<p>The adverts come from numerous science and tech magazines and are nice examples of the modernist mid-century aesthetic — and an enchanting journey again to the occasions when the foundations of the applied sciences we take with no consideration right now have been being laid. Eye sweet!</p>\n<h4>JavaScript Frameworks Safety Report 2019</h4>\n<p>The parents at Snyk printed their <a href=\"https://snyk.io/blog/javascript-frameworks-security-report-2019/\">state of JavaScript frameworks safety report for 2019</a>. It investigates the state of safety for the Angular and React ecosystems in addition to safety practices for the favored JavaScript frameworks Vue.js, Bootstrap, and jQuery.</p>\n<a href=\"https://snyk.io/blog/javascript-frameworks-security-report-2019/\"></a><a href=\"https://snyk.io/blog/javascript-frameworks-security-report-2019/\">JavaScript Frameworks Safety Report 2019</a>, a report that investigates the state of safety for each the Angular and React ecosystems.<p>Given the truth that Angular and React each have their proponents with ongoing discussions whether or not one or the opposite is a real framework, the report doesn’t intend to enterprise into rivalries however critiques every of them as viable front-end ecosystem options, whereas specializing in safety dangers and finest practices and the variations between them. A must-read.</p>\n<h4>Designing Accessible Shade Methods</h4>\n<p>Getting shade distinction proper is a necessary a part of ensuring that not solely folks with visible impairments can simply use your product but additionally everybody else when they’re in low-light environments or utilizing older screens. Nevertheless, should you’ve ever tried to create an accessible shade system your self, you most likely know that this may be fairly a problem.</p>\n<a href=\"https://stripe.com/en-de/blog/accessible-color-systems\"></a>“<a href=\"https://stripe.com/en-de/blog/accessible-color-systems\">Designing Accessible Shade Methods</a>” written by Daryl Koopersmith and Wilson Miner.<p>The workforce at Stripe just lately determined to deal with the problem and redesign their present shade system. The advantages it ought to present out of the field: cross accessibility tips, use clear and vibrant hues that customers can simply distinguish from each other, and have a constant visible weight with no shade showing to take precedence over one other. In case you’re curious to seek out out extra about their method, their <a href=\"https://stripe.com/en-de/blog/accessible-color-systems\">weblog publish</a> gives you useful insights.</p>\n<h4>Digital Wellbeing Experiments</h4>\n<p>Everybody has a special relationship with their telephones, however all of us have one thing in widespread: There are all the time these moments when it feels that telephones distract from life somewhat than enhance it — when having dinner with buddies and everybody checks their incoming notifications, for instance.</p>\n<a href=\"https://experiments.withgoogle.com/collection/digitalwellbeing\"></a>“<a href=\"https://experiments.withgoogle.com/collection/digitalwellbeing\">Digital Wellbeing Experiments</a>”, a showcase of concepts and instruments that assist folks discover a higher steadiness with expertise.<p>With their <a href=\"https://experiments.withgoogle.com/collection/digitalwellbeing\">Digital Wellbeing Experiments</a>, Google now showcases concepts and instruments that assist folks discover a higher steadiness with expertise and encourage designers and builders to contemplate digital wellbeing in every little thing they design and construct. There are experiments that allow you to change off from expertise as a gaggle, for instance, keep targeted by getting the suitable apps on the proper occasions, or take an important issues with you on a printed “paper cellphone”. The code for the experiments is open-source, and you probably have an thought for a digital wellbeing experiment, the Hack Pack will enable you to carry it to life.</p>\n<h4>Recursive: A Free Extremely-Versatile Variable Font</h4>\n<p>A font that offers you typographic management over 5 stylistic axes and might go from Sans to Mono? The variable font <a href=\"https://www.recursive.design/\">Recursive</a> makes it doable, providing a completely new degree of flexibility.</p>\n<a href=\"https://www.recursive.design/\"></a><a href=\"https://www.recursive.design/\">Recursive Font</a>, a typographic palette for vibrant code and UI.<p>Taking full benefit of variable font expertise, Recursive permits you to select from a variety of predefined kinds or dial in precisely what you need for every of its axes. Inspiration got here from single-stroke informal signpainting to offer the font a versatile and energetic look, making it an excellent match for data-rich-apps, technical documentation, code editors, and rather more. Please notice that Recursive remains to be below lively growth and can quickly be accessible by means of Google Fonts. A beta model is already accessible.</p>\n<h4>Open-Supply Tutorials For Studying GraphQL</h4>\n<p>GraphQL permits a consumer to specify precisely what knowledge it wants from an API, so as an alternative of a number of endpoints that return mounted knowledge constructions, a GraphQL server exposes a single endpoint and responds with exactly the info a consumer requested for. If you wish to wrap your head round GraphQL, listed below are two nice assets to get you began.</p>\n<a href=\"https://github.com/hasura/learn-graphql\"></a>There are a selection of open-source group maintained <a href=\"https://github.com/hasura/learn-graphql\">tutorials</a> that may enable you to to maneuver from the fundamentals of GraphQL to constructing a real-time software very quickly.<p><a href=\"https://www.howtographql.com/\"><em>Find out how to GraphQL</em></a> is a free open-source tutorial to take your GraphQL abilities from zero to manufacturing. Divided up into two elements, half one covers the core ideas of GraphQL whereas half two offers you a broader understanding of the GraphQL ecosystem. The opposite studying useful resource comes from the makers of the GraphQL engine Hasura: three <a href=\"https://learn.hasura.io/\">open-source community-maintained tutorials</a> (front-end, cell, and back-end tutorials) train you GraphQL to get you able to construct a real-time software in two hours.</p>\n<h4>Fixing Picture Orientation</h4>\n<p>Picture orientation on the net is, effectively, sophisticated. When Michael Scharnagl labored on a aspect undertaking, he seen that the photographs he uploaded to his server have been proven within the flawed orientation. Now he wrote a <a href=\"https://justmarkup.com/articles/2019-10-21-image-orientation/\">weblog publish</a> through which he dives deeper into the problem and the best way to repair it.</p>\n<a href=\"https://justmarkup.com/articles/2019-10-21-image-orientation/\"></a><a href=\"https://justmarkup.com/articles/2019-10-21-image-orientation/\">Picture orientation on the net</a> defined by Michael Scharnagl.<p>The explanation for portrait photos being displayed in panorama mode when they’re embedded utilizing <code></code> or <code>background-image</code> is the EXIF knowledge for the picture. How a browser offers with EXIF orientation will depend on the browser, and there’s no cross-browser approach to simply right it both. Michael’s Node.js repair helps you right the orientation. A useful little tip.</p>\n<h3>From Smashing With Love</h3>\n<p>A month could be a very long time to remain up to the mark, so please do subscribe to our bi-weekly <a href=\"https://www.smashingmagazine.com/the-smashing-newsletter/\">publication</a> and our <a href=\"https://podcast.smashingmagazine.com/subscribe?_ga=2.148489463.198915693.1573422057-899069810.1573222413\">podcast</a> should you nonetheless haven’t. Each challenge is written and edited with love and care. No third-party mailings or hidden promoting — promise!</p>\n<p>You may also tune into our very personal <a href=\"https://www.smashingmagazine.com/smashing-tv/\">Smashing TV</a>, and observe us on <a href=\"https://twitter.com/smashingmag\">Twitter</a>, <a href=\"https://www.facebook.com/smashmag/\">Fb</a> in addition to <a href=\"https://www.linkedin.com/company/smashing-magazine/\">LinkedIn</a>. Please do all the time be at liberty to succeed in out and share your initiatives with us! We love listening to from you!</p>\n<p>Sustain the good work, everybody! <em>You’re smashing!</em></p>\n<p><span>(cm, vf, ra, il)</span></p>",
+        "text": "Tweet\n\t\t\t\t\t\t\t\n\t\t\t\tShare\n\t\t\t\t\t\t\t\n\t\t\t\tShare\n\t\t\t\t\t\t\t\n\t\t\t\tReddit\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\n\n\n\n\n\n\nAbout The Creator\nJuggling between three languages each day, Iris is thought for her love of linguistics, arts, internet design and typography, in addition to her goldmine of …\nExtra about\nIris\n…\n\n\n\n\nWithin the fast-paced trade that designers and builders work in, it’s necessary to remain updated as a lot as doable. Don’t fear, we’ve acquired your again with month-to-month updates that will help you keep up to the mark.\nOn behalf of the Smashing workforce, welcome to a different month-to-month replace to maintain you all within the loop about all issues smashing. Be part of us as we share the most recent information and spotlight the issues now we have loved studying over the previous month.\nMost of the included posts are sourced from the most well-liked hyperlinks from our Smashing E-newsletter. In case you don’t get our publication but, then enroll right here to obtain helpful strategies and goodies (together with a free eBook on accessibility)!\nWhat’s New At Smashing?\nThe final SmashingConf of this yr befell in New York, an occasion that acquired offered out a great distance upfront and one other one we’re all fairly happy with. In case you missed out, our editor-in-chief Rachel Andrew summed up every little thing in a publish with movies and images of SmashingConf NY. Yow will discover the slides of the talks over right here, and even already seize your tremendous early-bird ticket should you like!\nSubsequent, there’s a ’lil undertaking that we’ve been which means to launch for a fairly some time, and it’s lastly occurring! We’re proud to have kicked off the Smashing Podcast, a bi-weekly podcast that’s moderated by our expensive good friend Drew McLellan — be sure to subscribe and tune into any podcast participant of your alternative.\nFinal however not least, we’re excited and searching very a lot ahead to the discharge of the upcoming Smashing e-book “Inclusive Parts” written by Heydon Pickering on the whys and the hows, making accessibility extra approachable and pleasant for builders. Keep tuned!\nReally helpful Studying on Smashing Journal\nWe publish a brand new article each day, and so should you’re not subscribed to our RSS feed or observe us on social media, you might miss out on some good articles! Listed below are some that our readers appeared to get pleasure from and advocate additional:\n“How To Cease Evaluation Paralysis With Design” by Suzanne Scacca\nOn the subject of placing our guests on the spot, giving them too many choices hurts their decision-making potential together with how they really feel concerning the expertise as an entire.\n\n“What Newspapers Can Educate Us About Net Design” by Frederick O’Brien\nEarlier than the house web page, there was the entrance web page. From the Gutenberg Precept to grid methods to above the fold, newspapers train us a lot concerning the foundations of internet design.\n\n“Creating On-line Environments That Work Properly For Older Customers” by Barry Rueger\nA big a part of the Web-using inhabitants is aged 50 or older — together with the individuals who invented it. Designers want to grasp what older customers want and why it’s not sufficient to only say, “I can learn it, so what’s the issue?”\n\n“Writing A Multiplayer Textual content Journey Engine In Node.js” by Fernando Doglio\nA Four-part collection that takes you thru step-by-step that will help you create a text-adventure engine with Node.js.\n\nGreatest Picks From Our E-newsletter\nWe’ll be trustworthy: Each second week, we wrestle with holding the Smashing E-newsletter points at a average size — there are simply so many gifted of us on the market engaged on good initiatives! So, with out eager to make this month-to-month replace too lengthy both, we’re shining the highlight on the next initiatives:\nWord: A thanks to Cosima Mielke for writing and getting ready these posts!\nFree Companies For Builders\nSo many providers on the market provide free tiers, however they are often exhausting to seek out. Free For Builders desires to vary that and lists software program and different providers which have free tiers for builders.\nfree-for.dev, a listing of SaaS, PaaS and IaaS choices which have free tiers of curiosity to devops and infradev.The providers included within the checklist are notably fascinating for System Directors, DevOps Practitioners, and different infrastructure builders and canopy every little thing from cloud suppliers and supply code repos to testing, log administration, fee integration, and much more. Greater than 500 folks have contributed to this group undertaking and you’re welcome to submit your findings, too, in fact. A useful useful resource for the bookmarks.\nGit Command Cheatsheet\nHave you learnt your git instructions? Whilst you most likely know the commonest ones by coronary heart, there are all the time these instructions which can be simply forgotten since you don’t want them usually. A concise refresher now comes from Rainer Selvet.\nGitSheet, a useless easy git cheatsheet.Described as a “useless easy git cheatsheet” by its creator, GitSheet lists git instructions and what they do by subject. A nifty little function: You possibly can copy a command to your clipboard with only a click on. Easy but efficient.\nA Playground For Tinkering With Design Methods\nYou’re about to construct a design system however don’t actually know the place or the best way to start? Properly, the Design System Playground is likely to be an excellent place to get began.\nDesign System Playground, an open-source undertaking constructed by John Polacek.The playground provides a variety of room to tinker with completely different font and shade mixtures and, when you’re completely happy together with your selections, it generates a design system that you would be able to export and use in your initiatives instantly. If the visible route of your design isn’t clear but, there’s additionally the choice to make use of a preset theme or random selections to construct upon.\nFreebie: Combine-And-Match Illustrations\nIllustrations are a unbelievable approach to breathe some life right into a undertaking. However not all of us have the abilities to create them ourselves or the time or the funds to rent an illustrator. For these events, the mix-and-match illustration library which Leni Kauffman created, would possibly turn out to be useful.\nRecent People, a fantastic illustration library of\n\nfolks and objects created and designed by London-based illustrator Leni Kauffman.Recent People helps you to mix poses, outfits, and pores and skin tones into completely different characters. The library additionally contains background parts (e.g., tables, seating, lamps, crops) to create completely different settings — from workplace areas to nature scenes. Free for private and business initiatives.\nActual-Time Visualization Of Tokyo’s Public Transport\nA surprising 3D knowledge visualization undertaking comes from Akihiko Kusanagi: Mini Tokyo 3D shows Tokyo’s public transport system on a map in realtime.\nMassive preview, a real-time 3D digital map of Tokyo’s public transport system.You possibly can observe alongside Tokyo’s trains shifting by means of town, with info on the prepare line, prepare quantity, subsequent and former stops, and doable delays. The information for this mammoth undertaking is sourced from Open Information Problem for Public Transportation in Tokyo which promotes the openness of public transportation knowledge. Their goal is to make public transportation (which is taken into account to be the world’s most complex) simpler to navigate. Inspiring!\nClassic Science And Tech Advertisements\nIn case you’ve acquired a candy spot for classic graphic design, right here’s a really particular goodie for you: a Flickr album with greater than 1,400 science and tech adverts from the 1950s and 60s.\n“Science and Tech Advertisements” (Flickr album), a random assortment of science adverts collected from numerous science and tech magazines of the 50s and 60s.The adverts come from numerous science and tech magazines and are nice examples of the modernist mid-century aesthetic — and an enchanting journey again to the occasions when the foundations of the applied sciences we take with no consideration right now have been being laid. Eye sweet!\nJavaScript Frameworks Safety Report 2019\nThe parents at Snyk printed their state of JavaScript frameworks safety report for 2019. It investigates the state of safety for the Angular and React ecosystems in addition to safety practices for the favored JavaScript frameworks Vue.js, Bootstrap, and jQuery.\nJavaScript Frameworks Safety Report 2019, a report that investigates the state of safety for each the Angular and React ecosystems.Given the truth that Angular and React each have their proponents with ongoing discussions whether or not one or the opposite is a real framework, the report doesn’t intend to enterprise into rivalries however critiques every of them as viable front-end ecosystem options, whereas specializing in safety dangers and finest practices and the variations between them. A must-read.\nDesigning Accessible Shade Methods\nGetting shade distinction proper is a necessary a part of ensuring that not solely folks with visible impairments can simply use your product but additionally everybody else when they’re in low-light environments or utilizing older screens. Nevertheless, should you’ve ever tried to create an accessible shade system your self, you most likely know that this may be fairly a problem.\n“Designing Accessible Shade Methods” written by Daryl Koopersmith and Wilson Miner.The workforce at Stripe just lately determined to deal with the problem and redesign their present shade system. The advantages it ought to present out of the field: cross accessibility tips, use clear and vibrant hues that customers can simply distinguish from each other, and have a constant visible weight with no shade showing to take precedence over one other. In case you’re curious to seek out out extra about their method, their weblog publish gives you useful insights.\nDigital Wellbeing Experiments\nEverybody has a special relationship with their telephones, however all of us have one thing in widespread: There are all the time these moments when it feels that telephones distract from life somewhat than enhance it — when having dinner with buddies and everybody checks their incoming notifications, for instance.\n“Digital Wellbeing Experiments”, a showcase of concepts and instruments that assist folks discover a higher steadiness with expertise.With their Digital Wellbeing Experiments, Google now showcases concepts and instruments that assist folks discover a higher steadiness with expertise and encourage designers and builders to contemplate digital wellbeing in every little thing they design and construct. There are experiments that allow you to change off from expertise as a gaggle, for instance, keep targeted by getting the suitable apps on the proper occasions, or take an important issues with you on a printed “paper cellphone”. The code for the experiments is open-source, and you probably have an thought for a digital wellbeing experiment, the Hack Pack will enable you to carry it to life.\nRecursive: A Free Extremely-Versatile Variable Font\nA font that offers you typographic management over 5 stylistic axes and might go from Sans to Mono? The variable font Recursive makes it doable, providing a completely new degree of flexibility.\nRecursive Font, a typographic palette for vibrant code and UI.Taking full benefit of variable font expertise, Recursive permits you to select from a variety of predefined kinds or dial in precisely what you need for every of its axes. Inspiration got here from single-stroke informal signpainting to offer the font a versatile and energetic look, making it an excellent match for data-rich-apps, technical documentation, code editors, and rather more. Please notice that Recursive remains to be below lively growth and can quickly be accessible by means of Google Fonts. A beta model is already accessible.\nOpen-Supply Tutorials For Studying GraphQL\nGraphQL permits a consumer to specify precisely what knowledge it wants from an API, so as an alternative of a number of endpoints that return mounted knowledge constructions, a GraphQL server exposes a single endpoint and responds with exactly the info a consumer requested for. If you wish to wrap your head round GraphQL, listed below are two nice assets to get you began.\nThere are a selection of open-source group maintained tutorials that may enable you to to maneuver from the fundamentals of GraphQL to constructing a real-time software very quickly.Find out how to GraphQL is a free open-source tutorial to take your GraphQL abilities from zero to manufacturing. Divided up into two elements, half one covers the core ideas of GraphQL whereas half two offers you a broader understanding of the GraphQL ecosystem. The opposite studying useful resource comes from the makers of the GraphQL engine Hasura: three open-source community-maintained tutorials (front-end, cell, and back-end tutorials) train you GraphQL to get you able to construct a real-time software in two hours.\nFixing Picture Orientation\nPicture orientation on the net is, effectively, sophisticated. When Michael Scharnagl labored on a aspect undertaking, he seen that the photographs he uploaded to his server have been proven within the flawed orientation. Now he wrote a weblog publish through which he dives deeper into the problem and the best way to repair it.\nPicture orientation on the net defined by Michael Scharnagl.The explanation for portrait photos being displayed in panorama mode when they’re embedded utilizing  or background-image is the EXIF knowledge for the picture. How a browser offers with EXIF orientation will depend on the browser, and there’s no cross-browser approach to simply right it both. Michael’s Node.js repair helps you right the orientation. A useful little tip.\nFrom Smashing With Love\nA month could be a very long time to remain up to the mark, so please do subscribe to our bi-weekly publication and our podcast should you nonetheless haven’t. Each challenge is written and edited with love and care. No third-party mailings or hidden promoting — promise!\nYou may also tune into our very personal Smashing TV, and observe us on Twitter, Fb in addition to LinkedIn. Please do all the time be at liberty to succeed in out and share your initiatives with us! We love listening to from you!\nSustain the good work, everybody! You’re smashing!\n(cm, vf, ra, il)"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-10-21-image-orientation/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://nthsecure.com/smashing-month-to-month-roundup-neighborhood-assets-and-favourite-posts"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dennis Frank",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fd250cba7285e616a349f74d143ecd898f689f81407de58339c505c59444ed59.jpg",
+        "url": "https://twitter.com/freshmango"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-3563601",
+      "published": null,
+      "wm-received": "2019-12-06T07:19:33Z",
+      "wm-id": 731363,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/3563601",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Sander",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0c533336a0f33be73a7963008ce319ed9cee0d388fcf4528f7f498d1bca8a929.jpg",
+        "url": "https://twitter.com/t_sander"
+      },
+      "url": "https://twitter.com/t_sander/status/1202845638087626752",
+      "published": "2019-12-06T07:02:02+00:00",
+      "wm-received": "2019-12-06T07:19:32Z",
+      "wm-id": 731362,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202845638087626752",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nguyễn Thành Long",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/longnt80"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-17433517",
+      "published": null,
+      "wm-received": "2019-12-05T21:50:28Z",
+      "wm-id": 731281,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/17433517",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mhannon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/296e1ea6edeb116ef4126f9930767dce9cecd9e7b35516674a73505129cc4bb7.jpg",
+        "url": "https://twitter.com/mhannon"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-15695380",
+      "published": null,
+      "wm-received": "2019-12-05T19:23:08Z",
+      "wm-id": 731129,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/15695380",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ᴍʀs. ʜᴇʀᴍᴀɴɴ 👩🏻‍🦰🍁",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/63ccdd52515114f0aa7a26287ea82e65bc319815a794d9e62e963e35f7476b56.jpg",
+        "url": "https://twitter.com/heartcrazed"
+      },
+      "url": "https://twitter.com/heartcrazed/status/1202624967441076224",
+      "published": "2019-12-05T16:25:10+00:00",
+      "wm-received": "2019-12-05T16:42:56Z",
+      "wm-id": 731068,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202624967441076224",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "doug",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c040048f6670bf083ed367f5241082bb8d41934c24876a34159ee39bff5d3012.jpg",
+        "url": "https://twitter.com/stringd"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-15743328",
+      "published": null,
+      "wm-received": "2019-12-05T15:17:12Z",
+      "wm-id": 731044,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/15743328",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Müller",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/17671e90723472d46f57384d34735d33ab8e6fc45d30233f1ba15b2fa72639d2.jpg",
+        "url": "https://twitter.com/pmmueller"
+      },
+      "url": "https://twitter.com/pmmueller/status/1202522782237691904",
+      "published": "2019-12-05T09:39:07+00:00",
+      "wm-received": "2019-12-05T09:59:10Z",
+      "wm-id": 730988,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202522782237691904",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Müller",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/17671e90723472d46f57384d34735d33ab8e6fc45d30233f1ba15b2fa72639d2.jpg",
+        "url": "https://twitter.com/pmmueller"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-11409092",
+      "published": null,
+      "wm-received": "2019-12-05T09:59:09Z",
+      "wm-id": 730987,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/11409092",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maëlig",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/27bc9fc9a622449ebc38108edd35982c35a9b4ddf83de600fa828276556831a6.jpg",
+        "url": "https://twitter.com/MaelB"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-49285959",
+      "published": null,
+      "wm-received": "2019-12-05T08:40:55Z",
+      "wm-id": 730978,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/49285959",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chelsea Malinaric",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7091334c9ad4568a9286708560ea63561b1eed7515d2d2685daedfd882cc11e6.jpg",
+        "url": "https://twitter.com/chelsmalinaric"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-4889878441",
+      "published": null,
+      "wm-received": "2019-12-05T07:18:48Z",
+      "wm-id": 730950,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/4889878441",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "PO. DEMULSANT",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/50af2051a534c08abc7085788b07649a806c3083a0d716b6036406d4695ef80d.png",
+        "url": "https://twitter.com/picodix"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-45118606",
+      "published": null,
+      "wm-received": "2019-12-05T06:19:16Z",
+      "wm-id": 730936,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/45118606",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johannes Nielsen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5db4593ed2a43eb43b5be8d99ebe8438403c3427e200d4ebb70a7d9282ca2205.jpg",
+        "url": "https://twitter.com/fly_kasual"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-3748174702",
+      "published": null,
+      "wm-received": "2019-12-05T06:19:15Z",
+      "wm-id": 730935,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/3748174702",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manal Pendse",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fd036e34b242bd37ed452222b2775b3b5093b94e235aa18e1ce819466481e33d.jpg",
+        "url": "https://twitter.com/ManalPendse"
+      },
+      "url": "https://twitter.com/ManalPendse/status/1202460945089384449",
+      "published": "2019-12-05T05:33:24+00:00",
+      "wm-received": "2019-12-05T05:49:05Z",
+      "wm-id": 730924,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202460945089384449",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daᴎilo Vәga ▲ 🇨🇱 ‏",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e3d9888f527fb77dea8ed7c88b083a5b0428bb0f3471124f008b9e1b409a2ab3.jpg",
+        "url": "https://twitter.com/Danilux"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-11583332",
+      "published": null,
+      "wm-received": "2019-12-05T05:16:49Z",
+      "wm-id": 730921,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/11583332",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Batbayar B.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5231241ed3eb5997a5fd927a67998f98119aa69c8fbb87ac5dc4378be8257d9a.jpg",
+        "url": "https://twitter.com/batbayar3113"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-39935068",
+      "published": null,
+      "wm-received": "2019-12-05T04:44:55Z",
+      "wm-id": 730909,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/39935068",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Arun Agrawal",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9595b4e9d7c2885a5945691c6274a4160d728c68dd51af5d5f0f20cc4ebd4190.png",
+        "url": "https://twitter.com/ebizindia"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-14168863",
+      "published": null,
+      "wm-received": "2019-12-05T03:45:52Z",
+      "wm-id": 730901,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/14168863",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Udbhav Rai",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a30085f143bceeeadbcb502431930047e081cbeb6a10b1952f4517706754666f.jpg",
+        "url": "https://twitter.com/udbhav3000"
+      },
+      "url": "https://twitter.com/udbhav3000/status/1202426003064152070",
+      "published": "2019-12-05T03:14:33+00:00",
+      "wm-received": "2019-12-05T03:20:35Z",
+      "wm-id": 730894,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202426003064152070",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diana Le",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2597499d8d0645bd9e2f63b8bcd0d9545864f88de156bddefa06ee3fcc7c98c5.png",
+        "url": "https://twitter.com/dianasoarus"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-285213919",
+      "published": null,
+      "wm-received": "2019-12-05T02:47:15Z",
+      "wm-id": 730882,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/285213919",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thanh Trần",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0e1047164961ef2f2c9f45aa6dc43359ed35f70e19592191ac075766c346ac2d.png",
+        "url": "https://twitter.com/trongthanh"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-85248494",
+      "published": null,
+      "wm-received": "2019-12-05T01:05:19Z",
+      "wm-id": 730860,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/85248494",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vertical Motion",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ba85fefb81bbfff0b118dcd61112f938375357de73377d81c1881031a6a85f4b.jpg",
+        "url": "https://twitter.com/vmgroundcontrol"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1584988088",
+      "published": null,
+      "wm-received": "2019-12-05T00:31:02Z",
+      "wm-id": 730847,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1584988088",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dino Quarin 🤖 🐺",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fde4b760937cb16bef131e640e4607044293cb94e90dacc5907d8195a7c0d354.png",
+        "url": "https://twitter.com/Dino_Quarin"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-8783912",
+      "published": null,
+      "wm-received": "2019-12-05T00:31:01Z",
+      "wm-id": 730846,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/8783912",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julie Young",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/10bc4633472046141c941ef525fec40274a6e0ab3b5b22a4c1b5068520bd77d1.jpg",
+        "url": "https://twitter.com/Young_Design"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-87535528",
+      "published": null,
+      "wm-received": "2019-12-04T23:22:33Z",
+      "wm-id": 730820,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/87535528",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Wilson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5e5b66544cb71066752e16c00baf35f4bfe4ad9c0a127ac0a2c812c9950b7c73.jpg",
+        "url": "https://twitter.com/ermlikeyeah"
+      },
+      "url": "https://twitter.com/ermlikeyeah/status/1202364322451775489",
+      "published": "2019-12-04T23:09:27+00:00",
+      "wm-received": "2019-12-04T23:22:33Z",
+      "wm-id": 730821,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202364322451775489",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "<a href=\"https://twitter.com/elmarko\">@elmarko</a> Asda Money flashbacks\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "@elmarko Asda Money flashbacks"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Antonius",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b9f3c9100136e57d6639a597f3f0a96aefc4fc39390f79608240b502adcc3066.jpg",
+        "url": "https://twitter.com/Okkido"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-5399562",
+      "published": null,
+      "wm-received": "2019-12-04T22:51:37Z",
+      "wm-id": 730804,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/5399562",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marko Čakarević",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8ebbc86d25997bb4cfc1234052b49608fd71593b54a7e0cf342132df380e701a.png",
+        "url": "https://twitter.com/markocakarevic"
+      },
+      "url": "https://twitter.com/markocakarevic/status/1202347994344878080",
+      "published": "2019-12-04T22:04:35+00:00",
+      "wm-received": "2019-12-04T22:19:10Z",
+      "wm-id": 730778,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202347994344878080",
+      "wm-target": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com//articles/2019-12-04-hamburger-menu/\">justmarkup.com//articles/2019…</a> <a href=\"https://twitter.com/search?q=%23UIdesign\">#UIdesign</a> <a href=\"https://twitter.com/search?q=%23UI\">#UI</a> <a href=\"https://twitter.com/search?q=%23UX\">#UX</a> <a href=\"https://twitter.com/search?q=%23webdesign\">#webdesign</a> <a href=\"https://twitter.com/search?q=%23digitaldesign\">#digitaldesign</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com//articles/2019… #UIdesign #UI #UX #webdesign #digitaldesign"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jacques Maes",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e2dd337bb5d5515cc0f9529caf316eee4ea41dfd6e0f54dd98000f6d0b2da67b.jpg",
+        "url": "https://twitter.com/jacmaes"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202200177395871744#favorited-by-82884637",
+      "published": null,
+      "wm-received": "2019-12-04T21:48:33Z",
+      "wm-id": 730772,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202200177395871744/82884637",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "NSJ",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/76ea20cc721de172728444df2c6dec28ea249907ab019e51fa18b787c489585c.jpg",
+        "url": "https://twitter.com/nsjones"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-16426041",
+      "published": null,
+      "wm-received": "2019-12-04T21:48:32Z",
+      "wm-id": 730770,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/16426041",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "KIRUPA 🍊",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/babc96d854d1a6437450356d191c2df43a5732808d8df8ab549f77238f08dbd8.jpg",
+        "url": "https://twitter.com/kirupa"
+      },
+      "url": "https://twitter.com/kirupa/status/1202343307419865088",
+      "published": "2019-12-04T21:45:57+00:00",
+      "wm-received": "2019-12-04T21:48:32Z",
+      "wm-id": 730771,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202343307419865088",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "A great read by Michael! 🙃\n\nMy snarky response is:\n\nDo: Implement anything but a 🍔 menu\n\nDon’t: Implement a 🍔 menu \n\n<a href=\"https://twitter.com/search?q=%23ui\">#ui</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>\n\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "A great read by Michael! 🙃\n\nMy snarky response is:\n\nDo: Implement anything but a 🍔 menu\n\nDon’t: Implement a 🍔 menu \n\n#ui #webdev"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Leon Barnard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c50984eea530a9cd5c988ee42f1c873ae5443fa819355f475d130733a0077c6b.jpg",
+        "url": "https://twitter.com/balsamiqLeon"
+      },
+      "url": "https://twitter.com/balsamiqLeon/status/1202342466331922432",
+      "published": "2019-12-04T21:42:37+00:00",
+      "wm-received": "2019-12-04T21:48:31Z",
+      "wm-id": 730769,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202342466331922432",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu - <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a> via <a href=\"https://twitter.com/justmarkup\">@justmarkup</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu - justmarkup.com/articles/2019-… via @justmarkup"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mirko Kaufmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/630048ee229ea46f8bbd7313327f26cf69930577411c6eccd4c2e81a39f79593.png",
+        "url": "https://twitter.com/mirkokaufmann"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-137307427",
+      "published": null,
+      "wm-received": "2019-12-04T21:24:22Z",
+      "wm-id": 730740,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/137307427",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flamur Mavraj",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b3523749d0e475a2eb5c2b515cbccdb22bf6dfa9dbb7c4f22c288ce3b9ee33df.jpg",
+        "url": "https://twitter.com/oxodesign"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-14636348",
+      "published": null,
+      "wm-received": "2019-12-04T20:26:04Z",
+      "wm-id": 730645,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/14636348",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tan Teck Hua",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3a1e12d2690de95e81614f4733dcb64d07c94e13056c578f22a45c9a5024d360.jpg",
+        "url": "https://twitter.com/teckhua"
+      },
+      "url": "https://twitter.com/teckhua/status/1202321097338712070",
+      "published": "2019-12-04T20:17:42+00:00",
+      "wm-received": "2019-12-04T20:26:03Z",
+      "wm-id": 730644,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202321097338712070",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rico 🙇🏻‍♂️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0b4ec1db5ab880ca24c6f10a63e01e5658bb332c74d42960d0e12aba92743099.jpg",
+        "url": "https://twitter.com/ricomadiko"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-703433",
+      "published": null,
+      "wm-received": "2019-12-04T19:59:38Z",
+      "wm-id": 730622,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/703433",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gilberto 🦁🎄",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7a4b204724bab2f1829675107f6ba08c75cf1e3a00daf5a585a1da3e2c121ce7.jpg",
+        "url": "https://twitter.com/gilbertoleon"
+      },
+      "url": "https://twitter.com/gilbertoleon/status/1202315206640230406",
+      "published": "2019-12-04T19:54:17+00:00",
+      "wm-received": "2019-12-04T19:59:38Z",
+      "wm-id": 730623,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202315206640230406",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Primera regla: No lo hagas\nSegunda regla: Ver la primera regla\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "Primera regla: No lo hagas\nSegunda regla: Ver la primera regla"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diego Narvaez",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/dinardu"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-45121488",
+      "published": null,
+      "wm-received": "2019-12-04T19:59:37Z",
+      "wm-id": 730621,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/45121488",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Erik Dunham",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4a81e234ec68835d4b0cd6ffd6dbfeb28dc8c2f5557e9a10a1e43dbbbd05d869.jpg",
+        "url": "https://twitter.com/sofafort"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202200177395871744#favorited-by-202712453",
+      "published": null,
+      "wm-received": "2019-12-04T19:25:04Z",
+      "wm-id": 730592,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202200177395871744/202712453",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "roycifer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/66cadf1d03075b720f8152748fb35b33849607acc97ae13ca5bcfa84107761e0.jpg",
+        "url": "https://twitter.com/roycifer"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-34863",
+      "published": null,
+      "wm-received": "2019-12-04T19:25:04Z",
+      "wm-id": 730593,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/34863",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Erik Dunham",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4a81e234ec68835d4b0cd6ffd6dbfeb28dc8c2f5557e9a10a1e43dbbbd05d869.jpg",
+        "url": "https://twitter.com/sofafort"
+      },
+      "url": "https://twitter.com/sofafort/status/1202305160367747074",
+      "published": "2019-12-04T19:14:22+00:00",
+      "wm-received": "2019-12-04T19:25:03Z",
+      "wm-id": 730591,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202305160367747074",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "So good!\n<a class=\"u-mention\" href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\"></a>",
+        "text": "So good!"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Erik Dunham",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4a81e234ec68835d4b0cd6ffd6dbfeb28dc8c2f5557e9a10a1e43dbbbd05d869.jpg",
+        "url": "https://twitter.com/sofafort"
+      },
+      "url": "https://twitter.com/sofafort/status/1202305080566923265",
+      "published": "2019-12-04T19:14:03+00:00",
+      "wm-received": "2019-12-04T19:25:02Z",
+      "wm-id": 730590,
+      "wm-source": "https://brid-gy.appspot.com/comment/twitter/justmarkup/1202200177395871744/1202305080566923265",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Thank you so much! The long discussions with my students about the usefulness of hamburger menus will be easier. Yay!\n<a class=\"u-mention\" href=\"http://justmarkup.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/justmarkup\"></a>",
+        "text": "Thank you so much! The long discussions with my students about the usefulness of hamburger menus will be easier. Yay!"
+      },
+      "in-reply-to": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Juan Olvera 🇲🇽 🌮",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/32badad20b4b0ff226c9fa0ca6e12d0e3cee489d7030823badc0189572a79e22.png",
+        "url": "https://twitter.com/_jolvera"
+      },
+      "url": "https://twitter.com/_jolvera/status/1202300656490401792",
+      "published": "2019-12-04T18:56:28+00:00",
+      "wm-received": "2019-12-04T18:57:57Z",
+      "wm-id": 730581,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1202300656490401792",
+      "wm-target": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Do's and Don'ts of implementing a hamburger menu <a href=\"https://justmarkup.com//articles/2019-12-04-hamburger-menu/\">justmarkup.com//articles/2019…</a> by <a href=\"https://twitter.com/justmarkup\">@justmarkup</a> <a href=\"https://twitter.com/search?q=%23ux\">#ux</a> <a href=\"https://twitter.com/search?q=%23a11y\">#a11y</a> <a href=\"https://twitter.com/search?q=%23accessibility\">#accessibility</a>",
+        "text": "Do's and Don'ts of implementing a hamburger menu justmarkup.com//articles/2019… by @justmarkup #ux #a11y #accessibility"
+      },
+      "mention-of": "https://justmarkup.com//articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tajinder Birdi",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4c183832a5bee923edf3823b1d4958f570a011c051ad4fc7508ab5c6f624da66.png",
+        "url": "https://twitter.com/tajinderbirdi"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-46621371",
+      "published": null,
+      "wm-received": "2019-12-04T18:57:56Z",
+      "wm-id": 730580,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/46621371",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jose Antonio Corachan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/310608541cf8a9271f7389dd803fba7431083b66a224d8ca2b598e59b5ddebb4.jpg",
+        "url": "https://twitter.com/jacorachan"
+      },
+      "url": "https://twitter.com/jacorachan/status/1202292572598788098",
+      "published": "2019-12-04T18:24:21+00:00",
+      "wm-received": "2019-12-04T18:29:36Z",
+      "wm-id": 730578,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202292572598788098",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Nyman",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9fad07255d664167211a97e27f6b5038ea44c2f14de2bac6febe1851a19110cb.jpg",
+        "url": "https://twitter.com/davidnyman"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-17829870",
+      "published": null,
+      "wm-received": "2019-12-04T18:28:54Z",
+      "wm-id": 730577,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/17829870",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Wuyts",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d80aa760f480b8938f413f14113a731e92797c053fb1faee1836ccc77c5e559c.jpg",
+        "url": "https://twitter.com/timwuyts"
+      },
+      "url": "https://twitter.com/timwuyts/status/1202284390765727746",
+      "published": "2019-12-04T17:51:50+00:00",
+      "wm-received": "2019-12-04T18:00:07Z",
+      "wm-id": 730569,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202284390765727746",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "florin cosmin onciu",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/810d975db714582d7fb3a1520b352957903226daa6fe8b3e8bae375c7f7453f8.jpg",
+        "url": "https://twitter.com/CosminOnciu"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-599701042",
+      "published": null,
+      "wm-received": "2019-12-04T18:00:07Z",
+      "wm-id": 730570,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/599701042",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carlos Obregón",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3220d3969870ad421cb9de503fb9424ce898440db93666e7346346bb473b31bf.jpg",
+        "url": "https://twitter.com/gaijinco"
+      },
+      "url": "https://twitter.com/gaijinco/status/1202276848463425538",
+      "published": "2019-12-04T17:21:52+00:00",
+      "wm-received": "2019-12-04T17:24:10Z",
+      "wm-id": 730564,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202276848463425538",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gideon Lehmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/63aababda3bda6602d72e54107fe4ea404cbd8b8453ae5d10ed05af298fec91e.jpg",
+        "url": "https://twitter.com/gidze3000"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-36459091",
+      "published": null,
+      "wm-received": "2019-12-04T17:24:07Z",
+      "wm-id": 730562,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/36459091",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Meagan Eller",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/770f3befdbdc3f64480d6c7c0a822266f5a70c5a5a575256bf7889e1490da502.jpg",
+        "url": "https://twitter.com/mmeller"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-14282516",
+      "published": null,
+      "wm-received": "2019-12-04T17:24:07Z",
+      "wm-id": 730563,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/14282516",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dominik kundel 🐼",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/66b33c2fba89aaaae741b0610a4c9df90d00f503e39fa3bb06216f39d7781022.jpg",
+        "url": "https://twitter.com/DKundel"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-53388766",
+      "published": null,
+      "wm-received": "2019-12-04T17:24:06Z",
+      "wm-id": 730561,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/53388766",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Dallas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/866dc6b113273389aabb2085fef50f7fe7272e09c829c2c880a29c7be6744405.jpg",
+        "url": "https://twitter.com/doctype_jon"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1159494277",
+      "published": null,
+      "wm-received": "2019-12-04T17:24:05Z",
+      "wm-id": 730560,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1159494277",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Κώστας Γαλανός 🇬🇷",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c5f802d1f33e8a38ab4ba2b0973ae4e19e01962640121fedcd7597e0e472ae5d.jpg",
+        "url": "https://twitter.com/k_galanos"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-2799630550",
+      "published": null,
+      "wm-received": "2019-12-04T16:49:04Z",
+      "wm-id": 730552,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/2799630550",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "laurentcrombe 🇧🇪",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ef96a603f0ae0c05550d87137dcc54ee7b1b31a329490d3d1203b15d95d33491.png",
+        "url": "https://twitter.com/laurentcrombe"
+      },
+      "url": "https://twitter.com/laurentcrombe/status/1202266934512930818",
+      "published": "2019-12-04T16:42:28+00:00",
+      "wm-received": "2019-12-04T16:49:04Z",
+      "wm-id": 730553,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202266934512930818",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "laurentcrombe 🇧🇪",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ef96a603f0ae0c05550d87137dcc54ee7b1b31a329490d3d1203b15d95d33491.png",
+        "url": "https://twitter.com/laurentcrombe"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-14972906",
+      "published": null,
+      "wm-received": "2019-12-04T16:49:03Z",
+      "wm-id": 730551,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/14972906",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "María Virginia Otaiza Rojas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/653a569c3d878c68a2aacd5606da91a9413affb8e627dea47882686a88ef3bb5.jpg",
+        "url": "https://twitter.com/mariavi50025010"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1202173839683313664",
+      "published": null,
+      "wm-received": "2019-12-04T16:18:10Z",
+      "wm-id": 730547,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1202173839683313664",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rattleknife Design",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7b59f68bd9792a39937c937ca763f72fcbd4426d99a2ad0e83df906d42c351ed.jpg",
+        "url": "https://twitter.com/Rattleknife"
+      },
+      "url": "https://twitter.com/Rattleknife/status/1202256112029982722",
+      "published": "2019-12-04T15:59:28+00:00",
+      "wm-received": "2019-12-04T16:18:08Z",
+      "wm-id": 730546,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202256112029982722",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Harald Atteneder",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/de919cda1554cfdfe9a34f99d9cc73d0ba9f2028ad761c4aac7e86f018de6b2f.jpeg",
+        "url": "https://twitter.com/urbantrout"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-761326064127926273",
+      "published": null,
+      "wm-received": "2019-12-04T16:18:07Z",
+      "wm-id": 730545,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/761326064127926273",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "José Cage",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5484f83bfa8b58693f5d9f2014d83a37c01ccdb60b7da45b1325949d446599ed.jpg",
+        "url": "https://twitter.com/cagejose"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-944899327",
+      "published": null,
+      "wm-received": "2019-12-04T15:54:02Z",
+      "wm-id": 730540,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/944899327",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ling",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b4c45f7c103462354ff6b47d032122176bda6c21732386b5827800434c06ddad.jpg",
+        "url": "https://twitter.com/lcube_ling"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-2925305532",
+      "published": null,
+      "wm-received": "2019-12-04T15:54:02Z",
+      "wm-id": 730541,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/2925305532",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vincent Desbarres",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1c01ed75acdb640657aee35706cc7dd99da88775d4a56aae70fa73c183db2e64.jpg",
+        "url": "https://twitter.com/vincivince"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-4342881",
+      "published": null,
+      "wm-received": "2019-12-04T15:54:00Z",
+      "wm-id": 730539,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/4342881",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joe Schunk",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cf01f183713202f5f4c6cc8b6417c877c76978bde2d766d1e91902e4af8e3a60.jpg",
+        "url": "https://twitter.com/jschunk_ac"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-157522364",
+      "published": null,
+      "wm-received": "2019-12-04T15:53:59Z",
+      "wm-id": 730538,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/157522364",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oude Dibbes",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c462916162a68d173ca9dd8d425395f01f4e14d764790c59961a0d3868fb299f.jpg",
+        "url": "https://twitter.com/oudedibbes"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-120049445",
+      "published": null,
+      "wm-received": "2019-12-04T15:53:58Z",
+      "wm-id": 730537,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/120049445",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "André Jaenisch",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/AndreJaenisch"
+      },
+      "url": "https://twitter.com/AndreJaenisch/status/1202244165683339265",
+      "published": "2019-12-04T15:12:00+00:00",
+      "wm-received": "2019-12-04T15:19:14Z",
+      "wm-id": 730532,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202244165683339265",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jackie 🇵🇷",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/08c6745629f0e2d60a05af4ba225e4dc6e78e81bcfcdd818e0faca21edee47c5.jpg",
+        "url": "https://twitter.com/junepants"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-483534692",
+      "published": null,
+      "wm-received": "2019-12-04T15:19:13Z",
+      "wm-id": 730531,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/483534692",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robert Hiller",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cb150541abc9dcf1e9b4bd759b3cbaf5904b5d945748f9683dcc4a5a376d6ae2.jpg",
+        "url": "https://twitter.com/paperboyffwd"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-4407749115",
+      "published": null,
+      "wm-received": "2019-12-04T15:19:09Z",
+      "wm-id": 730530,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/4407749115",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jesse Trippe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e3437a0926d855c28b53ce0849d4b3f644f4272a78a0e69aad9f444e6573c9b5.jpg",
+        "url": "https://twitter.com/jessetrippe"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-61759650",
+      "published": null,
+      "wm-received": "2019-12-04T14:49:02Z",
+      "wm-id": 730524,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/61759650",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bogdan Raczynski",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/77569a1b87bbd4e10ea10823fff4c7a78067b1347f77ea0e75c7cca38989093f.png",
+        "url": "https://twitter.com/bogdanraczynski"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-25708764",
+      "published": null,
+      "wm-received": "2019-12-04T14:49:01Z",
+      "wm-id": 730523,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/25708764",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "C.K",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/Cid__K"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1320807246",
+      "published": null,
+      "wm-received": "2019-12-04T14:48:59Z",
+      "wm-id": 730521,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1320807246",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jessthebp",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4f76ec672f925e9db0cd9829780ac3a72a7f146c2b8d6ea049d4a2aa0674a4d0.jpg",
+        "url": "https://twitter.com/jessthebp"
+      },
+      "url": "https://twitter.com/jessthebp/status/1202234368275746816",
+      "published": "2019-12-04T14:33:04+00:00",
+      "wm-received": "2019-12-04T14:48:59Z",
+      "wm-id": 730522,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1202140223825752064/1202234368275746816",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "text": "✏️ Do's and Don'ts of implementing a hamburger menu\n\njustmarkup.com/articles/2019-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Radimir Bitsov",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/852f57510b100c6b3a710848c36630bb342f3f8a8e26512ff307b23f0e93ca9a.jpg",
+        "url": "https://twitter.com/radibit"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-283477794",
+      "published": null,
+      "wm-received": "2019-12-04T14:20:15Z",
+      "wm-id": 730517,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/283477794",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Scharnagl",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0a236d69d7269a332c3cec198e0fce62d5d6c9749c60db7513c65f2511dbca5c.jpg",
+        "url": "https://twitter.com/justmarkup"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202225983585243136",
+      "published": "2019-12-04T13:59:45+00:00",
+      "wm-received": "2019-12-04T14:20:14Z",
+      "wm-id": 730516,
+      "wm-source": "https://brid-gy.appspot.com/comment/twitter/justmarkup/1202140223825752064/1202225983585243136",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Ah, good catch, thanks - it is fixed now.\n\nAnd thank you! 👍\n<a class=\"u-mention\" href=\"https://twitter.com/JohnFohf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/bnijenhuis\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/smashingmag\"></a>",
+        "text": "Ah, good catch, thanks - it is fixed now.\n\nAnd thank you! 👍"
+      },
+      "in-reply-to": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rgarsaball",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9af949be5e036b0fb7c5cd7e76b43338816cb266b451d41f23253fe1422e24bb.jpg",
+        "url": "https://twitter.com/rgarsaball"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-14943135",
+      "published": null,
+      "wm-received": "2019-12-04T14:20:13Z",
+      "wm-id": 730515,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/14943135",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Spawn Design",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0193f136b5ff607534637e5d34fb60c79881d9d0a97a58d412ab7e994ab60cac.jpg",
+        "url": "https://twitter.com/Spawn_Design"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-1005313001656897536",
+      "published": null,
+      "wm-received": "2019-12-04T14:20:12Z",
+      "wm-id": 730514,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/1005313001656897536",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anthony Sapp",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9fd5acc64246e22bd1be1241117aebe0e8b92d4d5735bfc8e83de973fcb4bfae.jpg",
+        "url": "https://twitter.com/thesapper"
+      },
+      "url": "https://twitter.com/justmarkup/status/1202140223825752064#favorited-by-21212832",
+      "published": null,
+      "wm-received": "2019-12-04T14:20:11Z",
+      "wm-id": 730513,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1202140223825752064/21212832",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "like-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bernard Nijenhuis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e1a995bad80b59251f9157c04ebf693517e0881f3a27be91bd8f789e5790802f.jpg",
+        "url": "https://twitter.com/bnijenhuis"
+      },
+      "url": "https://twitter.com/bnijenhuis/status/1202224095871557633",
+      "published": "2019-12-04T13:52:15+00:00",
+      "wm-received": "2019-12-04T14:20:10Z",
+      "wm-id": 730512,
+      "wm-source": "https://brid-gy.appspot.com/comment/twitter/justmarkup/1202140223825752064/1202224095871557633",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "content": {
+        "html": "Patterns-link has a ] at the end, which breaks the link...\n\nOT: Great article!\n<a class=\"u-mention\" href=\"http://justmarkup.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/JohnFohf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/justmarkup\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/smashingmag\"></a>",
+        "text": "Patterns-link has a ] at the end, which breaks the link...\n\nOT: Great article!"
+      },
+      "in-reply-to": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "in-reply-to",
       "wm-private": false
     }
   ]
