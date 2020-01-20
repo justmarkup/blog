@@ -786,3 +786,11 @@ a.carbon-poweredby {
     padding: 6px 0;
     font-size: 0.9em;
 }
+
+.infobox {
+    background: #eee;
+    padding: 12px;
+    margin: 30px 0 20px 0;
+    background: linear-gradient(to right, #089b52, #292e49);
+    color: #fff;
+}

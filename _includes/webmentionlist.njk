@@ -1,7 +1,7 @@
 {%- set absoluteUrl -%}{{ page.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
 {%- set mentions = webmentions.children | webmentionsForUrl(absoluteUrl) -%}
 {% if mentions | length %}
-    <div class="webmentions" id="webmentions">
+    <div class="webmentions" id="webmentions" hidden>
     <h3>Webmentions</h3>
 
         <ol class="webmentions__list">

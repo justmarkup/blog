@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2020-01-14T19:38:31.534Z",
+  "lastFetched": "2020-01-20T10:39:01.408Z",
   "children": [
     {
       "type": "entry",
@@ -3960,6 +3960,311 @@
       },
       "in-reply-to": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
       "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "stay positive",
+        "photo": "",
+        "url": "https://dc3itlinks.wordpress.com/author/dcapua7/"
+      },
+      "url": "https://dc3itlinks.wordpress.com/2020/01/16/2020_01_19-news-of-note/",
+      "published": "2020-01-16T12:29:05-05:00",
+      "wm-received": "2020-01-19T23:40:49Z",
+      "wm-id": 746129,
+      "wm-source": "https://dc3itlinks.wordpress.com/2020/01/16/2020_01_19-news-of-note/",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "name": "2020_01_19 News of Note?",
+      "content": {
+        "html": "<p>I’m trying to consolidate some links I’m finding useful for trend analysis, where tech could be headed, as well as future learnings. This format is my feeble attempt at organizing 🙂</p>\n\n\n\n<h3>Boring by default</h3>\n\n\n\n<p><a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">https://justmarkup.com/notes/2020-01-14-boring-by-default/</a></p>\n\n\n\n<h3>AppSheet. Gesundheit! Oh, we see – it’s Google pulling no-code development into a cloudy embrace</h3>\n\n\n\n<p><a href=\"https://www.theregister.co.uk/2020/01/15/google_cloud_embraces_nocode_development_with_appsheet_acquisition/\">https://www.theregister.co.uk/2020/01/15/google_cloud_embraces_nocode_development_with_appsheet_acquisition/</a></p>\n\n\n\n<h3>Look sharp: Microsoft Blazor’s gone mobile. Fancy developing mobile apps with C# web technology?</h3>\n\n\n\n<p><a href=\"https://www.theregister.co.uk/2020/01/15/microsoft_blazor_goes_mobile_develop_mobile_apps_with_c_web_technology/\">https://www.theregister.co.uk/2020/01/15/microsoft_blazor_goes_mobile_develop_mobile_apps_with_c_web_technology/</a></p>\n\n\n\n<h3>State of JS</h3>\n\n\n\n<p><a href=\"https://2019.stateofjs.com\">https://2019.stateofjs.com</a></p>\n\n\n\n<h3>WebAssembly: Key to a high-performance web, or ideal for malware? Reg speaks to co-designer Andreas Rossberg</h3>\n\n\n\n<p><a href=\"https://www.theregister.co.uk/2020/01/17/webassembly_key_to_a_highperformance_web_or_ideal_for_malware/\">https://www.theregister.co.uk/2020/01/17/webassembly_key_to_a_highperformance_web_or_ideal_for_malware/</a></p>\n\n\n\n<h3>Hiding Elements On The Web</h3>\n\n\n\n<p><a href=\"https://ishadeed.com/article/hiding-web/\">https://ishadeed.com/article/hiding-web/</a></p>\n\n\n\n<p></p>\n\n        \t\t\t\n\t\t\t\n\t\t\t\n\n<h3>Share this:</h3>\n<ul><li><a href=\"https://dc3itlinks.wordpress.com/2020/01/16/2020_01_19-news-of-note/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li>\n<li><a href=\"https://dc3itlinks.wordpress.com/2020/01/16/2020_01_19-news-of-note/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li>\n<li>\n</li></ul>\n\n\n<h3>Like this:</h3>\n\n<span><span>Like</span></span> <span>Loading...</span>\n\n<span></span><a></a>",
+        "text": "I’m trying to consolidate some links I’m finding useful for trend analysis, where tech could be headed, as well as future learnings. This format is my feeble attempt at organizing 🙂\n\n\n\nBoring by default\n\n\n\nhttps://justmarkup.com/notes/2020-01-14-boring-by-default/\n\n\n\nAppSheet. Gesundheit! Oh, we see – it’s Google pulling no-code development into a cloudy embrace\n\n\n\nhttps://www.theregister.co.uk/2020/01/15/google_cloud_embraces_nocode_development_with_appsheet_acquisition/\n\n\n\nLook sharp: Microsoft Blazor’s gone mobile. Fancy developing mobile apps with C# web technology?\n\n\n\nhttps://www.theregister.co.uk/2020/01/15/microsoft_blazor_goes_mobile_develop_mobile_apps_with_c_web_technology/\n\n\n\nState of JS\n\n\n\nhttps://2019.stateofjs.com\n\n\n\nWebAssembly: Key to a high-performance web, or ideal for malware? Reg speaks to co-designer Andreas Rossberg\n\n\n\nhttps://www.theregister.co.uk/2020/01/17/webassembly_key_to_a_highperformance_web_or_ideal_for_malware/\n\n\n\nHiding Elements On The Web\n\n\n\nhttps://ishadeed.com/article/hiding-web/\n\n\n\n\n\n        \t\t\t\n\t\t\t\n\t\t\t\n\nShare this:\nTwitter\nFacebook\n\nLike this:\n\nLike Loading..."
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://dc3itlinks.wordpress.com/2020/01/16/2020_01_19-news-of-note/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Valter - Senior IT Manager @ Del Giudice",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/440b51e20854601f74f0550a190144ba41560b835349f21b4067c27739dd7625.jpg",
+        "url": "https://twitter.com/EngVLafratta"
+      },
+      "url": "https://twitter.com/EngVLafratta/status/1218813996507238400",
+      "published": "2020-01-19T08:34:35+00:00",
+      "wm-received": "2020-01-19T08:47:13Z",
+      "wm-id": 745996,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1218813996507238400",
+      "wm-target": "https://justmarkup.com//articles/2018-05-31-https-valid-certificate-local-domain/",
+      "content": {
+        "html": "Setting up https with a valid certificate for a local domain – and use it with Node.js <a href=\"https://justmarkup.com//articles/2018-05-31-https-valid-certificate-local-domain/\">justmarkup.com//articles/2018…</a>",
+        "text": "Setting up https with a valid certificate for a local domain – and use it with Node.js justmarkup.com//articles/2018…"
+      },
+      "mention-of": "https://justmarkup.com//articles/2018-05-31-https-valid-certificate-local-domain/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adrian Roselli 🗯",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2802f5da6057132df9da7f04acee0dc3b93167f1f8b23230a15c6b138cf8acb1.jpeg",
+        "url": "https://twitter.com/aardrian"
+      },
+      "url": "https://twitter.com/aardrian/status/1218568779233398786",
+      "published": "2020-01-18T16:20:11+00:00",
+      "wm-received": "2020-01-18T16:21:50Z",
+      "wm-id": 745863,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1218568779233398786",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "No kidding, if I try to contribute a CSS/HTML/ARIA fix to an open source project and the first thing I have to do is set up an archaic environment for a text file change I just go do something else.\n<a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a>",
+        "text": "No kidding, if I try to contribute a CSS/HTML/ARIA fix to an open source project and the first thing I have to do is set up an archaic environment for a text file change I just go do something else.\njustmarkup.com/notes/2020-01-…"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gustavo Porto",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e3b42e884846d2e69ba6f751036a46bfa250d7380ddf5022250bf01ab3e0f222.jpg",
+        "url": "https://twitter.com/portothree"
+      },
+      "url": "https://twitter.com/portothree/status/1218198314358857728",
+      "published": "2020-01-17T15:48:05+00:00",
+      "wm-received": "2020-01-17T16:04:39Z",
+      "wm-id": 745581,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1218198314358857728",
+      "wm-target": "https://justmarkup.com//notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "Boring by default <a href=\"https://justmarkup.com//notes/2020-01-14-boring-by-default/\">justmarkup.com//notes/2020-01…</a>",
+        "text": "Boring by default justmarkup.com//notes/2020-01…"
+      },
+      "mention-of": "https://justmarkup.com//notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://imbuzu.wordpress.com/2020/01/16/the-boring-stack/",
+      "published": null,
+      "wm-received": "2020-01-16T23:14:35Z",
+      "wm-id": 745440,
+      "wm-source": "https://imbuzu.wordpress.com/2020/01/16/the-boring-stack/",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://imbuzu.wordpress.com/2020/01/16/the-boring-stack/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "EE",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/43fff2378599b63c664134f300fa26b7e272824c84c8258d013651bd7799a02f.png",
+        "url": "https://twitter.com/eerne"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-34865213",
+      "published": null,
+      "wm-received": "2020-01-16T11:07:22Z",
+      "wm-id": 745281,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/34865213",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Heilmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png",
+        "url": "https://twitter.com/codepo8"
+      },
+      "url": "https://twitter.com/codepo8/status/1217519832582590464",
+      "published": "2020-01-15T18:52:03+00:00",
+      "wm-received": "2020-01-15T19:18:04Z",
+      "wm-id": 744964,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1217519832582590464",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "👉🏻 “Never feel ashamed to start with a traditional (boring) stack – you may be the one launching a great project, while others still set up there build scripts.”\n\n🔗 <a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a>",
+        "text": "👉🏻 “Never feel ashamed to start with a traditional (boring) stack – you may be the one launching a great project, while others still set up there build scripts.”\n\n🔗 justmarkup.com/notes/2020-01-…"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manuel Matuzović",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg",
+        "url": "https://twitter.com/mmatuzo"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-22161724",
+      "published": null,
+      "wm-received": "2020-01-15T18:43:00Z",
+      "wm-id": 744947,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/22161724",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Baldur Bjarnason @baldur@toot.cafe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/380091dbece0311dd5cadc43ecdde03be0b6517dc13a83e8b6622a2a1e24516c.jpg",
+        "url": "https://twitter.com/fakebaldur"
+      },
+      "url": "https://twitter.com/fakebaldur/status/1217457182939238401",
+      "published": "2020-01-15T14:43:06+00:00",
+      "wm-received": "2020-01-15T14:57:13Z",
+      "wm-id": 744799,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1217457182939238401",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "“Boring by default”\n\nHard to do when your job depends on over-engineering and a certain amount of unnecessary pizzazz. <a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a>",
+        "text": "“Boring by default”\n\nHard to do when your job depends on over-engineering and a certain amount of unnecessary pizzazz. justmarkup.com/notes/2020-01-…"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lasha Krikheli",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4ca1f8afd78bf9304069f9dad595ec2f8a64277213fc711b560bfc7f0faf42c1.jpg",
+        "url": "https://twitter.com/LashaKrikheli"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-14140936",
+      "published": null,
+      "wm-received": "2020-01-15T12:59:11Z",
+      "wm-id": 744758,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/14140936",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "トミー",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b65f3d0ae878a243af4167b7346f12cd4260a5a832acaa437224331338fb9a07.jpg",
+        "url": "https://twitter.com/SaekiTominaga"
+      },
+      "url": "https://twitter.com/SaekiTominaga/status/1217281115393679360",
+      "published": "2020-01-15T03:03:28+00:00",
+      "wm-received": "2020-01-15T03:18:14Z",
+      "wm-id": 744539,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1217281115393679360",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "首がもげるほど頷きながら読んでる。\n\nBoring by default <a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a>",
+        "text": "首がもげるほど頷きながら読んでる。\n\nBoring by default justmarkup.com/notes/2020-01-…"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gaël Poupard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bebb7c8bbc4d5d316c64a4e8278e4fb1a662dd836590aa669864c8f7d7ca013d.jpeg",
+        "url": "https://twitter.com/ffoodd_fr"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-259814870",
+      "published": null,
+      "wm-received": "2020-01-14T23:30:08Z",
+      "wm-id": 744489,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/259814870",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Foster",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/77f3b964f299c76f9e460e79ef5ef99f24a4fa3750668ad08787658773ad24f7.jpg",
+        "url": "https://twitter.com/plfstr"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-221392435",
+      "published": null,
+      "wm-received": "2020-01-14T21:12:46Z",
+      "wm-id": 744424,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/221392435",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthew Phillips",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6d7638a1ee6e9af1c05c7b08256217d6ed989ffba71b68653b786f17d06adb76.jpg",
+        "url": "https://twitter.com/matthewcp"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-14447248",
+      "published": null,
+      "wm-received": "2020-01-14T20:06:32Z",
+      "wm-id": 744373,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/14447248",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7905218712e4abb53d85e6a82d400e60a560ff9eace7ab32b695a7e37930c2fb.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/justmarkup/status/1217169942853955586#favorited-by-58448784",
+      "published": null,
+      "wm-received": "2020-01-14T20:06:26Z",
+      "wm-id": 744372,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1217169942853955586/58448784",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]
