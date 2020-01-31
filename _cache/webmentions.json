@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2020-01-20T10:39:01.408Z",
+  "lastFetched": "2020-01-31T10:09:10.657Z",
   "children": [
     {
       "type": "entry",
@@ -4265,6 +4265,75 @@
       "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
       "like-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julien 💬",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4f4d7bcb5d92f0f0f052c8702db6ffbad4fca289b1cf8efbce3b7ee2661fa4a3.jpg",
+        "url": "https://twitter.com/jdassonval"
+      },
+      "url": "https://twitter.com/jdassonval/status/1221077877376126978",
+      "published": "2020-01-25T14:30:27+00:00",
+      "wm-received": "2020-01-25T14:58:45Z",
+      "wm-id": 748649,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1221077877376126978",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "Be boring by default and enhance on the way.\n<a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a> <a href=\"https://twitter.com/search?q=%23KeepItSimple\">#KeepItSimple</a>",
+        "text": "Be boring by default and enhance on the way.\njustmarkup.com/notes/2020-01-… #KeepItSimple"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Веб-стандарты",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ff2f2f01750c33798a4e7aa97ed3ac505d2cec68daa231baa5ec7da51f070310.jpg",
+        "url": "https://twitter.com/webstandards_ru"
+      },
+      "url": "https://twitter.com/webstandards_ru/status/1220693086445228033",
+      "published": "2020-01-24T13:01:25+00:00",
+      "wm-received": "2020-01-24T13:59:01Z",
+      "wm-id": 748306,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1220693086445228033",
+      "wm-target": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "photo": [
+        "https://pbs.twimg.com/media/EPDF5GYXsAE_AXE.jpg"
+      ],
+      "content": {
+        "html": "«Хорошо» и «плохо» при реализации гамбургер-меню. Майкл Шарналь собирает правильные практики для создания удобного и доступного переключателя навигации — <a href=\"https://justmarkup.com/articles/2019-12-04-hamburger-menu/\">justmarkup.com/articles/2019-…</a>",
+        "text": "«Хорошо» и «плохо» при реализации гамбургер-меню. Майкл Шарналь собирает правильные практики для создания удобного и доступного переключателя навигации — justmarkup.com/articles/2019-…"
+      },
+      "mention-of": "https://justmarkup.com/articles/2019-12-04-hamburger-menu/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Corey Megown",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fc7185a88c6f5b701224c2947a86a1fb5dc789cb137f05520b02cbcc33750b72.jpg",
+        "url": "https://twitter.com/cmegown"
+      },
+      "url": "https://twitter.com/cmegown/status/1220024637813379073",
+      "published": "2020-01-22T16:45:15+00:00",
+      "wm-received": "2020-01-22T16:56:44Z",
+      "wm-id": 747173,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1220024637813379073",
+      "wm-target": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "<a href=\"https://justmarkup.com/notes/2020-01-14-boring-by-default/\">justmarkup.com/notes/2020-01-…</a>",
+        "text": "justmarkup.com/notes/2020-01-…"
+      },
+      "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
       "wm-private": false
     }
   ]
