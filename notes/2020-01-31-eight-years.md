@@ -1,6 +1,8 @@
 ---
 title: Eight years
-description: 
+description: It's been eight years since I launched this site with my first article.
+ogImage: https://justmarkup.com/img/icons/icon-512x512.png
+ogImageAlt: justmarkup
 date: 2020-01-31T11:13:20+00:00
 tags:
     - note
