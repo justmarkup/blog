@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2020-01-31T10:11:53.366Z",
+  "lastFetched": "2020-02-21T06:38:56.304Z",
   "children": [
     {
       "type": "entry",
@@ -4335,6 +4335,333 @@
       "mention-of": "https://justmarkup.com/notes/2020-01-14-boring-by-default/",
       "wm-property": "mention-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://inneka.com/programming/html/difference-between-word-wrap-break-word-and-word-break-break-word/",
+      "published": null,
+      "wm-received": "2020-02-02T12:45:32Z",
+      "wm-id": 751191,
+      "wm-source": "https://inneka.com/programming/html/difference-between-word-wrap-break-word-and-word-break-break-word/",
+      "wm-target": "https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/",
+      "name": "Difference between word-wrap: break-word and word-break: break-word",
+      "content": {
+        "html": "Loading... \n         \n        \n        \n<h2>Difference between word-wrap: break-word and word-break: break-word</h2>\n<pre>\nI needed to fix some CSS somewhere because my text wasn't wrapping around and was instead going on indefinitely if it was an extremely long word.\nLike in most cases, I tried word-wrap: break-word; in my CSS file and it did not work.\nThen, to my surprise, and by the suggestion of Google Chrome Developer Tools, I tried word-break: break-word; and it fixed my problem. I was shocked by this so I've been googling to know the difference between these two but I have seen nothing on the subject.\nFurther, I don't think word-break: break-word; is documented behavior seeing as how W3 has no mention of it. I tested it on Safari and Chrome, and it works perfectly on both, but I'm hesitant to use word-break: break-word; because I see no mention of it anywhere.\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p><strong>Update</strong></p>\n<p>If you plan on breaking words and want to hyphenate as well, try the following:</p>\n<pre><code>.hyphenate {\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n  -webkit-hyphens: auto;\n  -ms-hyphens: auto;\n  -moz-hyphens: auto;\n  hyphens: auto;\n}\n</code></pre>\n<p>This worked even in Chrome … sort of … sans hyphens. Anyways a detailed explanation is in this <a href=\"https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/\">article</a>.</p>\n<p><code>word-break:break-word</code> is not documented and only master developers know this ultra secret technique like the <em>Quivering Palm of Death</em>. </p>\n<p>Actually it’s an obscure <code>-webkit-</code> property that works like <code>word-wrap: break-word</code> but it’s also used on dynamic lengths as well.</p>\n<p><strong><a href=\"https://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/\">Kenneth.io – Word Wrapping Hypernation Using CSS</a></strong></p>\n<p><strong><a href=\"https://css-tricks.com/almanac/properties/w/word-break/\">CSS-Tricks – word-break</a></strong></p>\n<p>From <a href=\"http://caniuse.com/#feat=word-break\"><strong>CaniUse</strong></a>:</p>\n\n\n\n\n\n\n\n<blockquote>\n<p>Chrome, Safari and other WebKit/Blink browsers also support the unofficial <code>break-word</code> value which is treated like <code>word-wrap: break-word</code>.</p>\n</blockquote>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+        "text": "Loading... \n         \n        \n        \nDifference between word-wrap: break-word and word-break: break-word\n\nI needed to fix some CSS somewhere because my text wasn't wrapping around and was instead going on indefinitely if it was an extremely long word.\nLike in most cases, I tried word-wrap: break-word; in my CSS file and it did not work.\nThen, to my surprise, and by the suggestion of Google Chrome Developer Tools, I tried word-break: break-word; and it fixed my problem. I was shocked by this so I've been googling to know the difference between these two but I have seen nothing on the subject.\nFurther, I don't think word-break: break-word; is documented behavior seeing as how W3 has no mention of it. I tested it on Safari and Chrome, and it works perfectly on both, but I'm hesitant to use word-break: break-word; because I see no mention of it anywhere.\n\nSolutions/Answers:\nAnswer 1:\n\nUpdate\nIf you plan on breaking words and want to hyphenate as well, try the following:\n.hyphenate {\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n  -webkit-hyphens: auto;\n  -ms-hyphens: auto;\n  -moz-hyphens: auto;\n  hyphens: auto;\n}\n\nThis worked even in Chrome … sort of … sans hyphens. Anyways a detailed explanation is in this article.\nword-break:break-word is not documented and only master developers know this ultra secret technique like the Quivering Palm of Death. \nActually it’s an obscure -webkit- property that works like word-wrap: break-word but it’s also used on dynamic lengths as well.\nKenneth.io – Word Wrapping Hypernation Using CSS\nCSS-Tricks – word-break\nFrom CaniUse:\n\n\n\n\n\n\n\n\nChrome, Safari and other WebKit/Blink browsers also support the unofficial break-word value which is treated like word-wrap: break-word.\n\n\n\n\n\n\n\n\n\n\nOur Awesome Free Tools\nCheck your IP Address precisely\nOnline JSON Formatter with Syntax Highlight\nOnline CSS Minifier Compressor\nOnline Javascript Minifier Compressor\nOnline MD5 Hash Generator\nOnline SHA-1, SHA-256, SHA-512 Generator\nOnline Base64 Encoder/Decoder\nOnline CRC-32 Calculator\nOnline Triple DES Encryptor/Decryptor\nBest World Clocks\nReferences\nDatabase Administration Tutorials\nProgramming Tutorials & IT News\nLinux & DevOps World\nEntertainment & General News\nAll the Free, Online Tools you need\n\n\n \n     Loading..."
+      },
+      "mention-of": "https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://inneka.com/programming/html/difference-between-word-wrap-break-word-and-word-break-break-word/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://inneka.com/programming/css/difference-between-word-wrap-break-word-and-word-break-break-word-2/",
+      "published": null,
+      "wm-received": "2020-02-01T11:46:18Z",
+      "wm-id": 750890,
+      "wm-source": "https://inneka.com/programming/css/difference-between-word-wrap-break-word-and-word-break-break-word-2/",
+      "wm-target": "https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/",
+      "name": "Difference between word-wrap: break-word and word-break: break-word",
+      "content": {
+        "html": "Loading... \n         \n        \n        \n<h2>Difference between word-wrap: break-word and word-break: break-word</h2>\n<pre>\nI needed to fix some CSS somewhere because my text wasn't wrapping around and was instead going on indefinitely if it was an extremely long word.\nLike in most cases, I tried word-wrap: break-word; in my CSS file and it did not work.\nThen, to my surprise, and by the suggestion of Google Chrome Developer Tools, I tried word-break: break-word; and it fixed my problem. I was shocked by this so I've been googling to know the difference between these two but I have seen nothing on the subject.\nFurther, I don't think word-break: break-word; is documented behavior seeing as how W3 has no mention of it. I tested it on Safari and Chrome, and it works perfectly on both, but I'm hesitant to use word-break: break-word; because I see no mention of it anywhere.\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p><strong>Update</strong></p>\n<p>If you plan on breaking words and want to hyphenate as well, try the following:</p>\n<pre><code>.hyphenate {\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n  -webkit-hyphens: auto;\n  -ms-hyphens: auto;\n  -moz-hyphens: auto;\n  hyphens: auto;\n}\n</code></pre>\n<p>This worked even in Chrome … sort of … sans hyphens. Anyways a detailed explanation is in this <a href=\"https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/\">article</a>.</p>\n<p><code>word-break:break-word</code> is not documented and only master developers know this ultra secret technique like the <em>Quivering Palm of Death</em>. </p>\n<p>Actually it’s an obscure <code>-webkit-</code> property that works like <code>word-wrap: break-word</code> but it’s also used on dynamic lengths as well.</p>\n<p><strong><a href=\"https://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/\">Kenneth.io – Word Wrapping Hypernation Using CSS</a></strong></p>\n<p><strong><a href=\"https://css-tricks.com/almanac/properties/w/word-break/\">CSS-Tricks – word-break</a></strong></p>\n<p>From <a href=\"http://caniuse.com/#feat=word-break\"><strong>CaniUse</strong></a>:</p>\n\n\n\n\n\n\n\n<blockquote>\n<p>Chrome, Safari and other WebKit/Blink browsers also support the unofficial <code>break-word</code> value which is treated like <code>word-wrap: break-word</code>.</p>\n</blockquote>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+        "text": "Loading... \n         \n        \n        \nDifference between word-wrap: break-word and word-break: break-word\n\nI needed to fix some CSS somewhere because my text wasn't wrapping around and was instead going on indefinitely if it was an extremely long word.\nLike in most cases, I tried word-wrap: break-word; in my CSS file and it did not work.\nThen, to my surprise, and by the suggestion of Google Chrome Developer Tools, I tried word-break: break-word; and it fixed my problem. I was shocked by this so I've been googling to know the difference between these two but I have seen nothing on the subject.\nFurther, I don't think word-break: break-word; is documented behavior seeing as how W3 has no mention of it. I tested it on Safari and Chrome, and it works perfectly on both, but I'm hesitant to use word-break: break-word; because I see no mention of it anywhere.\n\nSolutions/Answers:\nAnswer 1:\n\nUpdate\nIf you plan on breaking words and want to hyphenate as well, try the following:\n.hyphenate {\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n  -webkit-hyphens: auto;\n  -ms-hyphens: auto;\n  -moz-hyphens: auto;\n  hyphens: auto;\n}\n\nThis worked even in Chrome … sort of … sans hyphens. Anyways a detailed explanation is in this article.\nword-break:break-word is not documented and only master developers know this ultra secret technique like the Quivering Palm of Death. \nActually it’s an obscure -webkit- property that works like word-wrap: break-word but it’s also used on dynamic lengths as well.\nKenneth.io – Word Wrapping Hypernation Using CSS\nCSS-Tricks – word-break\nFrom CaniUse:\n\n\n\n\n\n\n\n\nChrome, Safari and other WebKit/Blink browsers also support the unofficial break-word value which is treated like word-wrap: break-word.\n\n\n\n\n\n\n\n\n\n\nOur Awesome Free Tools\nCheck your IP Address precisely\nOnline JSON Formatter with Syntax Highlight\nOnline CSS Minifier Compressor\nOnline Javascript Minifier Compressor\nOnline MD5 Hash Generator\nOnline SHA-1, SHA-256, SHA-512 Generator\nOnline Base64 Encoder/Decoder\nOnline CRC-32 Calculator\nOnline Triple DES Encryptor/Decryptor\nBest World Clocks\nReferences\nDatabase Administration Tutorials\nProgramming Tutorials & IT News\nLinux & DevOps World\nEntertainment & General News\nAll the Free, Online Tools you need\n\n\n \n     Loading..."
+      },
+      "mention-of": "https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://inneka.com/programming/css/difference-between-word-wrap-break-word-and-word-break-break-word-2/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manuel Matuzović",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg",
+        "url": "https://twitter.com/mmatuzo"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-22161724",
+      "published": null,
+      "wm-received": "2020-02-01T09:22:33Z",
+      "wm-id": 750751,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/22161724",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marcus Herrmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/72c80119cece59908e6cb2895d65ba6d88bad1944f8f29ef4e4a2bd99dd38a9d.jpg",
+        "url": "https://twitter.com/_marcusherrmann"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-11659852",
+      "published": null,
+      "wm-received": "2020-01-31T15:46:26Z",
+      "wm-id": 750588,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/11659852",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "micz flor",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4ce69713484023d955797fe3846d60772b5dc09d7030a72037c7a1e880b6595a.jpg",
+        "url": "https://twitter.com/miczflor"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-199626323",
+      "published": null,
+      "wm-received": "2020-01-31T13:15:52Z",
+      "wm-id": 750505,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/199626323",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Holger Bartel",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/592535dc857345dd207fd60638dac39139891257ffe2400f476a70ca705647be.jpg",
+        "url": "https://twitter.com/foobartel"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-205651658",
+      "published": null,
+      "wm-received": "2020-01-31T11:33:41Z",
+      "wm-id": 750478,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/205651658",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gideon Lehmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/63aababda3bda6602d72e54107fe4ea404cbd8b8453ae5d10ed05af298fec91e.jpg",
+        "url": "https://twitter.com/gidze3000"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-36459091",
+      "published": null,
+      "wm-received": "2020-01-31T11:04:16Z",
+      "wm-id": 750470,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/36459091",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lady Batarei",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/db8c7b10118c9fd0b171616cc323487212b9a6d203bf38e7d164c68bc6962e56.jpg",
+        "url": "https://twitter.com/batareechka"
+      },
+      "url": "https://twitter.com/justmarkup/status/1223187951305351168#favorited-by-130633800",
+      "published": null,
+      "wm-received": "2020-01-31T10:30:53Z",
+      "wm-id": 750469,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1223187951305351168/130633800",
+      "wm-target": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "like-of": "https://justmarkup.com/notes/2020-01-31-eight-years/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mischief magpie 💚",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2011b39f74e23929f4a4857878cb563895293c68df5bcf1907a59288224f657d.jpg",
+        "url": "https://twitter.com/isladeteuta"
+      },
+      "url": "https://twitter.com/justmarkup/status/1227484593860882432#favorited-by-4472692180",
+      "published": null,
+      "wm-received": "2020-02-12T12:23:12Z",
+      "wm-id": 755458,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1227484593860882432/4472692180",
+      "wm-target": "https://justmarkup.com/demos/web-share-target-image-to-grayscale/",
+      "like-of": "https://justmarkup.com/demos/web-share-target-image-to-grayscale/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mischief magpie 💚",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2011b39f74e23929f4a4857878cb563895293c68df5bcf1907a59288224f657d.jpg",
+        "url": "https://twitter.com/isladeteuta"
+      },
+      "url": "https://twitter.com/justmarkup/status/1227484593860882432#favorited-by-4472692180",
+      "published": null,
+      "wm-received": "2020-02-12T12:23:12Z",
+      "wm-id": 755459,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1227484593860882432/4472692180",
+      "wm-target": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "like-of": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.alvinashcraft.com/2020/02/12/dew-drop-february-12-2020-3132/",
+      "published": null,
+      "wm-received": "2020-02-12T12:17:50Z",
+      "wm-id": 755457,
+      "wm-source": "https://www.alvinashcraft.com/2020/02/12/dew-drop-february-12-2020-3132/",
+      "wm-target": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "mention-of": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.alvinashcraft.com/2020/02/12/dew-drop-february-12-2020-3132/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/",
+      "published": null,
+      "wm-received": "2020-02-12T09:41:14Z",
+      "wm-id": 755442,
+      "wm-source": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/",
+      "wm-target": "https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/",
+      "name": "JQuery el efecto del menu funciona solo una vez",
+      "content": {
+        "html": "Loading... \n         \n        \n        \n<h2>JQuery el efecto del menu funciona solo una vez</h2>\n<pre>\nhttp://www.maytelabargamalaga.com/prueba-menu/index.html\nHola a todos. Gracias de antemano por vuestra ayuda. \nEn el enlace que he adjuntado, estoy intentando animar la barra de menu. La idea es que cada vez que se pulse en un enlace, la barra desaparezca completamente y vuelva a aparecer. \nProblemas:\nLa animacion se hace una vez al inicio y luego no se repite. ¿quizas sea porque no he conseguido quitar la clase ('desaparece) o por la posicion fija del objeto? \nHTML\n</pre><ul><li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/#home\">Starseite</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/#about\">Über mich</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/#interactive\">Interaktiv</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/#course\">Coaching</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/#kontakt\">Kontakt</a></li>\n                    <li>\n                </li></ul>\n\nJS (JQuery)\n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n    $desplazamiento.click(function(e){     \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        cabecera.addClass('desaparece');\n});\n\nCSS\n.desaparece {\n    animation-name: fadeIn;\n-moz-animation-name: fadeIn;\n-webkit-animation-duration: 3s;\n  animation-duration: 3s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n\n}\n\nGracias por vuestra ayuda. Saludos\n\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>El problema es que las animaciones en CSS no se pueden reiniciar simplemente añadiendo de nuevo la clase.</p>\n<p>Te recomiendo leer <a href=\"https://css-tricks.com/restart-css-animation/\">este</a> artículo con varias alternativas, <a href=\"https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/\">este</a> otro (basado en el anterior y con una solución alternativa), <a href=\"https://blog.timhagn.com/restart-css3-animations-on-hover-without-javascript/\">este</a> otro (con otra solución) y <a href=\"https://stackoverflow.com/questions/6268508/restart-animation-in-css3-any-better-way-than-removing-the-element\">esta</a> pregunta.</p>\n<p>He implementado una de ellas (del primer artículo) en la que se elimina y añade de nuevo la clase. La clave está en que, entre medias, llama a <code>void this.offsetWidth;</code> que fuerza al navegador a recalcular el elemento del DOM (Reflow) y se reinicia así la animación. <a href=\"https://gist.github.com/paulirish/5d52fb081b3570c81e3a\">Aquí</a> más info. </p>\n<pre><code>$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n\n    $desplazamiento.click(function(e){       \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        //Eliminamos la clase \"desaparece\"\n        cabecera.removeClass(\"desaparece\");   \n        //Forzamos el reflow del elemento con offsetWidth\n        void this.offsetWidth;\n        //Volvemos a añadir la clase para reiniciar la animación\n        cabecera.addClass(\"desaparece\");          \n    });\n}\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>Vale, identificar el problema en la pagina resulta poco practico ya que no es un sand-box adecuado, para tu próxima pregunta, podrías incluir el problema en un fiddle para que se pueda hacer un testeo correcto y a de mas cabe decir que es algo completamente posible con la herramienta de fragmento de código de Stack.</p>\n<p>Pasando a la pregunta en cuestión, creo que el error radica a que estas trabajando una animación con css, te seria mas practico si lo hicieras todo con JQuery, de la siguiente manera:</p>\n<blockquote>\n<p>Con fadeIn y fadeOut</p>\n</blockquote>\n\n\n<pre><code>$(\"nav ul li\").click(function(){\n\n  $(\"nav\").fadeOut();\n  setTimeout(function(){\n  \n    $(\"nav\").fadeIn();\n  \n  }, 2000);\n\n});</code></pre>\n<pre><code>* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}</code></pre>\n<pre><code>&lt;script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;\n&lt;nav class=\"menu menu--antonio header-nav-wrap\"&gt;\n                &lt;ul class=\"menu__list header-nav\"&gt;\n                    &lt;li class=\"menu__item menu__item--current\"&gt;&lt;a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" &gt;Starseite&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" &gt;Über mich&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" &gt;Interaktiv&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" &gt;Coaching&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__line\"&gt;&lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/nav&gt;</code></pre>\n\n\n<blockquote>\n<p>Con visibility y opacity:</p>\n</blockquote>\n\n\n<pre><code>$(\"nav ul li\").click(function(){\n\n  $(\"nav\").css({\"visibility\": \"hidden\",\"opacity\": \"0\"});\n  setTimeout(function(){\n  \n    $(\"nav\").css({\"visibility\": \"visible\",\"opacity\": \"1\"});\n  \n  }, 2000);\n\n});</code></pre>\n<pre><code>* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n  transition: .2s; /*agrego un transition*/\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}</code></pre>\n<pre><code>&lt;script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;\n&lt;nav class=\"menu menu--antonio header-nav-wrap\"&gt;\n                &lt;ul class=\"menu__list header-nav\"&gt;\n                    &lt;li class=\"menu__item menu__item--current\"&gt;&lt;a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" &gt;Starseite&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" &gt;Über mich&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" &gt;Interaktiv&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" &gt;Coaching&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__line\"&gt;&lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/nav&gt;</code></pre>\n\n\n<p>La diferencia entre los dos métodos es principalmente la permanencia en la pagina, si usas <code>fadeIn()</code> y <code>fadeOut()</code> es como le adjudicaras al elemento la propiedad css <code>display: none</code>; en cambio si utilizas directamente las propiedades <code>visibility</code> y <code>opacity</code> solo estas colocando al elemento entero transparente.</p>\n<p>Espero que te sea de ayuda!</p>\n\n\n<h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://pes4fun.com/\">Games &amp; eSport</a></li>\n</ul>\n\n \n     Loading...",
+        "text": "Loading... \n         \n        \n        \nJQuery el efecto del menu funciona solo una vez\n\nhttp://www.maytelabargamalaga.com/prueba-menu/index.html\nHola a todos. Gracias de antemano por vuestra ayuda. \nEn el enlace que he adjuntado, estoy intentando animar la barra de menu. La idea es que cada vez que se pulse en un enlace, la barra desaparezca completamente y vuelva a aparecer. \nProblemas:\nLa animacion se hace una vez al inicio y luego no se repite. ¿quizas sea porque no he conseguido quitar la clase ('desaparece) o por la posicion fija del objeto? \nHTML\nStarseite\n                    Über mich\n                    Interaktiv\n                    Coaching\n                    Kontakt\n                    \n                \n\nJS (JQuery)\n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n    $desplazamiento.click(function(e){     \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        cabecera.addClass('desaparece');\n});\n\nCSS\n.desaparece {\n    animation-name: fadeIn;\n-moz-animation-name: fadeIn;\n-webkit-animation-duration: 3s;\n  animation-duration: 3s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n\n}\n\nGracias por vuestra ayuda. Saludos\n\nSolutions/Answers:\nAnswer 1:\n\nEl problema es que las animaciones en CSS no se pueden reiniciar simplemente añadiendo de nuevo la clase.\nTe recomiendo leer este artículo con varias alternativas, este otro (basado en el anterior y con una solución alternativa), este otro (con otra solución) y esta pregunta.\nHe implementado una de ellas (del primer artículo) en la que se elimina y añade de nuevo la clase. La clave está en que, entre medias, llama a void this.offsetWidth; que fuerza al navegador a recalcular el elemento del DOM (Reflow) y se reinicia así la animación. Aquí más info. \n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n\n    $desplazamiento.click(function(e){       \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        //Eliminamos la clase \"desaparece\"\n        cabecera.removeClass(\"desaparece\");   \n        //Forzamos el reflow del elemento con offsetWidth\n        void this.offsetWidth;\n        //Volvemos a añadir la clase para reiniciar la animación\n        cabecera.addClass(\"desaparece\");          \n    });\n}\n\n\nAnswer 2:\n\nVale, identificar el problema en la pagina resulta poco practico ya que no es un sand-box adecuado, para tu próxima pregunta, podrías incluir el problema en un fiddle para que se pueda hacer un testeo correcto y a de mas cabe decir que es algo completamente posible con la herramienta de fragmento de código de Stack.\nPasando a la pregunta en cuestión, creo que el error radica a que estas trabajando una animación con css, te seria mas practico si lo hicieras todo con JQuery, de la siguiente manera:\n\nCon fadeIn y fadeOut\n\n\n\n$(\"nav ul li\").click(function(){\n\n  $(\"nav\").fadeOut();\n  setTimeout(function(){\n  \n    $(\"nav\").fadeIn();\n  \n  }, 2000);\n\n});\n* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n<nav class=\"menu menu--antonio header-nav-wrap\">\n                <ul class=\"menu__list header-nav\">\n                    <li class=\"menu__item menu__item--current\"><a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" >Starseite</a></li>\n                    <li class=\"menu__item\"><a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" >Über mich</a></li>\n                    <li class=\"menu__item\"><a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" >Interaktiv</a></li>\n                    <li class=\"menu__item\"><a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" >Coaching</a></li>\n                    <li class=\"menu__item\"><a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\">Kontakt</a></li>\n                    <li class=\"menu__line\"></li>\n                </ul>\n            </nav>\n\n\n\nCon visibility y opacity:\n\n\n\n$(\"nav ul li\").click(function(){\n\n  $(\"nav\").css({\"visibility\": \"hidden\",\"opacity\": \"0\"});\n  setTimeout(function(){\n  \n    $(\"nav\").css({\"visibility\": \"visible\",\"opacity\": \"1\"});\n  \n  }, 2000);\n\n});\n* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n  transition: .2s; /*agrego un transition*/\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n<nav class=\"menu menu--antonio header-nav-wrap\">\n                <ul class=\"menu__list header-nav\">\n                    <li class=\"menu__item menu__item--current\"><a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" >Starseite</a></li>\n                    <li class=\"menu__item\"><a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" >Über mich</a></li>\n                    <li class=\"menu__item\"><a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" >Interaktiv</a></li>\n                    <li class=\"menu__item\"><a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" >Coaching</a></li>\n                    <li class=\"menu__item\"><a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\">Kontakt</a></li>\n                    <li class=\"menu__line\"></li>\n                </ul>\n            </nav>\n\n\nLa diferencia entre los dos métodos es principalmente la permanencia en la pagina, si usas fadeIn() y fadeOut() es como le adjudicaras al elemento la propiedad css display: none; en cambio si utilizas directamente las propiedades visibility y opacity solo estas colocando al elemento entero transparente.\nEspero que te sea de ayuda!\n\n\nReferences\nDatabase Administration Tutorials\nProgramming Tutorials & IT News\nLinux & DevOps World\nEntertainment & General News\nGames & eSport\n\n\n \n     Loading..."
+      },
+      "mention-of": "https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ricardo Gladwell 🌹 🏳️‍🌈 #VoteLabour",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/30ee0307b0f35b41a7456f2b9e38a7ed1d23b178e21405e6216b61f2f4bf2362.jpg",
+        "url": "https://twitter.com/axonrg"
+      },
+      "url": "https://twitter.com/justmarkup/status/1227484593860882432#favorited-by-102068185",
+      "published": null,
+      "wm-received": "2020-02-12T09:19:30Z",
+      "wm-id": 755436,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1227484593860882432/102068185",
+      "wm-target": "https://justmarkup.com/demos/web-share-target-image-to-grayscale/",
+      "like-of": "https://justmarkup.com/demos/web-share-target-image-to-grayscale/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ricardo Gladwell 🌹 🏳️‍🌈 #VoteLabour",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/30ee0307b0f35b41a7456f2b9e38a7ed1d23b178e21405e6216b61f2f4bf2362.jpg",
+        "url": "https://twitter.com/axonrg"
+      },
+      "url": "https://twitter.com/justmarkup/status/1227484593860882432#favorited-by-102068185",
+      "published": null,
+      "wm-received": "2020-02-12T09:19:30Z",
+      "wm-id": 755437,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1227484593860882432/102068185",
+      "wm-target": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "like-of": "https://justmarkup.com/articles/2020-02-11-share-images-to-your-website/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Perry",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4df5d1d39abfc1e5cf8874274ca2fa30bd31be13ca8bd669258fabe4af2e4d40.png",
+        "url": "https://twitter.com/ryanperry19"
+      },
+      "url": "https://twitter.com/ryanperry19/status/1227401414256857088",
+      "published": "2020-02-12T01:17:55+00:00",
+      "wm-received": "2020-02-12T01:48:01Z",
+      "wm-id": 755347,
+      "wm-source": "https://brid-gy.appspot.com/post/twitter/justmarkup/1227401414256857088",
+      "wm-target": "https://justmarkup.com//notes/2020-01-14-boring-by-default/",
+      "content": {
+        "html": "Boring by default <a href=\"https://justmarkup.com//notes/2020-01-14-boring-by-default/\">justmarkup.com//notes/2020-01…</a>",
+        "text": "Boring by default justmarkup.com//notes/2020-01…"
+      },
+      "mention-of": "https://justmarkup.com//notes/2020-01-14-boring-by-default/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/",
+      "published": null,
+      "wm-received": "2020-02-11T15:18:58Z",
+      "wm-id": 755016,
+      "wm-source": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/",
+      "wm-target": "https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/",
+      "name": "JQuery el efecto del menu funciona solo una vez",
+      "content": {
+        "html": "Loading... \n         \n        \n        \n<h2>JQuery el efecto del menu funciona solo una vez</h2>\n<pre>\nhttp://www.maytelabargamalaga.com/prueba-menu/index.html\nHola a todos. Gracias de antemano por vuestra ayuda. \nEn el enlace que he adjuntado, estoy intentando animar la barra de menu. La idea es que cada vez que se pulse en un enlace, la barra desaparezca completamente y vuelva a aparecer. \nProblemas:\nLa animacion se hace una vez al inicio y luego no se repite. ¿quizas sea porque no he conseguido quitar la clase ('desaparece) o por la posicion fija del objeto? \nHTML\n</pre><ul><li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/#home\">Starseite</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/#about\">Über mich</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/#interactive\">Interaktiv</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/#course\">Coaching</a></li>\n                    <li><a href=\"https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/#kontakt\">Kontakt</a></li>\n                    <li>\n                </li></ul>\n\nJS (JQuery)\n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n    $desplazamiento.click(function(e){     \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        cabecera.addClass('desaparece');\n});\n\nCSS\n.desaparece {\n    animation-name: fadeIn;\n-moz-animation-name: fadeIn;\n-webkit-animation-duration: 3s;\n  animation-duration: 3s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n\n}\n\nGracias por vuestra ayuda. Saludos\n\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>El problema es que las animaciones en CSS no se pueden reiniciar simplemente añadiendo de nuevo la clase.</p>\n<p>Te recomiendo leer <a href=\"https://css-tricks.com/restart-css-animation/\">este</a> artículo con varias alternativas, <a href=\"https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/\">este</a> otro (basado en el anterior y con una solución alternativa), <a href=\"https://blog.timhagn.com/restart-css3-animations-on-hover-without-javascript/\">este</a> otro (con otra solución) y <a href=\"https://stackoverflow.com/questions/6268508/restart-animation-in-css3-any-better-way-than-removing-the-element\">esta</a> pregunta.</p>\n<p>He implementado una de ellas (del primer artículo) en la que se elimina y añade de nuevo la clase. La clave está en que, entre medias, llama a <code>void this.offsetWidth;</code> que fuerza al navegador a recalcular el elemento del DOM (Reflow) y se reinicia así la animación. <a href=\"https://gist.github.com/paulirish/5d52fb081b3570c81e3a\">Aquí</a> más info. </p>\n<pre><code>$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n\n    $desplazamiento.click(function(e){       \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        //Eliminamos la clase \"desaparece\"\n        cabecera.removeClass(\"desaparece\");   \n        //Forzamos el reflow del elemento con offsetWidth\n        void this.offsetWidth;\n        //Volvemos a añadir la clase para reiniciar la animación\n        cabecera.addClass(\"desaparece\");          \n    });\n}\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>Vale, identificar el problema en la pagina resulta poco practico ya que no es un sand-box adecuado, para tu próxima pregunta, podrías incluir el problema en un fiddle para que se pueda hacer un testeo correcto y a de mas cabe decir que es algo completamente posible con la herramienta de fragmento de código de Stack.</p>\n<p>Pasando a la pregunta en cuestión, creo que el error radica a que estas trabajando una animación con css, te seria mas practico si lo hicieras todo con JQuery, de la siguiente manera:</p>\n<blockquote>\n<p>Con fadeIn y fadeOut</p>\n</blockquote>\n\n\n<pre><code>$(\"nav ul li\").click(function(){\n\n  $(\"nav\").fadeOut();\n  setTimeout(function(){\n  \n    $(\"nav\").fadeIn();\n  \n  }, 2000);\n\n});</code></pre>\n<pre><code>* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}</code></pre>\n<pre><code>&lt;script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;\n&lt;nav class=\"menu menu--antonio header-nav-wrap\"&gt;\n                &lt;ul class=\"menu__list header-nav\"&gt;\n                    &lt;li class=\"menu__item menu__item--current\"&gt;&lt;a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" &gt;Starseite&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" &gt;Über mich&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" &gt;Interaktiv&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" &gt;Coaching&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__line\"&gt;&lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/nav&gt;</code></pre>\n\n\n<blockquote>\n<p>Con visibility y opacity:</p>\n</blockquote>\n\n\n<pre><code>$(\"nav ul li\").click(function(){\n\n  $(\"nav\").css({\"visibility\": \"hidden\",\"opacity\": \"0\"});\n  setTimeout(function(){\n  \n    $(\"nav\").css({\"visibility\": \"visible\",\"opacity\": \"1\"});\n  \n  }, 2000);\n\n});</code></pre>\n<pre><code>* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n  transition: .2s; /*agrego un transition*/\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}</code></pre>\n<pre><code>&lt;script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;\n&lt;nav class=\"menu menu--antonio header-nav-wrap\"&gt;\n                &lt;ul class=\"menu__list header-nav\"&gt;\n                    &lt;li class=\"menu__item menu__item--current\"&gt;&lt;a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" &gt;Starseite&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" &gt;Über mich&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" &gt;Interaktiv&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" &gt;Coaching&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__item\"&gt;&lt;a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;\n                    &lt;li class=\"menu__line\"&gt;&lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/nav&gt;</code></pre>\n\n\n<p>La diferencia entre los dos métodos es principalmente la permanencia en la pagina, si usas <code>fadeIn()</code> y <code>fadeOut()</code> es como le adjudicaras al elemento la propiedad css <code>display: none</code>; en cambio si utilizas directamente las propiedades <code>visibility</code> y <code>opacity</code> solo estas colocando al elemento entero transparente.</p>\n<p>Espero que te sea de ayuda!</p>\n\n\n<h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://pes4fun.com/\">Games &amp; eSport</a></li>\n</ul>\n\n \n     Loading...",
+        "text": "Loading... \n         \n        \n        \nJQuery el efecto del menu funciona solo una vez\n\nhttp://www.maytelabargamalaga.com/prueba-menu/index.html\nHola a todos. Gracias de antemano por vuestra ayuda. \nEn el enlace que he adjuntado, estoy intentando animar la barra de menu. La idea es que cada vez que se pulse en un enlace, la barra desaparezca completamente y vuelva a aparecer. \nProblemas:\nLa animacion se hace una vez al inicio y luego no se repite. ¿quizas sea porque no he conseguido quitar la clase ('desaparece) o por la posicion fija del objeto? \nHTML\nStarseite\n                    Über mich\n                    Interaktiv\n                    Coaching\n                    Kontakt\n                    \n                \n\nJS (JQuery)\n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n    $desplazamiento.click(function(e){     \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        cabecera.addClass('desaparece');\n});\n\nCSS\n.desaparece {\n    animation-name: fadeIn;\n-moz-animation-name: fadeIn;\n-webkit-animation-duration: 3s;\n  animation-duration: 3s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n\n}\n\nGracias por vuestra ayuda. Saludos\n\nSolutions/Answers:\nAnswer 1:\n\nEl problema es que las animaciones en CSS no se pueden reiniciar simplemente añadiendo de nuevo la clase.\nTe recomiendo leer este artículo con varias alternativas, este otro (basado en el anterior y con una solución alternativa), este otro (con otra solución) y esta pregunta.\nHe implementado una de ellas (del primer artículo) en la que se elimina y añade de nuevo la clase. La clave está en que, entre medias, llama a void this.offsetWidth; que fuerza al navegador a recalcular el elemento del DOM (Reflow) y se reinicia así la animación. Aquí más info. \n$(document).ready(function () {\n    $allDocument = $(window);\n    $desplazamiento = $('.smoothscroll');\n    var cabecera = $('.main-header');\n\n\n    $desplazamiento.click(function(e){       \n\n        $('body,html').animate({\n            scrollTop: $(this.hash).stop().offset().top \n        },1500);\n\n        //Eliminamos la clase \"desaparece\"\n        cabecera.removeClass(\"desaparece\");   \n        //Forzamos el reflow del elemento con offsetWidth\n        void this.offsetWidth;\n        //Volvemos a añadir la clase para reiniciar la animación\n        cabecera.addClass(\"desaparece\");          \n    });\n}\n\n\nAnswer 2:\n\nVale, identificar el problema en la pagina resulta poco practico ya que no es un sand-box adecuado, para tu próxima pregunta, podrías incluir el problema en un fiddle para que se pueda hacer un testeo correcto y a de mas cabe decir que es algo completamente posible con la herramienta de fragmento de código de Stack.\nPasando a la pregunta en cuestión, creo que el error radica a que estas trabajando una animación con css, te seria mas practico si lo hicieras todo con JQuery, de la siguiente manera:\n\nCon fadeIn y fadeOut\n\n\n\n$(\"nav ul li\").click(function(){\n\n  $(\"nav\").fadeOut();\n  setTimeout(function(){\n  \n    $(\"nav\").fadeIn();\n  \n  }, 2000);\n\n});\n* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n<nav class=\"menu menu--antonio header-nav-wrap\">\n                <ul class=\"menu__list header-nav\">\n                    <li class=\"menu__item menu__item--current\"><a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" >Starseite</a></li>\n                    <li class=\"menu__item\"><a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" >Über mich</a></li>\n                    <li class=\"menu__item\"><a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" >Interaktiv</a></li>\n                    <li class=\"menu__item\"><a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" >Coaching</a></li>\n                    <li class=\"menu__item\"><a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\">Kontakt</a></li>\n                    <li class=\"menu__line\"></li>\n                </ul>\n            </nav>\n\n\n\nCon visibility y opacity:\n\n\n\n$(\"nav ul li\").click(function(){\n\n  $(\"nav\").css({\"visibility\": \"hidden\",\"opacity\": \"0\"});\n  setTimeout(function(){\n  \n    $(\"nav\").css({\"visibility\": \"visible\",\"opacity\": \"1\"});\n  \n  }, 2000);\n\n});\n* {\n\n  margin: 0 ;\n  padding: 0;\n\n}\n\nbody {\n\n  width: 500px;\n  height: 600px;\n\n\n}\n\nnav {\n\n  width: 100%;\n  transition: .2s; /*agrego un transition*/\n\n}\n\nnav ul {\n\n  height: 50px;\n  margin-right: auto;\n  margin-left: auto;\n  background-color: aqua;\n  width: 100%;\n  display: flex;\n  align-items: center;\n\n}\n\nnav ul li {\n\n  display: inline-flex;\n\n}\n\nnav ul li a {\n\n  padding-left: 20px;\n  padding-right: 20px;\n  color: black;\n  text-decoration: none;\n  font-size: 15px;\n\n}\n\nnav ul li a:hover {\n\n  color: white;\n\n}\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n<nav class=\"menu menu--antonio header-nav-wrap\">\n                <ul class=\"menu__list header-nav\">\n                    <li class=\"menu__item menu__item--current\"><a href=\"#home\" class=\"menu__link smoothscroll\" id=\"uno\" >Starseite</a></li>\n                    <li class=\"menu__item\"><a href=\"#about\" class=\"menu__link smoothscroll\" id=\"dos\" >Über mich</a></li>\n                    <li class=\"menu__item\"><a href=\"#interactive\" class=\"menu__link smoothscroll\" id=\"tres\" >Interaktiv</a></li>\n                    <li class=\"menu__item\"><a href=\"#course\" class=\"menu__link smoothscroll\" id=\"cuartro\" >Coaching</a></li>\n                    <li class=\"menu__item\"><a href=\"#kontakt\" class=\"menu__link smoothscroll\" id=\"cinco\">Kontakt</a></li>\n                    <li class=\"menu__line\"></li>\n                </ul>\n            </nav>\n\n\nLa diferencia entre los dos métodos es principalmente la permanencia en la pagina, si usas fadeIn() y fadeOut() es como le adjudicaras al elemento la propiedad css display: none; en cambio si utilizas directamente las propiedades visibility y opacity solo estas colocando al elemento entero transparente.\nEspero que te sea de ayuda!\n\n\nReferences\nDatabase Administration Tutorials\nProgramming Tutorials & IT News\nLinux & DevOps World\nEntertainment & General News\nGames & eSport\n\n\n \n     Loading..."
+      },
+      "mention-of": "https://justmarkup.com/log/2015/01/restart-css-animation-using-css-to-trigger-a-reflow/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/"
+      }
     }
   ]
 }
