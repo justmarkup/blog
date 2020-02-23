@@ -76,9 +76,9 @@ Since HTML5 you can create so-called [Block Level Links](http://html5doctor.com/
 
 From an accessible point of view this is better than having the redundancy problem, but it comes with other disadvantages, so let's see at yet another approach.
 
-## An absolute link
+## An absolute positioned link
 
-Our next approach is to use an absolute link. The idea is to have only one inline link in the HTML, and use ::before to stretch that link around the whole teaser.
+Our next approach is to use an absolute positioned link. The idea is to have only one inline link in the HTML, and use ::before to stretch that link around the whole teaser.
 
 ```html
 <article>
@@ -156,6 +156,6 @@ All in all, this approach seems pretty good, but the non-working context menu is
 
 ## Conclusion
 
-As you can see, there is no real winner here. All the approaches have their disadvantages. Personally, I prefer to use the absolute link approach, as I often don't need individual :hover/:focus styles and I am okay with the disadvantage of not being able to select text there, as on the full article the text will be select-able. And it offers the best experience for keyboard and screen reader users.
+As you can see, there is no real winner here. All the approaches have their disadvantages. Personally, I prefer to use the absolute positioned link approach, as I often don't need individual :hover/:focus styles and I am okay with the disadvantage of not being able to select text there, as on the full article the text will be select-able. And it offers the best experience for keyboard and screen reader users.
 
 If you came as far, go and read more about building cards elements on [Inclusive Components](https://inclusive-components.design/cards/).

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2020-02-21T06:38:56.304Z",
+  "lastFetched": "2020-02-23T08:26:07.962Z",
   "children": [
     {
       "type": "entry",
@@ -4662,6 +4662,289 @@
       "rels": {
         "canonical": "https://config9.com/lang/es/jquery-el-efecto-del-menu-funciona-solo-una-vez-2/"
       }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Šime Vidas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/09bb4880190585b5e89c617e2b0fc0af42f2bd0b1eefa64fa76f35eb307555a6.jpeg",
+        "url": "https://twitter.com/simevidas"
+      },
+      "url": "https://twitter.com/simevidas/status/1231396744002514945",
+      "published": "2020-02-23T01:53:56+00:00",
+      "wm-received": "2020-02-23T02:10:55Z",
+      "wm-id": 759585,
+      "wm-source": "https://brid-gy.appspot.com/comment/twitter/justmarkup/1231110040326680576/1231396744002514945",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "content": {
+        "html": "I’d say absolutely positioned link instead of absolute link, which already has a different meaning (absolute vs. relative links).\n<a class=\"u-mention\" href=\"http://justmarkup.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/justmarkup\"></a>",
+        "text": "I’d say absolutely positioned link instead of absolute link, which already has a different meaning (absolute vs. relative links)."
+      },
+      "in-reply-to": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gabor Lenard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/536d80760bd8ac34226eaefd3a7a998ae866eda3234238995fb55cca436f0bfc.png",
+        "url": "https://twitter.com/zengabor"
+      },
+      "url": "https://twitter.com/justmarkup/status/1231110040326680576#favorited-by-803501",
+      "published": null,
+      "wm-received": "2020-02-22T15:50:20Z",
+      "wm-id": 759466,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1231110040326680576/803501",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "tyler lee",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/de6da1282da456cde13f6808dfbe1c0844e5afde219bc55c736ccc5b920e44ab.png",
+        "url": "https://twitter.com/tylerjameslee"
+      },
+      "url": "https://twitter.com/justmarkup/status/1231110040326680576#favorited-by-14307150",
+      "published": null,
+      "wm-received": "2020-02-22T13:14:34Z",
+      "wm-id": 759437,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1231110040326680576/14307150",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fec6a2477c391323ac4d51e4e4ebbd49e8178abbe92eaeb15ea12a2ad3cce3f6.png",
+        "url": "https://twitter.com/nonsponsored"
+      },
+      "url": "https://twitter.com/justmarkup/status/1231110040326680576#favorited-by-17096025",
+      "published": null,
+      "wm-received": "2020-02-22T10:28:43Z",
+      "wm-id": 759414,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1231110040326680576/17096025",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marijn - ActiveB1t",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3e59d9aaeb91c8fbc63bd35f263f72f71ce8c22b86240f3b07e51c7c3248f4bd.jpg",
+        "url": "https://twitter.com/ActiveB1t"
+      },
+      "url": "https://twitter.com/justmarkup/status/1231110040326680576#favorited-by-3405689013",
+      "published": null,
+      "wm-received": "2020-02-22T08:22:13Z",
+      "wm-id": 759387,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1231110040326680576/3405689013",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "®einhard Lange - Kanzlerexperte",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7d90fdceeb7bcb37b0067852119baa6f22db5881f69598e124c1d54d74bae22a.jpg",
+        "url": "https://twitter.com/machtdesign"
+      },
+      "url": "https://twitter.com/justmarkup/status/1231110040326680576#favorited-by-754912966324129792",
+      "published": null,
+      "wm-received": "2020-02-22T08:21:52Z",
+      "wm-id": 759386,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1231110040326680576/754912966324129792",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sebastian Greger",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4caa9f177b0252ea37146a4931ae2bf5d80f884c67818233a59e252ad5c2d01a.jpg",
+        "url": "https://twitter.com/sebastiangreger"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-58313462",
+      "published": null,
+      "wm-received": "2020-02-21T13:05:57Z",
+      "wm-id": 759044,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/58313462",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jens Grochtdreis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/76c59a44803d2fe0e2760190e87623c4e62786dae9dc1637cc0ab25b98fde15b.png",
+        "url": "https://twitter.com/Flocke"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-7015572",
+      "published": null,
+      "wm-received": "2020-02-21T13:05:49Z",
+      "wm-id": 759043,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/7015572",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.alvinashcraft.com/2020/02/21/dew-drop-february-21-2020-3138/",
+      "published": null,
+      "wm-received": "2020-02-21T12:17:17Z",
+      "wm-id": 759032,
+      "wm-source": "https://www.alvinashcraft.com/2020/02/21/dew-drop-february-21-2020-3138/",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "mention-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.alvinashcraft.com/2020/02/21/dew-drop-february-21-2020-3138/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "®einhard Lange - Kanzlerexperte",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7d90fdceeb7bcb37b0067852119baa6f22db5881f69598e124c1d54d74bae22a.jpg",
+        "url": "https://twitter.com/machtdesign"
+      },
+      "url": "https://twitter.com/machtdesign/status/1230772653939556354",
+      "published": "2020-02-21T08:34:02+00:00",
+      "wm-received": "2020-02-21T11:05:36Z",
+      "wm-id": 759020,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1230756338231173121/1230772653939556354",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "content": {
+        "text": "✏️ Teaser with multiple links\n\njustmarkup.com/articles/2020-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "®einhard Lange - Kanzlerexperte",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7d90fdceeb7bcb37b0067852119baa6f22db5881f69598e124c1d54d74bae22a.jpg",
+        "url": "https://twitter.com/machtdesign"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-754912966324129792",
+      "published": null,
+      "wm-received": "2020-02-21T11:04:58Z",
+      "wm-id": 759019,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/754912966324129792",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marcus Herrmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/72c80119cece59908e6cb2895d65ba6d88bad1944f8f29ef4e4a2bd99dd38a9d.jpg",
+        "url": "https://twitter.com/_marcusherrmann"
+      },
+      "url": "https://twitter.com/_marcusherrmann/status/1230766772992667648",
+      "published": "2020-02-21T08:10:39+00:00",
+      "wm-received": "2020-02-21T08:41:22Z",
+      "wm-id": 758988,
+      "wm-source": "https://brid-gy.appspot.com/repost/twitter/justmarkup/1230756338231173121/1230766772992667648",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "content": {
+        "text": "✏️ Teaser with multiple links\n\njustmarkup.com/articles/2020-…"
+      },
+      "repost-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6cadd5c7ea8ba3e1336671afc46cd6c449a247920c453bbf3c495905cc811752.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-58448784",
+      "published": null,
+      "wm-received": "2020-02-21T08:41:06Z",
+      "wm-id": 758987,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/58448784",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marcus Herrmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/72c80119cece59908e6cb2895d65ba6d88bad1944f8f29ef4e4a2bd99dd38a9d.jpg",
+        "url": "https://twitter.com/_marcusherrmann"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-11659852",
+      "published": null,
+      "wm-received": "2020-02-21T08:40:57Z",
+      "wm-id": 758986,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/11659852",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Larry Hudson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5587b729bc1a33a14871b99fa49f3d9d1348697aed3ea70945ea00fca6f93c33.jpg",
+        "url": "https://twitter.com/larryhudsondev"
+      },
+      "url": "https://twitter.com/justmarkup/status/1230756338231173121#favorited-by-1116194966152212480",
+      "published": null,
+      "wm-received": "2020-02-21T08:40:42Z",
+      "wm-id": 758985,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/justmarkup/1230756338231173121/1116194966152212480",
+      "wm-target": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "like-of": "https://justmarkup.com/articles/2020-02-21-teaser-with-multiple-links/",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
