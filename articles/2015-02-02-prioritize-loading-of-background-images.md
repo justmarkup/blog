@@ -24,11 +24,13 @@ Let’s have a look at some code to see how prioritizing the loading of backgrou
 
 Here is the HTML for the header image:
 
+```html
 <div class="header-img"><img style="display: none;" src="images/header-img.jpg" alt=""></div>
+```
 
 And here is the CSS:
 
-``` css
+```css
 .header-img {
     width: 100%;
     height: 500px;
@@ -56,8 +58,9 @@ I hope this technique is reasonably and that I haven’t missed anything. Otherw
 As [@clmnsk](https://twitter.com/clmnsk/status/598114917590401024) mentioned on twitter, this technique can also be used in combination with responsive images, more accurately by using srcset and media queries. Here is the example from above using three different images for three different screen sizes:
 
 Here is the HTML for the header image:
-
-<img src="images/header-img\_small.jpg" srcset="images/header-img\_small.jpg 600w, images/header-img\_medium.jpg 900w, images/header-img\_large.jpg 1200w" alt=""&g
+```html
+<img src="images/header-img_small.jpg" srcset="images/header-img_small.jpg 600w, images/header-img_medium.jpg 900w, images/header-img_large.jpg 1200w" alt="">
+```
 
 And here is the CSS:
 
