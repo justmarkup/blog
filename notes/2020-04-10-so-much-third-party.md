@@ -1,5 +1,5 @@
 ---
-title: A poll, third-party, assumptions and some tips
+title: A poll, third-party, assumptions, and some tips
 description: Why we ship so much third-party code and things to consider when using third-party code
 ogImage: https://justmarkup.com/img/icons/icon-512x512.png
 ogImageAlt: justmarkup
