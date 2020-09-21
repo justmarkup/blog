@@ -183,3 +183,8 @@ so may mean you will not be able to enjoy the full functionality of this website
 
 If you do not agree with the storage and use of your data, you can disable this feature here. In this case, an opt-out cookie will be stored in your browser to prevent Matomo from storing your usage data. If you delete your cookies, this will mean that  
 the opt-out cookie will also be deleted. You will then need to reactivate it when you return to our site if you wish your activity not to be tracked.
+
+<iframe
+        style="border: 0; height: 200px; width: 600px;"
+        src="https://justmarkup.com/piwik/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=444444&fontSize=1.1rem&fontFamily=sans-serif"
+        ></iframe>

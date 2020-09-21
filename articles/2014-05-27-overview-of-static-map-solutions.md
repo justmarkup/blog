@@ -25,7 +25,7 @@ First of all, Google Maps. As described in the [Developer Guide](https://develop
 
 Example:  
 
-![static map image of downtown New York City](https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318 &markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false)
+![static map image of downtown New York City](https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmapmarkers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false)
 
 Code:
 
@@ -85,7 +85,7 @@ The free plan has a limit of 10,000 requests / day and as far as I can see there
 Last but not least also Yandex offers a [Static Map API](http://api.yandex.com/maps/doc/staticapi/1.x/dg/concepts/input_params.xml). It also offers basic options to set markers, define lines and polygons but lacks support for different styles.
 
 Example:  
-![](https://static-maps.yandex.ru/1.x/?lang=en-US&ll=32.810152,39.889847& \  size=450,450&z=10&l=map&pt=32.810152,39.889847,pm2rdl1~32.870152,39.869847,pm2rdl99)
+![](https://static-maps.yandex.ru/1.x/?lang=en-US&ll=32.810152,39.889847&\size=450,450&z=10&l=map&pt=32.810152,39.889847,pm2rdl1~32.870152,39.869847,pm2rdl99)
 
 Code:
 
