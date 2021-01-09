@@ -1,6 +1,6 @@
 ---
-title: Styling the <details> element
-description: I recently worked on a FAQ page, and as I like semantic and accessible HTML I chose to use the <details> element to show the questions and answers.
+title: Styling the details element
+description: I recently worked on a FAQ page, and as I like semantic and accessible HTML I chose to use the details element to show the questions and answers.
 ogImage: https://justmarkup.com/img/icons/icon-512x512.png
 ogImageAlt: justmarkup
 date: 2020-09-22T09:11:10+00:00
@@ -50,16 +50,41 @@ The next issue was that the designer didn't like the abrupt opening/closing. To 
 To still achieve this we therefore need JavaScript and here is my attempt.
 
 ``` css
-details div {
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: var(--details-height-open, '100%');
+  }
+}
+
+html {
   --details-transition-time: 400ms;
-  --details-max-height: 0;
+}
+
+details {
   transition: all ease-out var(--details-transition-time, 0);
-  max-height: var(--details-max-height, auto);
+  max-height: var(--details-height-closed, auto);
+}
+
+details[open] {
+  max-height: var(--details-height-open, auto);
+
+}
+
+details div {
+  transition: all ease-out var(--details-transition-time, 0);
+  max-height: var(--details-content-height-closed, auto);
   overflow: hidden;
+  animation-name: slideDown;
+  animation-duration: var(--details-transition-time);
 }
 
 details.is--open div {
-  max-height: var(--details-height-open, auto);
+  max-height: var(--details-content-height-open, auto);
 }
 ```
 
@@ -67,13 +92,18 @@ details.is--open div {
 const details = document.querySelectorAll('details');
 
 details.forEach(detail => {
-  const detailContent = detail.querySelector('div'); 
+  const detailContent = detail.querySelector('div');
+  const detailClosedHeight = detail.scrollHeight;
   // open the details to get the height of the content
   detail.open = true;
   // pass it to the the element as CSS property
-  detailContent.style.setProperty('--details-height-open', detailContent.scrollHeight + 'px');
+  detailContent.style.setProperty('--details-content-height-open', detailContent.scrollHeight + 'px');
+  detail.style.setProperty('--details-height-open', detailContent.scrollHeight + detailClosedHeight + 'px');
   // close the details again
   detail.open = false;
+
+  detailContent.style.setProperty('--details-content-height-closed', detailContent.scrollHeight + 'px');
+  detail.style.setProperty('--details-height-closed', detailClosedHeight + 'px');
 
   detail.addEventListener('click', (ev) => {
     const container = ev.target.parentElement;
@@ -108,6 +138,8 @@ Next we toggle the class is--open, which we need in CSS to make the transition w
 
 To avoid this, we set a timeout here with the value we set in CSS before via a custom property and remove the open attribute not before the transition is done.
 
+As an extra for Chromium we have to use CSS animation for the opening, as transition somehow doesn't work there. To get it also working in Safari, we need also transition the height of the details itself.
+
 ## Reacting to preferences and screen changes
 
 There is still some issue with this approach, if you resize the browser the height of the container will be either too small or too big.
@@ -141,10 +173,14 @@ As a final step let's reduce the transition time to 1ms if the user prefers redu
 
 With this in place we are done. The details element is now styled to our liking and there is a transition when opening/closing it.
 
-You can find the final demo on [JS Bin](https://jsbin.com/jocuxus/17/edit?html,css,js,output).
+You can find the final demo on [JS Bin](https://jsbin.com/wogeyey/1/edit?html,css,js,output).
 
 ## Resources
 
 * [MDN: details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 * [Using CSS Transitions on Auto Dimensions](https://css-tricks.com/using-css-transitions-auto-dimensions/)
 * [Browser support for details](https://caniuse.com/details)
+
+Update 24.09.2020: [Vadim Makeev](https://twitter.com/pepelsbey_) pointed out that the opening transition is not working in Chrome and Safari. And while I was 100% sure it did work at least in Chrome, they were absolutely right and it didn't work. To fix this in Chrome I added the animation.
+
+Update 25.09.2020: Add workaround for Safari to transition also there the opening.

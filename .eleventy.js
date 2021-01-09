@@ -25,6 +25,13 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
     })
 
+    function sortByNavOrder(values) {
+        let vals = [...values]; // this *seems* to prevent collection mutation...
+        return vals.sort((a, b) => Math.sign(a.data.navOrder - b.data.navOrder));
+    }
+
+    eleventyConfig.addFilter("sortByNavOrder", sortByNavOrder);
+
     eleventyConfig.addNunjucksFilter('currentYear', function(value) {
         return new Date().getFullYear();
     });
