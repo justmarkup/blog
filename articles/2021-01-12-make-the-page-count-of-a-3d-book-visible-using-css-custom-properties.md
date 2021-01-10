@@ -9,7 +9,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-I am currently building a book section/shelf for this site and thought it would be cool to show the books in 3D and also to make it visible how many pages a book has. In this article I would like to show you how to use CSS custom properties to adapt the depth of a 3D book showing how many pages the book has.
+I am currently building a book section for this site and thought it would be cool to show the books in 3D and also to make it visible how many pages a book has. In this article I would like to show you how to use CSS custom properties to adapt the depth of a 3D book showing how many pages the book has.
 
 ## 3D Book in CSS
 
@@ -26,7 +26,7 @@ Here is the HTML for creating the book:
 
 ```
 
-And here is the CSS from the example
+And here is the CSS:
 
 ```css
 .book {
@@ -82,7 +82,11 @@ And here is the CSS from the example
 }
 ```
 
+<div style="max-width: 400px;">
+
 ![Screenshot of the above demo showing the book World Wide Waste - How Digital Is Killing Our Planet-and What We Can Do About It by Gerry McGovern](https://justmarkup.com/img/3d-book-v1.png)
+
+</div>
 
 Demo: [https://jsbin.com/nuzaten/1/edit?html,css,output](https://jsbin.com/nuzaten/1/edit?html,css,output)
 
@@ -111,15 +115,15 @@ html {
 
 Let's go through this.
 
-First, we set three CSS custom properties The first one defines the actual page count.
+First, we set three CSS custom properties whereas the first one defines the actual page count.
 
-In the second one it is getting interesting. There we use clamp() to define our minimum as 1 (50 pages or fewer), our preferred value (page count divided by 50) and a maximum of 20 (1000pages or more).
+In the second one it is getting interesting. There we use clamp() to define our minimum as 1 (50 pages or fewer), our preferred value (page count divided by 50) and a maximum of 20 (1000 pages or more).
 
-In the last property we multiply the range by 10px, so we can use that in our CSS for the transform and width properties we need to adapt as you can see in the .book__wrapper before/after selectors.
+In the last property we multiply the range by 10px, so we can use that in our CSS for the transform and width properties that we need to adapt.
 
-If you open the [demo](https://jsbin.com/dozadun/3/edit?html,css,output) you can change the --page-count property to see how the depth changes. With some small changes the depth of the book is now reactive. CSS: What a wonderful language!
+If you open the [demo](https://jsbin.com/dozadun/3/edit?html,css,output) you can change the --page-count property to see how the depth changes. And that's it. With some small changes, the depth of the book is now reactive. CSS: What a wonderful language!
 
-That was a fun challenge and can't wait to share my book section where you will see this in action. If you also enjoyed it, consider [supporting me](https://www.buymeacoffee.com/justmarkup).
+That was a fun challenge and can't wait to share my book section where you will see this in action.
 
 ## Resources
 
