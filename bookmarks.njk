@@ -1,0 +1,23 @@
+---
+layout: layouts/home.njk
+templateClass: page--article
+tags:
+  - nav
+navtitle: Bookmarks
+navOrder: 5
+---
+
+<h1>My public bookmarks</h1>
+
+<p>A list of pages I added to Pocket.</p>
+
+{% if pocket.length %}
+  <ul class="reading-list teaser">
+  {%- for entry in pocket | reverse %}
+    <li>
+      <h2><a href="{{ entry.given_url }}">{{ entry.resolved_title }}</a></h2>
+      <p>{{ entry.excerpt }}</p>
+    </li>
+  {%- endfor %}
+  </ul>
+{%- endif %}

@@ -25,6 +25,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
     })
 
+    eleventyConfig.addFilter('dateFromPocket', timestamp => {
+        return new Date(timestamp * 1000);
+    })
+
     function sortByNavOrder(values) {
         let vals = [...values]; // this *seems* to prevent collection mutation...
         return vals.sort((a, b) => Math.sign(a.data.navOrder - b.data.navOrder));
