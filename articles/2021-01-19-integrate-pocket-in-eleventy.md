@@ -9,7 +9,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-I have been using [Pocket](https://app.getpocket.com/) since many years to organize my bookmarks and reading list and thought it would be great to show them on my blog which is using [Eleventy](https://www.11ty.dev/). In this article you will learn how to get your data from Pocket and show them on your Eleventy site.
+I have been using [Pocket](https://app.getpocket.com/) since many years to organize my bookmarks and reading list and thought it would be great to show them on my blog where I use [Eleventy](https://www.11ty.dev/). In this article you will learn how to get your data from Pocket and show them on your Eleventy site.
 
 ## Get a consumer key from Pocket
 
@@ -39,7 +39,7 @@ You can test if all worked by opening the URL [https://getpocket.com/v3/get?cons
 
 ## Fetch data from Pocket
 
-Now, let's open your Eleventy project.
+Now, let's switch to your Eleventy project.
 
 To start, create a file called pocket.js and save it in the ```_data``` folder (if you don't have the ```_data``` folder already create it now)
 
@@ -116,9 +116,9 @@ With this in place, we can go back to the terminal and run the Eleventy serve co
 npx eleventy --serve
 ```
 
-If you now open the template where you integrated pocket you should see a list of all your items (or if you used a specific tag, all your items tagged with the specific tag).
+If you now open the template where you integrated Pocket you should see a list of all your items (or if you used a specific tag, all your items tagged with the specific tag).
 
-You can now deploy your site and show your pocket list on your site.
+You can now deploy your site and show your Pocket list on your site. 
 
 ## Extra (automatic deploys, caching)
 
@@ -128,4 +128,4 @@ Be aware that there is a rate limit, but it is very generous with [320 calls per
 
 ## My Bookmarks
 
-If you are curious what I save at Pocket have a look at my [bookmark section](https://justmarkup.com/bookmarks/)
+If you are curious what I have saved at Pocket have a look at my [bookmark section](https://justmarkup.com/bookmarks/)
