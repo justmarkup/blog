@@ -17,6 +17,8 @@ Browser support
 
 Support for [CSS Hyphenation](https://caniuse.com/#feat=css-hyphens) is pretty good. You should keep in mind that while it works in Chromium-based browsers on Mac & Android platforms it doesn’t work at the moment (January 2019) on [Windows and Linux](https://bugs.chromium.org/p/chromium/issues/detail?id=652964). It also doesn’t work in Opera Mini and some other mobile browsers (Blackberry browser, IE mobile, …), but overall the support is solid.
 
+**Update 2021**: Hyphenation is now also supported in Chromium on Windows.
+
 Using CSS Hyphenation
 ---------------------
 
