@@ -75,6 +75,11 @@
           </li>
           {%- endfor -%}
           <li class="nav__item">
+            <a class="nav__link" href="https://bits.justmarkup.com">
+              Social
+            </a>
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="/feed/feed.xml" target="_blank">
               RSS feed 
               <svg aria-hidden="true" class="icon" viewBox="0 0 32 32">
@@ -104,7 +109,6 @@
         Copyright © Michael Scharnagl <time datetime="{{ 'date' | currentYear }}">{{ 'date' | currentYear }}</time>. 
         All rights reserved. 
         <a rel="me" href="https://mastodon.social/@justmarkup">Mastodon</a> |
-        <a href="https://twitter.com/justmarkup" rel="me">Twitter</a> | 
         <a href="https://www.buymeacoffee.com/justmarkup">Buy me a coffee</a>  | 
         <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/legal/">Legal</a> | 
         <a class="footer-nav{% if nav.url == page.url %} footer-nav--active{% endif %}" href="/privacy/">Privacy Policy</a>
