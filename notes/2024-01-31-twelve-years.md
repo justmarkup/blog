@@ -3,7 +3,7 @@ title: Twelve years
 description: Eleven years ago I published my first article on this site, and it's still kind of alive
 ogImage: https://justmarkup.com/img/icons/icon-512x512.png
 ogImageAlt: justmarkup
-date: 2023-01-31T11:12:08+00:00
+date: 2024-01-31T11:12:08+00:00
 tags:
     - note
 layout: layouts/post.njk
