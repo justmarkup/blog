@@ -6,17 +6,8 @@ templateClass: page--article
     <h1 class="p-name" itemprop="title">{{ title }}</h1>
     <time itemprop="dateCreated pubdate datePublished" class="article__date dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
 
-    <div id="carbon_wrapper"></div>
-
     <div class="article__content e-content">
         {{ content | safe }}
     </div>
 </article>
 
-<script>
-var adScript = document.createElement('script');
-    adScript.async = true;
-    adScript.src = 'https://cdn.carbonads.com/carbon.js?serve=CKYILK7M&placement=justmarkupcom';
-    adScript.id = '_carbonads_js';
-    document.getElementById('carbon_wrapper').appendChild(adScript);
-</script>
